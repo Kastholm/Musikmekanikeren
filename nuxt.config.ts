@@ -2,7 +2,9 @@
 export default defineNuxtConfig({
      
           modules: [
-            '@nuxtjs/tailwindcss'
+            '@nuxtjs/tailwindcss', ['nuxt-swiper', {
+              prefix: 'Swiper',
+            }]
           ]
         
 })

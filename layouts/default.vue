@@ -13,10 +13,13 @@ export default {
 </script>
 
 <style>
+@import url("https://use.typekit.net/rwl1ktr.css");
   body {
     @apply bg-Metric;
   }
-
+.wrapper {
+@apply max-w-[1640px] xl:m-auto px-12;
+}
 /* Styling af Scrollbar */
 ::-webkit-scrollbar {
   @apply w-2;
@@ -48,5 +51,22 @@ export default {
   html {
     font-size: 1em;
   }
+}
+/* *{
+  @apply text-smooth;
+} */
+p {
+  font-family: "source-sans-3", sans-serif;
+font-weight: 400;
+font-style: normal; 
+}
+h1, h2, h3, .header, .tab-title {
+  font-family: "niveau-grotesk", sans-serif !important;
+font-weight: 600;
+font-style: normal;
+/* font-family: "montserrat", sans-serif;
+font-weight: 600;
+font-style: normal; */
+@apply uppercase;
 }
 </style>
