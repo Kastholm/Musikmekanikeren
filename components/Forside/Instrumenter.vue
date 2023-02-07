@@ -1,6 +1,7 @@
 <script setup>
 
 import { gsap } from 'gsap';
+import { Grid } from 'swiper';
 import { onMounted} from "vue";
 
 

@@ -10,14 +10,14 @@ export default {
                <li><NuxtLink to='/'>Forside</NuxtLink> </li>
                <li><NuxtLink to='/Service'>Service</NuxtLink></li>
                <li><NuxtLink to='/Skoleservice'>Skoleservice</NuxtLink> </li>
-               <img class="logo" src="/img/logo.png" alt="">
+               <img class="logo" src="https://kiwswbakieolzufmufjq.supabase.co/storage/v1/object/public/public/logo.png" alt="">
                <li><NuxtLink to='/projekter'> Projekter</NuxtLink></li>
                <li><NuxtLink to="/omos">Om os </NuxtLink></li>
                <li><NuxtLink to="/kontakt">Kontakt</NuxtLink></li>
           </ul>
      </nav>
           <nav class="phoneNav">
-               <img class="logo" src="/img/logo.png" alt="">
+               <img class="logo" src="https://kiwswbakieolzufmufjq.supabase.co/storage/v1/object/public/public/logo.png" alt="">
               <span class="burger">
                     <svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
        <path

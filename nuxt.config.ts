@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
      
           modules: [
-            '@nuxtjs/tailwindcss', ['nuxt-swiper', {
+            '@nuxtjs/tailwindcss', '@nuxtjs/supabase', ['nuxt-swiper', {
               prefix: 'Swiper',
             }]
           ]
