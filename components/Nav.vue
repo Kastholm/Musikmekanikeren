@@ -10,7 +10,7 @@ export default {
                <li><NuxtLink to='/'>Forside</NuxtLink> </li>
                <li><NuxtLink to='/Service'>Service</NuxtLink></li>
                <li><NuxtLink to='/Skoleservice'>Skoleservice</NuxtLink> </li>
-               <img class="logo" src="https://kiwswbakieolzufmufjq.supabase.co/storage/v1/object/public/public/logo.png" alt="">
+               <span class="logo-bg"><img class="logo" src="https://kiwswbakieolzufmufjq.supabase.co/storage/v1/object/public/public/logo.png" alt=""></span>
                <li><NuxtLink to='/projekter'> Projekter</NuxtLink></li>
                <li><NuxtLink to="/omos">Om os </NuxtLink></li>
                <li><NuxtLink to="/kontakt">Kontakt</NuxtLink></li>
@@ -46,13 +46,18 @@ export default {
 
 <style>
 .mainNav {
-     @apply text-smooth hidden lg:block ;
+     @apply text-smooth hidden lg:block w-screen fixed z-50 ;
 }
 .mainNav .logo{
-     @apply w-[14em] ;
+     @apply w-[13em] h-[8em] absolute top-0;
+     border-radius: 400px;
+}
+.logo-bg{
+     @apply w-[13em] h-[7.4em] bg-Metric relative;
+     border-radius: 400px;
 }
 .mainNav ul {
-     @apply flex justify-center;
+     @apply flex justify-center bg-Metric h-20 overflow-visible;
 }
 .mainNav li {
      @apply m-auto;

@@ -9,7 +9,7 @@
 </span>
 </div>
 <div class="w-1/2 relative">
-<img class="w-[30em] gsapimg " src="https://easol.com/_next/image?url=%2Fimages%2Fhomepage%2F5.jpg&w=2048&q=75" alt="">
+<img class="w-[30em] gsapimg " src="https://images-ext-1.discordapp.net/external/fdbZQta670jFTyPb0wwIzsR9cRDYDOngtis5xtN44g4/%3Fetag%3D%25221b9763-5be21834%2522%26sourceContentType%3Dimage%252Fjpeg%26quality%3D85/https/musikmekanikeren.dk/____impro/1/onewebmedia/Privat/Musik%2520Mekanikeren%2520Lodning%2520Elektronik.JPG?width=689&height=722" alt="">
 <img class="dotsBlue clusterPieces absolute" src="/img/dots_blue.svg" style="transform: translate(0%, 2.654%) translate3d(0px, 0px, 0px);"/>
 </div>
 

@@ -28,8 +28,8 @@ import { testimonialsdata } from "../../assets/json/testimonials.json";
     <SwiperSlide v-for="testimonial in testimonialsdata"  :key="testimonial"  >
      <div class="testi_container" >
      <span class="testi_box" >
-          <img class="w-24 bg-smooth" loading="lazy" width="85" height="17" src="/img/stars.gif" alt="">
           <h3>{{testimonial.header}}</h3>
+          <img class="w-24 bg-smooth my-1" loading="lazy" width="85" height="17" src="/img/stars.gif" alt="">
           <blockquote>{{testimonial.review}}</blockquote>
      </span>
      </div>
@@ -51,10 +51,22 @@ import { testimonialsdata } from "../../assets/json/testimonials.json";
      @apply flex place-content-center lg:flex lg:columns-3 lg:justify-center text-left  h-64;
 }
 .testi_container span {
-     @apply /* lg:w-1/3 */  p-6 border-l mx-2 my-4 border-l-orange-500 grid place-content-center text-left ;
+     @apply /* lg:w-1/3 */  p-6 border-l mx-2 my-4 /* border-l-orange-500 */ grid text-left ;
+     place-content: start center;
      
 }
 .testi_container h3 {
      @apply font-bold text-lg;
+}
+.swiper-slide-prev{
+ /*  @apply bg-blue-400; */
+}
+.swiper-slide-active{
+  /* @apply bg-green-400; */
+}
+.swiper-slide-next{
+  @apply  border-x-orange-500 ;
+  transition: .3s;
+
 }
 </style>
