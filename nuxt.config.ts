@@ -2,19 +2,16 @@
 export default defineNuxtConfig({
      
           modules: [
-            '@nuxtjs/tailwindcss', 
-            '@nuxtjs/strapi',
+            '@nuxtjs/tailwindcss',
             ['nuxt-swiper', {
               prefix: 'Swiper',
-            }]
+            }],
+            '@nuxtjs/sanity'
           ],
-          strapi: {
-            // entities: ['restaurants', 'categories'],
-            url: process.env.STRAPI_URL || 'http://localhost:1337', //3000 maybe
-            prefix: '/api',
-            version: 'v4',
-            cookie: {},
-            cookieName: 'strapi_jwt'
-          }, 
-})
+          sanity: {
+            projectId: "Musikmekanikeren",
+            apiVersion: '2022-03-25'
+          },
+          
+});
     
