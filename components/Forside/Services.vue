@@ -5,7 +5,6 @@ import { SplitText } from 'gsap/SplitText';
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { onMounted} from "vue";
 
-
 onMounted(async () => { 
 
 gsap.registerPlugin(SplitText);
@@ -83,6 +82,7 @@ tabs.forEach(tab => {
 
 </script>
 <template >
+
 <div class="overflow-hidden w-full relative">
      <div class="float flex justify-center items-center py-4 font-bold text-[4rem] lg:text-[8rem] xl:text-[12rem] font-header text-zinc-100 space-x-8 lg:space-x-16">
      <span class="opacity-25">HJEM</span>

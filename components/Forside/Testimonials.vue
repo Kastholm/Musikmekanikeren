@@ -1,10 +1,11 @@
 <script setup>
 import { testimonialsdata } from "../../assets/json/testimonials.json";
+const query = groq`*[_type == "testimonials"]`;
+const { data } = useSanityQuery(query);
 </script>
 <template>
   <section class="testi_section">
 <h2 >5 Stjerner på Trustpilot</h2>
-
 
     <Swiper
     :modules="[SwiperAutoplay, SwiperEffectCreative]"
@@ -25,12 +26,12 @@ import { testimonialsdata } from "../../assets/json/testimonials.json";
       },
     }"
   >
-    <SwiperSlide v-for="testimonial in testimonialsdata"  :key="testimonial"  >
+    <SwiperSlide v-for="testimonials in data" v-bind:key="testimonials._id"  >
      <div class="testi_container" >
      <span class="testi_box" >
-          <h3>{{testimonial.header}}</h3>
+          <h3>{{testimonials.navn}} - {{testimonials.by}}</h3>
           <img class="w-24 bg-smooth my-1" loading="lazy" width="85" height="17" src="/img/stars.gif" alt="">
-          <blockquote>{{testimonial.review}}</blockquote>
+          <blockquote>{{testimonials.anmeldelse}}</blockquote>
      </span>
      </div>
     </SwiperSlide>
