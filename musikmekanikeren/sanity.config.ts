@@ -6,7 +6,7 @@ import {schemaTypes} from './schemas'
 
 export default defineConfig({
   theme,
-  name: 'default',
+  name: 'default',  
   title: 'Musikmekanikeren',
 
   projectId: '1f5ltia2',

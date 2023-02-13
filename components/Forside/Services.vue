@@ -96,7 +96,7 @@ tabs.forEach(tab => {
 <section class="wrapper relative portfolio">
           <h2>Vores Projekter</h2>
             <ServiceTabs>
-                    <ServiceTab title="Hjemmeside1" class="showcase">
+                    <ServiceTab title="Service" class="showcase">
                          <div class="tab_content">
                          <div class="showcase_img" style='background-image: url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");'>
                          <h3 class="showcase_title">Hej</h3>
@@ -114,7 +114,7 @@ tabs.forEach(tab => {
                     </div>
                     </ServiceTab>
           
-                    <ServiceTab class="showcase" title="Hjemmeside2">
+                    <ServiceTab class="showcase" title="Skoleservice">
                     <div class="tab_content">
                          <div class="showcase_img" style='background-image: url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");'>
                          <h3 class="showcase_title">Hej</h3>
@@ -132,59 +132,6 @@ tabs.forEach(tab => {
                     </div>
                     </ServiceTab>
           
-                    <ServiceTab title="Hjemmeside3" class="showcase">
-                    <div class="tab_content">
-                         <div class="showcase_img" style='background-image: url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");'>
-                         <h3 class="showcase_title">Hej</h3>
-                         </div>
-                         <div class="showcase_text">
-                              <span>
-                                   Our Role
-                                   Visual Branding
-                                   UX/UI Design
-                                   Custom Modular Development
-                              </span>
-                              <span>
-                                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt excepturi illo eligendi quisquam. Distinctio suscipit sunt hic excepturi deleniti harum?</span>
-                         </div>
-                    </div>
-                    </ServiceTab>
-          
-                    <ServiceTab class="showcase" title="Hjemmeside4">
-                     <div class="tab_content">
-                         <div class="showcase_img" style='background-image: url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");'>
-                         <h3 class="showcase_title">Hej</h3>
-                         </div>
-                         <div class="showcase_text">
-                              <span>
-                                   Our Role
-                                   Visual Branding
-                                   UX/UI Design
-                                   Custom Modular Development
-                              </span>
-                              <span>
-                                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt excepturi illo eligendi quisquam. Distinctio suscipit sunt hic excepturi deleniti harum?</span>
-                         </div>
-                    </div>
-                    </ServiceTab>
-          
-                    <ServiceTab class="showcase" title="Hjemmeside5">
-                    <div class="tab_content">
-                         <div class="showcase_img" style='background-image: url("https://images.pexels.com/photos/102127/pexels-photo-102127.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");'>
-                         <h3 class="showcase_title">Hej</h3>
-                         </div>
-                         <div class="showcase_text">
-                              <span>
-                                   Our Role
-                                   Visual Branding
-                                   UX/UI Design
-                                   Custom Modular Development
-                              </span>
-                              <span>
-                                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deserunt excepturi illo eligendi quisquam. Distinctio suscipit sunt hic excepturi deleniti harum?</span>
-                         </div>
-                    </div>
-                    </ServiceTab>
             </ServiceTabs>
    
 </section>
@@ -204,25 +151,28 @@ tabs.forEach(tab => {
   background: #191919;
 }
 
+.portfolio{ 
+@apply bg-yellow-200 py-4;
+}
 .tabs {
-  @apply flex flex-col-reverse md:flex-row;
+  @apply grid;
 }
 .tabs-titles {
-  @apply grid w-2/6;
+  @apply grid grid-cols-2 text-center;
 }
 .tab-title {
-  @apply my-6 opacity-40 text-[3rem] hover:opacity-100;
+  @apply mt-6 pb-2 opacity-40 text-[3rem] hover:opacity-100 rounded-t-lg;
   transition: .2s;
 }
 .tabs-content{
-  @apply w-4/6;
+  @apply bg-red-800 p-4;
   transition: .2s;
 }
-.tab-content{
-     @apply relative;
+.tab_content{
+     @apply relative flex;
 }
 .tab-active{
-  @apply  opacity-100 text-[3.3rem] relative ;
+  @apply  opacity-100 text-[3.3rem] relative bg-red-800 ;
   transition: .2s;
 }
 .tab-active::after{
@@ -234,13 +184,13 @@ tabs.forEach(tab => {
      border-bottom: 2px solid rgb(218, 178, 19);
 }
 .showcase_img{
-     @apply w-[100%] bg-cover h-[28em] relative;
+     @apply w-[100%] bg-cover h-[28em] relative m-auto;
 }
 .showcase_title{
      @apply text-[8rem] absolute -bottom-10 uppercase;
 }
 .showcase_text{
-     @apply flex;
+     @apply grid gap-4;
 }
 .showcase_text span{
      @apply mx-8 p-4 bg-smooth;

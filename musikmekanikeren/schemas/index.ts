@@ -1,5 +1,6 @@
 // schemas/index.js
 
 import testimonials from './testimonials'
-export const schemaTypes = [testimonials]
+import products from './products'
+export const schemaTypes = [testimonials, products]
 
