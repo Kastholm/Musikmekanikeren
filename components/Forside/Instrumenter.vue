@@ -42,7 +42,7 @@ items.forEach((item, i) => {
 <template>
   <section>
        <div class="group">
-       <div class="item w-[42vw]" style="background-image: url(https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
+       <div class="item itemFirst w-[42vw]" style="background-image: url(https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
        <div class="item" style="background-image: url(https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
        <br class="block md:hidden">
        <div class="item" style="background-image: url(https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
@@ -70,5 +70,8 @@ items.forEach((item, i) => {
   display: inline-block;
   cursor: pointer;
 }
+  .itemFirst {
+    width: 42vw ;
+  }
 
 </style>

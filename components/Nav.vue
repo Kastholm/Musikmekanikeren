@@ -45,6 +45,10 @@ export default {
 </template>
 
 <style>
+.router-link-active {
+  color: rgb(26, 255, 0);
+  font-weight: bold;
+}
 .mainNav {
      @apply text-smooth hidden lg:block w-screen fixed z-50 ;
 }

@@ -10,12 +10,12 @@
       <h1>Sanity + Nuxt</h1>
     </header>
     <main>
-      <h2>Pets</h2>
+      <!-- <h2>Pets</h2>
       <ul v-if="data?.length">
         <li v-for="pet in data" v-bind:key="pet._id">
           {{ pet.name }}
         </li>
-      </ul>
+      </ul> -->
       <!-- <p v-else>No pets to show</p>
       <h2>Data</h2>
       <div v-if="data">

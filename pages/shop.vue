@@ -1,32 +1,19 @@
 <template>
-  <div>
-    <h2>Categories</h2>
-    <ul>
-      <li v-for="category in categories" :key="category">{{ category }}</li>
-    </ul>
-  </div>
+ <section >
+  <ul class="pt-[32em]" >
+   <li v-for="category in data" v-bind:key="category._id">
+    <span v-if='category.subcategories = 1'>{{ category.title }}</span>
+          
+        </li>
+      </ul>
+ </section>
 </template>
 
-<script>
+<script setup>
+const query = `*[_type == "category"]`
+const { data } = useSanityQuery(query);
 
 
-export default {
-  data() {
-    return {
-      categories: []
-    };
-  },
-  async asyncData({ params }) {
-    const documentId = params.id;
-    const document = await client.fetch(
-      `*[_id == $id][0]{
-        categories[]
-      }`,
-      { id: documentId }
-    );
-    return {
-      categories: document.categories
-    };
-  }
-};
+/* console.log(query.products.categories) */
+console.log(data)
 </script>
