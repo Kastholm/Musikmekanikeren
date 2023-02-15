@@ -7,12 +7,13 @@ export default {
        {
          name: 'title',
          type: 'string',
-         title: 'Title',
+         title: 'Kategoriens Navn',
        },
        {
-         name: 'subcategories',
-         type: 'array',
-         of: [{ type: 'reference', to: [{ type: 'category' }] }],
-       },
+      name: 'categories',
+      type: 'array',
+      title: 'Kategoriens Navn',
+      of: [{ type: 'string' }],
+    },
      ],
    }
