@@ -36,6 +36,9 @@ export default {
   html {
     font-size: 2.2vw;
   }
+  p {
+    font-size: 2.8vw;
+  }
 }
 @media screen and (min-width: 40em) {
   html {

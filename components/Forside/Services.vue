@@ -169,7 +169,7 @@ tabs.forEach(tab => {
   transition: .2s;
 }
 .tab_content{
-     @apply relative flex;
+     @apply relative md:flex;
 }
 .tab-active{
   @apply  opacity-100 text-[3.3rem] relative bg-red-800 ;

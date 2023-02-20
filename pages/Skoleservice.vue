@@ -1,5 +1,6 @@
 <template>
-  
+  <SkoleservicesHero />
+<SkoleservicesCards />
 </template>
 
 <script>
