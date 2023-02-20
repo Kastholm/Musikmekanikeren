@@ -11,6 +11,11 @@ export default {
       type: 'string'
     },
     {
+      name: 'myImage',
+      type: 'image',
+      validation: Rule => Rule.required(),
+    },
+    {
       name: 'category',
       type: 'reference',
       to: [{ type: 'category' }],
