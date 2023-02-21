@@ -13,7 +13,7 @@ export default {
         name: 'myImage',
         type: 'image',
         validation: Rule => Rule.required(),
-        /* options: {
+        options: {
           hotspot: true,
         },
         fields: [
@@ -21,12 +21,20 @@ export default {
             name: 'token',
             type: 'string',
             hidden: true,
-            validation: Rule => Rule.required(),
+            
             options: {
               isHighlighted: true,
             },
           },
-        ], */
+          {
+            // Editing this field will be hidden behind an "Edit"-button
+            name: 'link',
+            type: 'string',
+            title: 'Billede Link',
+            description: 'Sæt billedets link her',
+            validation: Rule => Rule.required(),
+          }
+        ],
       },
        {
       name: 'categories',
