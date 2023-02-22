@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         Metric: "#222222",
-        cyangreen: "#316b74",
+        cyangreen: "#273e3f",
         smooth: "#FAF9F7",
         elipse: "#191919",
         //smooth: "#FAF9F7"
@@ -19,8 +19,8 @@ module.exports = {
         "teal-vivid-600": "#079A82",
         "teal-vivid-700": "#048271",
         "teal-vivid-800": "#016457",
-        "teal-vivid-900": "#004440",  
-      
+        "teal-vivid-900": "#004440",
+
         // Neutrals
         "grey-050": "#F7F7F7",
         "grey-100": "#E1E1E1",
@@ -31,8 +31,8 @@ module.exports = {
         "grey-600": "#626262",
         "grey-700": "#515151",
         "grey-800": "#3B3B3B",
-        "grey-900": "#222222",  
-      
+        "grey-900": "#222222",
+
         // Supporting
         "yellow-vivid-050": "#FFFBEA",
         "yellow-vivid-100": "#FFF3C4",
@@ -43,8 +43,8 @@ module.exports = {
         "yellow-vivid-600": "#DE911D",
         "yellow-vivid-700": "#CB6E17",
         "yellow-vivid-800": "#B44D12",
-        "yellow-vivid-900": "#8D2B0B",  
-      
+        "yellow-vivid-900": "#8D2B0B",
+
         "red-vivid-050": "#FFE3E3",
         "red-vivid-100": "#FFBDBD",
         "red-vivid-200": "#FF9B9B",
@@ -54,7 +54,7 @@ module.exports = {
         "red-vivid-600": "#CF1124",
         "red-vivid-700": "#AB091E",
         "red-vivid-800": "#8A041A",
-        "red-vivid-900": "#610316",   
+        "red-vivid-900": "#610316",
       },
     },
   },

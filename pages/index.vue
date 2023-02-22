@@ -6,9 +6,6 @@
  <ForsideServices />
  <ForsideInstrumenter />
    <div>
-    <header>
-      <h1>Sanity + Nuxt</h1>
-    </header>
     <main>
       <!-- <h2>Pets</h2>
       <ul v-if="data?.length">

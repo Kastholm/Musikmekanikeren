@@ -43,7 +43,7 @@ const { data } = useSanityQuery(query);
 
 <style>
 .testi_section {
-     @apply text-center bg-smooth ;
+     @apply text-center bg-smooth text-Metric ;
 }
 .testi_section h2 {
      @apply text-4xl py-4;

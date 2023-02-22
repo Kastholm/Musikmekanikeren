@@ -83,7 +83,7 @@ tabs.forEach(tab => {
 </script>
 <template >
 
-<div class="overflow-hidden w-full relative">
+<div class="overflow-hidden w-full relative ">
      <div class="float flex justify-center items-center py-4 font-bold text-[4rem] lg:text-[8rem] xl:text-[12rem] font-header text-zinc-100 space-x-8 lg:space-x-16">
      <span class="opacity-25">HJEM</span>
      <span class="opacity-25">HJEM</span>
@@ -92,8 +92,8 @@ tabs.forEach(tab => {
      <span class="opacity-25">HJEM</span>
      </div>
 </div>
-          <!-- <div class="circlePath"></div> -->
-<section class="wrapper relative portfolio">
+          <div class="circlePath"></div>
+<section class="wrapper relative portfolio ">
           <h2>Vores Projekter</h2>
             <ServiceTabs>
                     <ServiceTab title="Service" class="showcase">
@@ -148,11 +148,11 @@ tabs.forEach(tab => {
   bottom: 0;
   z-index: -10;
   overflow: visible;
-  background: #191919;
+  @apply bg-cyangreen;
 }
 
 .portfolio{ 
-@apply bg-yellow-200 py-4;
+@apply py-4;
 }
 .tabs {
   @apply grid;
@@ -165,14 +165,14 @@ tabs.forEach(tab => {
   transition: .2s;
 }
 .tabs-content{
-  @apply bg-red-800 p-4;
+  @apply bg-Metric p-4;
   transition: .2s;
 }
 .tab_content{
      @apply relative md:flex;
 }
 .tab-active{
-  @apply  opacity-100 text-[3.3rem] relative bg-red-800 ;
+  @apply  opacity-100 text-[3.3rem] relative bg-Metric ;
   transition: .2s;
 }
 .tab-active::after{

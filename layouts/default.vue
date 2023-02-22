@@ -12,8 +12,8 @@
 
 <style>
 @import url("https://use.typekit.net/rwl1ktr.css");
-  body {
-    @apply bg-Metric;
+body {
+    @apply bg-Metric text-smooth overflow-x-hidden;
   }
 .wrapper {
 @apply max-w-[1640px] xl:m-auto px-12;
@@ -23,34 +23,38 @@
   @apply w-2;
 }
 ::-webkit-scrollbar-track {
-  @apply bg-gradient-to-t bg-red-400 to-green-500
+  @apply bg-gradient-to-t bg-Metric to-smooth
 }
 ::-webkit-scrollbar-thumb {
-  @apply bg-indigo-600;
+  @apply bg-cyangreen;
 }
 
 /* Responsive tags der ændrer størrelse udfra skørmstørrelse */
-@media only screen and (max-width: 40em) {
+/* 640px smaller */
+@media screen and (max-width: 31em) {
   html {
-    font-size: 2.2vw;
+    font-size: 4.2vw;
   }
-  p {
-    font-size: 2.8vw;
+}
+    @media screen and (max-width: 23em) {
+      html {
+        font-size: 5vw;
+      }
+    }
+/* 640px bigger */
+@media screen and (min-width: 31em) {
+  html {
+    font-size: 3vw;
   }
 }
 @media screen and (min-width: 40em) {
   html {
-    font-size: 1.8vw;
+    font-size: 2.5vw;
   }
 }
 @media screen and (min-width: 50em) {
   html {
-    font-size: 1.3vw;
-  }
-}
-@media screen and (min-width: 62em) {
-  html {
-    font-size: 1em;
+    font-size: 1.05em;
   }
 }
 /* *{
