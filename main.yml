@@ -1,4 +1,4 @@
-name: Merging & Sending
+name: Merging & Sending (Docker update and SSH)
 
 on:
   push:
