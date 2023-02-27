@@ -23,8 +23,4 @@ ENV PORT=8080
 
 EXPOSE 8080
 
-#server
-RUN apt-get update && apt-get install -y openssh-client
-RUN ssh ubuntu@192.168.87.185
-
 CMD ["npm", "run", "dev"]
