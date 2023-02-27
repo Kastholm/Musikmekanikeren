@@ -19,4 +19,4 @@ jobs:
         run: |
           docker build . -t kastholm/musikmekanikeren:test
           docker push kastholm/musikmekanikeren:test
-          docker restart b979fedd7d67616ffcac223c5b6da1613e9f2a185f6c6d9aeb85f961050ad6ee
+          docker restart unruffled_mayer
