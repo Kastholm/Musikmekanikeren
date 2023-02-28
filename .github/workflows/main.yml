@@ -19,4 +19,14 @@ jobs:
         run: |
           docker build . -t kastholm/musikmekanikeren:test
           docker push kastholm/musikmekanikeren:test
-          docker restart unruffled_mayer
+
+      - name: copy file via ssh password
+        uses: appleboy/scp-action@master
+        with:
+          host: 192.168.87.185
+          username: ubuntu
+          password: ${{ secrets.DOCKER_PASS }}
+          key: ${{ secrets.SSH_KEY }}
+          port: 22
+          source: "layouts/default.vue"
+          target: "/var/www/webtify.website/musikmekanikeren"
