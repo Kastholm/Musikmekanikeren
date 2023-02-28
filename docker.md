@@ -41,7 +41,7 @@ RUN npm config delete @gsap:registry
           scp -r /app/dist/* root@192.168.87.185:/var/www/
 
                 - name: Copy files to server
-        run: scp -r /app/dist/* root@192.168.87.185:/var/www/
+        run: scp -r /app/.output/public/* root@192.168.87.185:/var/www/webtify.website/musikmekanikeren
 
 
 
