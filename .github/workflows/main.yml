@@ -17,5 +17,5 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.DOCKER_PASS }}
           port: 22
-          source: "/layouts/default.vue"
+          source: "/layouts"
           target: "/var/www/webtify.website/musikmekanikeren"
