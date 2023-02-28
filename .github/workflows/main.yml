@@ -26,6 +26,6 @@ jobs:
           host: ${{ secrets.SSH_HOST }}
           username: ${{ secrets.SSH_USER }}
           port: 22
-          key: ${{ secrets.SSH_KEY }}
+          password: ${{ secrets.DOCKER_PASS }}
           source: "/app/dist/*"
           target: "/var/www/"
