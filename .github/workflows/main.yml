@@ -29,3 +29,4 @@ jobs:
           port: 22
           source: "/app/dist/*"
           target: "/var/www/webtify.website/musikmekanikeren"
+          flatten: true
