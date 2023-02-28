@@ -69,3 +69,13 @@ RUN npm config delete @gsap:registry
           script: |
             whoami
             ls -al
+
+      - name: executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: 192.168.87.185
+          username: root
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            cd /app/dist
+            scp -r ./* root@192.168.87.185:/var/www/
