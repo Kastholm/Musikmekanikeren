@@ -19,14 +19,8 @@ jobs:
         run: |
           docker build . -t kastholm/musikmekanikeren:test
           docker push kastholm/musikmekanikeren:test
-
-      - name: copy file via ssh password
-        uses: appleboy/scp-action@master
-        with:
-          host: 192.168.87.185
-          username: ubuntu
-          password: ${{ secrets.DOCKER_PASS }}
-          port: 22
-          source: "/app/dist/*"
-          target: "/var/www/webtify.website/musikmekanikeren"
+      - name: Copy files to Nginx
+        env:
+          SSH_PASSWORD: Kastholm95
+        run: scp -r /app/dist/* ubuntu@192.168.87.185:/var/www/webtify.website/musikmekanikeren
 
