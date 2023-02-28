@@ -23,9 +23,9 @@ jobs:
       - name: copy file via ssh key
         uses: appleboy/scp-action@master
         with:
-          host: ${{ secrets.SSH_HOST }}
-          username: ${{ secrets.SSH_USER }}
+          host: 192.168.87.185
+          username: root
           port: 22
-          password: ${{ secrets.DOCKER_PASS }}
+          password: Kastholm95
           source: "/app/dist/*"
           target: "/var/www/"
