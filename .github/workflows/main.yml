@@ -17,8 +17,8 @@ jobs:
           password: ${{ secrets.DOCKER_PASS }}
       - name: Build and tag Docker image
         run: |
-          docker build . -t kastholm/musikmekanikeren:main
-          docker push kastholm/musikmekanikeren:main
+          docker build . -t kastholm/musikmekanikeren:docker
+          docker push kastholm/musikmekanikeren:docker
 
       - name: copy file via ssh key
         uses: appleboy/scp-action@master
