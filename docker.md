@@ -36,3 +36,9 @@ RUN npm config delete @gsap:registry
           password: Kastholm95
           source: "/app/dist/*"
           target: "/var/www/"
+
+
+          scp -r /app/dist/* root@192.168.87.185:/var/www/
+
+                - name: Copy files to server
+        run: scp -r /app/dist/* root@192.168.87.185:/var/www/

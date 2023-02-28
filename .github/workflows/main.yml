@@ -19,5 +19,3 @@ jobs:
         run: |
           docker build . -t kastholm/musikmekanikeren:docker
           docker push kastholm/musikmekanikeren:docker
-      - name: Copy files to server
-        run: scp -r /app/dist/* root@192.168.87.185:/var/www/
