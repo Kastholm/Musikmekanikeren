@@ -30,6 +30,5 @@ jobs:
       - name: Copy files using SSH
         uses: appleboy/ssh-action@master
         with:
-        script: |
-          scp -r /app/dist/* root@192.168.87.185:/var/www/
-
+          script: |
+            scp -r /app/dist/* root@192.168.87.185:/var/www/
