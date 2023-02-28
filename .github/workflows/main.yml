@@ -8,11 +8,13 @@ jobs:
   update-docker-image:
     runs-on: ubuntu-latest
     steps:
-      - name: Setup SSH connection
-        uses: appleboy/ssh-action@master
+      - name: executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@v0.1.8
         with:
           host: 192.168.87.185
           username: root
-          password: ${{ secrets.DOCKER_PASS }}
-          script: |
-            scp -r /app/dist/* root@192.168.87.185:/var/www/
+          key: ${{ secrets.SSH_KEY }}
+          script: whoami
+               
+          
+            
