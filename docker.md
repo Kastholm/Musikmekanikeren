@@ -56,3 +56,16 @@ RUN npm config delete @gsap:registry
         run: |
           docker build . -t kastholm/musikmekanikeren:docker
           docker push kastholm/musikmekanikeren:docker
+
+
+
+
+                - name: executing remote ssh commands using ssh key
+        uses: appleboy/ssh-action@v0.1.8
+        with:
+          host: 192.168.87.185
+          username: root
+          key: ${{ secrets.SSH_KEY }}
+          script: |
+            whoami
+            ls -al
