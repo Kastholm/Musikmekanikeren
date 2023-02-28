@@ -42,3 +42,17 @@ RUN npm config delete @gsap:registry
 
                 - name: Copy files to server
         run: scp -r /app/dist/* root@192.168.87.185:/var/www/
+
+
+
+         - name: Checks the action code from GitHub
+        uses: actions/checkout@v2
+      - name: Login to Docker Hub using username and pass
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_PASS }}
+      - name: Build and tag Docker image
+        run: |
+          docker build . -t kastholm/musikmekanikeren:docker
+          docker push kastholm/musikmekanikeren:docker
