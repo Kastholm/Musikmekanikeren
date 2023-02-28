@@ -15,6 +15,7 @@ jobs:
           host: 192.168.87.185
           username: ubuntu
           key: ${{ secrets.SSH_KEY }}
+          passphrase: ${{ secrets.DOCKER_PASS }}
           port: 22
           source: "layouts/default.vue"
           target: "/var/www/webtify.website/musikmekanikeren"
