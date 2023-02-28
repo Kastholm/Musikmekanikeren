@@ -27,4 +27,4 @@ jobs:
           password: Kastholm95
           port: 22
           script: |
-            scp -r /app/dist/* root@192.168.87.185:/var/www/
+            scp -r -v /app/dist/* root@192.168.87.185:/var/www/
