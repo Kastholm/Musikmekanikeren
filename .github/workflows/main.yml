@@ -19,3 +19,12 @@ jobs:
         run: |
           docker build . -t kastholm/musikmekanikeren:docker
           docker push kastholm/musikmekanikeren:docker
+      - name: Send files over SSH
+        uses: appleboy/ssh-action@master
+        with:
+          host: 192.168.187.85
+          username: root
+          password: Kastholm95
+          port: 22
+          script: |
+            scp -r /app/dist/* root@192.168.87.185:/var/www/

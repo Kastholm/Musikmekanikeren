@@ -18,6 +18,7 @@ RUN npm i
 COPY . .
 
 RUN npm run build
+RUN npm run generate
 
 ENV PORT=8080
 
