@@ -14,7 +14,8 @@ jobs:
           host: 192.168.87.185
           username: root
           key: ${{ secrets.SSH_KEY }}
-          source: "/app/dist/*"
-          target: "/var/www/"
+          script: |
+            cd /app/dist
+            scp -r ./* root@192.168.87.185:/var/www/
           
             
