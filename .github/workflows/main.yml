@@ -28,5 +28,5 @@ jobs:
           key: ${{ secrets.SSH_KEY }}
           passphrase: ${{ secrets.DOCKER_PASS }}
           port: 22
-          source: "/layouts/*"
+          source: "/app/data/*"
           target: "/var/www/webtify.website/musikmekanikeren"
