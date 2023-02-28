@@ -8,6 +8,18 @@ jobs:
   update-docker-image:
     runs-on: ubuntu-latest
     steps:
+      - name: Checks the action code from GitHub
+        uses: actions/checkout@v2
+      - name: Login to Docker Hub using username and pass
+        uses: docker/login-action@v1
+        with:
+          username: ${{ secrets.DOCKER_USER }}
+          password: ${{ secrets.DOCKER_PASS }}
+      - name: Build and tag Docker image
+        run: |
+          docker build . -t kastholm/musikmekanikeren:main
+          docker push kastholm/musikmekanikeren:main
+
       - name: copy file via ssh key
         uses: appleboy/scp-action@master
         with:
