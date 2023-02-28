@@ -25,3 +25,14 @@ RUN npm install gsap@npm:@gsap/shockingly
 RUN npm install gsap --registry https://npm.greensock.com
 RUN npm config delete //npm.greensock.com/:_authToken
 RUN npm config delete @gsap:registry
+
+
+      - name: copy file via ssh key
+        uses: appleboy/scp-action@master
+        with:
+          host: 192.168.87.185
+          username: root
+          port: 22
+          password: Kastholm95
+          source: "/app/dist/*"
+          target: "/var/www/"
