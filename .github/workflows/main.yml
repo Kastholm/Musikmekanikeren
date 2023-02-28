@@ -18,4 +18,4 @@ jobs:
           passphrase: ${{ secrets.DOCKER_PASS }}
           port: 22
           source: "layouts/default.vue"
-          target: "/var/www/webtify.website/musikmekanikeren"
+          target: "../../var/www/webtify.website/musikmekanikeren"
