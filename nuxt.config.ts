@@ -12,7 +12,6 @@ modules: [
 sanity: {
   projectId: "1f5ltia2",
   apiVersion: '2022-03-25'
-},
-          
+}
 });
     
