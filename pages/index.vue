@@ -1,11 +1,12 @@
 <template>
   <NuxtPage />
- <ForsideHero />
- <ForsideTestimonials />
- <ForsideInfo />
- <ForsideServices />
- <ForsideInstrumenter />
-   <div>
+  <ForsideHero />
+  <ForsideTestimonials />
+  <ForsideInfo />
+  <ForsideServices />
+  <ForsideInstrumenter />
+  <ForsideShortcuts />
+  <div>
     <main>
       <!-- <h2>Pets</h2>
       <ul v-if="data?.length">
@@ -34,6 +35,4 @@ const query = groq`*[_type == "pet"]`;
 const { data } = useSanityQuery(query);
 </script>
 
-<style>
-
-</style>
+<style></style>

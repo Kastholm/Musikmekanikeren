@@ -1,66 +1,78 @@
+<script setup>
+
+import { gsap } from 'gsap';
+import { Grid } from 'swiper';
+import { onMounted} from "vue";
+
+
+onMounted(async () => { 
+const items = document.querySelectorAll('.item')
+
+const expand = (item, i) => {
+  items.forEach((it, ind) => {
+    if (i === ind) return
+    it.clicked = false
+  })
+  gsap.to(items, {
+    width: item.clicked ? '15vw' : '8vw',
+    duration: .5,
+    ease: 'expo'
+  })
+  
+  item.clicked = !item.clicked
+  gsap.to(item, {
+    width: item.clicked ? '42vw' : '15vw',
+    duration: 1,
+    ease: 'expo'
+  })
+}
+
+items.forEach((item, i) => {
+  item.clicked = false
+  item.addEventListener('click', () => expand(item, i))
+})
+
+});
+
+
+
+
+
+</script>
 <template>
-  <section class="bg-white dark:bg-gray-900">
-     <!-- animate-pulse -->
-    <div class="container px-6 py-10 mx-auto ">
-        <!-- <h1 class="w-48 h-2 mx-auto bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
-
-        <p class="w-64 h-2 mx-auto mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
-        <p class="w-64 h-2 mx-auto mt-4 bg-gray-200 rounded-lg sm:w-80 dark:bg-gray-700"></p> -->
-
-
-
-
-
-        <div class="grid grid-cols-1 gap-8 mt-8 xl:mt-12 xl:gap-12 sm:grid-cols-2 xl:grid-cols-4 lg:grid-cols-3">
-<!-- Div Start -->
-            <div class="w-full ">
-                <div style="background-image: url('https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;" class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600 grid place-content-center"><button class="bg-red-800 px-10 py-2">Hej</button></div>
-                
-                <h1 class="w-56 h-2 mt-4 ">Overskrift</h1>
-                <p class="w-24 h-2 mt-4 ">Undertitel</p>
-            </div>
-<!-- Div End -->
-<!-- Div Start -->
-            <div class="w-full ">
-                <div style="background-image: url('https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;" class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
-                
-                <h1 class="w-56 h-2 mt-4 ">Overskrift</h1>
-                <p class="w-24 h-2 mt-4 ">Undertitel</p>
-            </div>
-<!-- Div End -->
-<!-- Div Start -->
-            <div class="w-full ">
-                <div style="background-image: url('https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;" class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
-                
-                <h1 class="w-56 h-2 mt-4 ">Overskrift</h1>
-                <p class="w-24 h-2 mt-4 ">Undertitel</p>
-            </div>
-<!-- Div End -->
-<!-- Div Start -->
-            <div class="w-full ">
-                <div style="background-image: url('https://images.pexels.com/photos/33597/guitar-classical-guitar-acoustic-guitar-electric-guitar.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); background-size: cover;" class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
-                
-                <h1 class="w-56 h-2 mt-4 ">Overskrift</h1>
-                <p class="w-24 h-2 mt-4 ">Undertitel</p>
-            </div>
-<!-- Div End -->
-            <div class="w-full ">
-                <div class="w-full h-64 bg-gray-300 rounded-lg dark:bg-gray-600"></div>
-                
-                <h1 class="w-56 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></h1>
-                <p class="w-24 h-2 mt-4 bg-gray-200 rounded-lg dark:bg-gray-700"></p>
-            </div>
-        </div>
-    </div>
-</section>
+  <section class="relative bg-cyangreen z-10 py-16">
+       <h1 class='text-smooth text-6xl'>Hvilket instrument ønsker du repareret</h1>
+       <div class="group">
+       <div class="item itemFirst w-[42vw]" style="background-image: url(https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
+       <div class="item" style="background-image: url(https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
+       <br class="block md:hidden">
+       <div class="item" style="background-image: url(https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
+       <div class="item" style="background-image: url(https://images.pexels.com/photos/462439/pexels-photo-462439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
+     </div>
+  </section>
 </template>
 
-<script>
-export default {
-
-}
-</script>
-
 <style>
+.group {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.item {
+  width: 15vw;
+  /* height: 75vh; */
+  height: 40vh;
+  background-position: center;
+  background-size: 75vh;
+  
+  margin: 1vw;
+  border-radius: 3vw;
+  display: inline-block;
+  cursor: pointer;
+}
+  .itemFirst {
+    width: 42vw ;
+  }
 
 </style>

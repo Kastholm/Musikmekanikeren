@@ -1,4 +1,4 @@
-// schemas/pet.js
+// schema for Butiks kategorier
 export default {
      name: 'category',
      type: 'document',
@@ -56,7 +56,7 @@ export default {
                 name: 'image',
                 type: 'image',
                 title: 'Billede til underkategori'
-              }
+              },
             ]
           }
         ],
