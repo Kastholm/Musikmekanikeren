@@ -12,6 +12,7 @@ export default {
        {
         name: 'myImage',
         type: 'image',
+        title: 'Vælg billede',
         validation: Rule => Rule.required(),
         options: {
           hotspot: true,
@@ -36,11 +37,29 @@ export default {
           }
         ],
       },
+      
        {
-      name: 'categories',
-      type: 'array',
-      title: 'Kategoriens Navn',
-      of: [{ type: 'string' }],
+        name: 'categories',
+        type: 'array',
+        title: 'Underkategorier Navn',
+        of: [
+          {
+            type: 'object',
+            title: 'Subcategory',
+            fields: [
+              {
+                name: 'name',
+                type: 'string',
+                title: 'Navn på underkategori'
+              },
+              {
+                name: 'image',
+                type: 'image',
+                title: 'Billede til underkategori'
+              }
+            ]
+          }
+        ],
     },
      ],
    }

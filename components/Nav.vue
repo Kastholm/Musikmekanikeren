@@ -44,7 +44,7 @@ export default {
 
 </template>
 
-<style>
+<style scoped>
 .router-link-active {
   color: rgb(26, 255, 0);
   font-weight: bold;
