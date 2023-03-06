@@ -19,7 +19,6 @@ COPY . .
 
 RUN npm run build
 RUN npm run generate
-RUN scp -r /app/dist/* root@192.168.87.185:/var/www/
 
 ENV PORT=8080
 

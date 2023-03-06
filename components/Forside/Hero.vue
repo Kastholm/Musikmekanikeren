@@ -7,7 +7,7 @@
           </span>
      </div>
   </section>
-               <BaseButton />
+           
 
   
 </template>
