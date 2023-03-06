@@ -1,31 +1,33 @@
 <template>
   <!-- Card Blog -->
-  <div class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div
+    class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto relative bg-smooth "
+  >
     <!-- Title -->
     <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
       <h2
-        class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
+        class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-cyangreen"
       >
-        Insights
+        Lær mere om Musikmekanikeren
       </h2>
-      <p class="mt-1 text-gray-600 dark:text-gray-400">
+      <p class="mt-1 text-cyangreen dark:text-metric">
         Stay in the know with insights from industry experts.
       </p>
     </div>
     <!-- End Title -->
 
     <!-- Grid -->
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[85rem] m-auto">
       <!-- Card -->
       <a class="group rounded-xl overflow-hidden" href="#">
         <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
           <img
             class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-            src="https://images.unsplash.com/photo-1586232702178-f044c5f4d4b7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1035&q=80"
+            src="https://musikmekanikeren.dk/____impro/1/onewebmedia/S%C3%A6rlige%20projekter/Kasuga%20Les%20Paul%20Custom/Kasuga%20Les%20Paul%20Custom%202.jpg?etag=%22343f20-5c599b59%22&sourceContentType=image%2Fjpeg&rotate=270&ignoreAspectRatio&resize=670%2B503&extract=0%2B117%2B670%2B295&quality=85"
             alt="Image Description"
           />
           <span
-            class="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-gray-900"
+            class="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-gray-800 text-cyangreen py-1.5 px-3 dark:bg-gray-900"
           >
             Sponsored
           </span>
@@ -33,13 +35,13 @@
 
         <div class="mt-7">
           <h3
-            class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200"
+            class="text-xl font-semibold text-cyangreen group-hover:text-cyangreen dark:text-cyangreen"
           >
-            Studio by Preline
+            Projekter
           </h3>
-          <p class="mt-3 text-gray-800 dark:text-gray-200">
-            Produce professional, reliable streams easily leveraging Preline's
-            innovative broadcast studio
+          <p class="mt-3 text-cyangreen dark:text-cyangreen whitespace-normal">
+            Få indblik i nogle gode historier & billedserier for spændende
+            instrumenter som har været igennem værkstedet..
           </p>
           <p
             class="mt-5 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 group-hover:underline font-medium"
@@ -69,18 +71,18 @@
         <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
           <img
             class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-            src="https://images.unsplash.com/photo-1542125387-c71274d94f0a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80"
+            src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Privat/Kaares%20f%C3%B8rste%20trommes%C3%A6t.png?etag=%22392709-56a77a82%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=458%2B309&extract=0%2B10%2B456%2B296"
             alt="Image Description"
           />
         </div>
 
         <div class="mt-7">
           <h3
-            class="text-xl font-semibold text-gray-800 group-hover:text-gray-600 dark:text-gray-200"
+            class="text-xl font-semibold text-cyangreen group-hover:text-cyangreen dark:text-cyangreen"
           >
-            Onsite
+            Hvem er jeg ?
           </h3>
-          <p class="mt-3 text-gray-800 dark:text-gray-200">
+          <p class="mt-3 text-cyangreen dark:text-cyangreen whitespace-normal">
             Optimize your in-person experience with best-in-class capabilities
             like badge printing and lead retrieval
           </p>
@@ -113,9 +115,11 @@
         href="#"
       >
         <div class="flex-auto p-4 md:p-6">
-          <h3 class="text-xl text-white/[.9] group-hover:text-white">
-            <span class="font-bold">Preline</span> Press publishes books about
-            economic and technological advancement.
+          <h3 class="text-xl text-white/[.9] group-hover:text-white whitespace-normal text-left">
+            <span class="font-bold text-2xl">Besgøg vores Shop</span> 
+            <p>
+              Leder du efter nyt udstyr til dit instrument?
+            </p>
           </h3>
         </div>
         <div class="pt-0 p-4 md:p-6">

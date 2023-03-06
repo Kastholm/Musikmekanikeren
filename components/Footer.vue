@@ -1,7 +1,7 @@
 <template>
-<section class="bg-smooth relative z-10">
+<section class="bg-cyangreen relative z-10">
 
-<div class="w-screen h-64  text-Metric grid place-content-center">
+<div class="w-screen h-64  text-smooth grid place-content-center">
   <h2 class="text-6xl">Nyhedsbrev</h2>
 </div>
 

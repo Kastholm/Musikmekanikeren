@@ -4,7 +4,7 @@
 <span class="">
   <p>Hej</p>
   <h2 class="quoteTwo header">DIT FORTRUKNE INSTRUMENT VÆRKSTED</h2>
-  <h4 class="quote_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cumque velit, nostrum nesciunt at placeat, blanditiis illum ex dolores, in cum odio incidunt ratione maiores dolorum eveniet? Optio molestiae dolorem quidem laboriosam maxime officia consequatur nulla doloribus ipsam unde odit consectetur, qui quae natus quos beatae aut debitis cupiditate minima.</h4>
+  <h5 class="quote_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cumque velit, nostrum nesciunt at placeat, blanditiis illum ex dolores, in cum odio incidunt ratione maiores dolorum eveniet? Optio molestiae dolorem quidem laboriosam maxime officia consequatur nulla doloribus ipsam unde odit consectetur, qui quae natus quos beatae aut debitis cupiditate minima.</h5>
   
 </span>
 </div>

@@ -62,6 +62,7 @@ p {
   font-family: "source-sans-3", sans-serif;
   font-weight: 400;
   font-style: normal;
+  @apply text-[1.1rem];
 }
 h1,
 h2,
@@ -75,5 +76,8 @@ h3,
 font-weight: 600;
 font-style: normal; */
   @apply uppercase;
+}
+h4 {
+  @apply text-3xl;
 }
 </style>

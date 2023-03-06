@@ -1,111 +1,112 @@
 <template>
- <!--  <div>
-  <button class="btn-87"> 
-  <span>Hej Marc</span>
-  <svg aria-hidden><circle></circle></svg>
+  <button class="btn-21">
+    <p class="relative z-50 font-bold"><slot></slot></p>
   </button>
-</div> -->
-<div></div>
 </template>
 
 <script>
-export default {
-
-}
+export default {};
 </script>
 
 <style>
-.btn-87,
-.btn-87 *,
-.btn-87 :after,
-.btn-87 :before,
-.btn-87:after,
-.btn-87:before {
+.btn-21,
+.btn-21 *,
+.btn-21 :after,
+.btn-21 :before,
+.btn-21:after,
+.btn-21:before {
   border: 0 solid;
   box-sizing: border-box;
 }
-.btn-87 {
+.btn-21 {
   -webkit-tap-highlight-color: transparent;
   -webkit-appearance: button;
-  background-color: #000;
+  background-color: #273e3f;
   background-image: none;
-  color: #fff;
+  color: #fbfbfb;
   cursor: pointer;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
     Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
     Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-size: 100%;
+  font-weight: 900;
   line-height: 1.5;
   margin: 0;
-  -webkit-mask-image: -webkit-radial-gradient(#000, #fff);
+  margin-top: 1em;
+  -webkit-mask-image: -webkit-radial-gradient(#273e3f, #fff);
   padding: 0;
+  text-transform: uppercase;
 }
-.btn-87:disabled {
+.btn-21:disabled {
   cursor: default;
 }
-.btn-87:-moz-focusring {
+.btn-21:-moz-focusring {
   outline: auto;
 }
-.btn-87 svg {
+.btn-21 svg {
   display: block;
   vertical-align: middle;
 }
-.btn-87 [hidden] {
+.btn-21 [hidden] {
   display: none;
 }
-.btn-87 {
-  background: none;
-  border-radius: 999px;
-  box-sizing: border-box;
-  display: grid;
-  place-items: center;
-  font-size: 20px;
-  font-weight: 600;
-  text-align: center;
-  filter:blur(1px);
-  height: 110px;
+.btn-21 {
+  border-radius: 99rem;
+  border-width: 2px;
+  overflow: hidden;
+  padding: 0.8rem 3rem;
   position: relative;
-  text-transform: uppercase;
-  width: 110px;
 }
-.btn-87 span {
+.btn-21 span {
   mix-blend-mode: difference;
 }
-.btn-87:before {
-  background: #fff;
-  border-radius: 50%;
+.btn-21:before {
+  -webkit-animation: move-out 0.3s;
+  animation: move-out 0.3s;
+  background: #222222;
+  color: #fbfbfb;
   content: "";
-  inset: 0;
-  opacity: 0;
+  height: 100%;
+  left: -100%;
   position: absolute;
-  transition: opacity 0.2s linear;
-  z-index: -1;
+  top: 0;
+  width: 100%;
+  will-change: transform;
 }
-.btn-87:hover:before {
-  opacity: 1;
-  transition: opacity 0.2s linear 1s;
+.btn-21:hover:before {
+  -webkit-animation: move-in 0.3s forwards;
+  animation: move-in 0.3s forwards;
 }
-.btn-87 svg {
-  fill: none;
-  stroke: currentcolor;
-  stroke-width: 4px;
-  stroke-dasharray: 450;
-  stroke-dashoffset: 450;
-  height: 105%;
-  left: -5px;
-  pointer-events: none;
-  position: absolute;
-  top: -5px;
-  transition: stroke-dashoffset 0.4s ease-in-out;
-  width: 105%;
+@-webkit-keyframes move-in {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
-.btn-87 circle {
-  cx: 52%;
-  cy: 52%;
-  r: 45%;
+@keyframes move-in {
+  0% {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
 }
-.btn-87:hover svg {
-  stroke-dashoffset: 120;
-  transition: stroke-dashoffset 1s ease-in-out;
+@-webkit-keyframes move-out {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(200%);
+  }
+}
+@keyframes move-out {
+  0% {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(200%);
+  }
 }
 </style>
