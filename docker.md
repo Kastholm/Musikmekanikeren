@@ -43,6 +43,8 @@ RUN npm config delete @gsap:registry
                 - name: Copy files to server
         run: scp -r /app/.output/public/* root@192.168.87.185:/var/www/webtify.website/musikmekanikeren
 
+        scp -r ./.output/public/* root@192.168.87.185:/var/www/webtify.website/musikmekanikeren
+
 
 
          - name: Checks the action code from GitHub
@@ -79,3 +81,6 @@ RUN npm config delete @gsap:registry
           script: |
             cd /app/dist
             scp -r ./* root@192.168.87.185:/var/www/
+
+
+            ScrollTrigger.refresh()
