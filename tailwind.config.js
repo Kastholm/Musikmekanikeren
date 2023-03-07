@@ -2,11 +2,7 @@
 module.exports = {
   content: [
     "node_modules/preline/dist/*.js",
-    "./components/**/*.{vue,js,ts,jsx,tsx}",
-    "./pages/**/*.{vue,js,ts,jsx,tsx}",
-    "./layouts/**/*.{vue,js,ts,jsx,tsx}",
-    "./index.html",
-    "./**/*.{vue,js,ts,jsx,tsx}",
+   
   ],
   plugins: [require("preline/plugin")],
   theme: {
