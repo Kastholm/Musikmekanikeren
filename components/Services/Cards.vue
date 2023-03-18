@@ -14,14 +14,14 @@ const expand = (item, i) => {
     it.clicked = false
   })
   gsap.to(items, {
-    width: item.clicked ? '15vw' : '8vw',
+    width: item.clicked ? '15vw' : '10vw',
     duration: .5,
     ease: 'expo'
   })
   
   item.clicked = !item.clicked
   gsap.to(item, {
-    width: item.clicked ? '42vw' : '15vw',
+    width: item.clicked ? '35vw' : '15vw',
     duration: 1,
     ease: 'expo'
   })
@@ -43,7 +43,7 @@ items.forEach((item, i) => {
   <section class="relative bg-cyangreen z-10 py-16">
        <h1 class='text-smooth text-6xl'>Hvilket instrument ønsker du repareret</h1>
        <div class="group">
-       <div class="item itemFirst w-[42vw]" style="background-image: url(https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
+       <div class="item itemFirst w-[35vw]" style="background-image: url(https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
        <div class="item" style="background-image: url(https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
        <br class="block md:hidden">
        <div class="item" style="background-image: url(https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
@@ -72,7 +72,7 @@ items.forEach((item, i) => {
   cursor: pointer;
 }
   .itemFirst {
-    width: 42vw ;
+    width: 35vw ;
   }
 
 </style>

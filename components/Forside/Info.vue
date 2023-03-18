@@ -4,7 +4,7 @@
       <div class="md:w-1/2">
         <span class="">
           <h2 class="quoteTwo header">DIT FORTRUKNE INSTRUMENT VÆRKSTED</h2>
-          <h5 class="quote_text">
+          <h5 class="quote_text m-10">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
             cumque velit, nostrum nesciunt at placeat, blanditiis illum ex
             dolores, in cum odio incidunt ratione maiores dolorum eveniet? Optio
