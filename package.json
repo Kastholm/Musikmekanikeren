@@ -19,6 +19,8 @@
     "gsap": "npm:@gsap/shockingly@^3.11.4",
     "nuxt-swiper": "^1.0.0",
     "preline": "^1.7.0",
-    "sanity-blocks-vue-component": "^1.0.1"
+    "sanity-blocks-vue-component": "^1.0.1",
+    "three": "^0.150.1",
+    "vanta": "^0.5.24"
   }
 }
