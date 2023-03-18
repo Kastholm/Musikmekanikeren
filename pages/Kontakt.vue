@@ -1,4 +1,4 @@
-<template>Har du en 
+<template>
  <section class="mb-32 text-gray-800">
     <div class="relative overflow-hidden bg-no-repeat bg-cover"
       style="background-position: 50%; background-image: url('https://i.ibb.co/nrYFcP0/group-of-people-enjoying-concerts.jpg'); height: 350px;">
@@ -24,7 +24,7 @@
         <div class="max-w-[700px] mx-auto">
             <div>
             <h4 class="text-center text-2xl font-serif font-semibold text-slate-300"> Kontakt os online </h4>
-            <h4 class="text-center text-1xl font-serif font-medium text-slate-300"> svar indenfor 24 timer alle hverdage </h4>
+            <h4 class="text-center text-2xl font-serif font-medium text-slate-300"> svar indenfor 24 timer alle hverdage </h4>
           </div>
           <br>
           <form>
@@ -35,14 +35,14 @@
               py-1.5
               text-base
               font-normal
-              text-gray-700
+              text-grey-700
               bg-white bg-clip-padding
               border border-solid border-gray-300
               rounded
               transition
               ease-in-out
               m-0
-              focus:text-gray-700 focus:bg-white focus:bg-cyangreen focus:outline-none" id="exampleInput7"
+              focus:text-slate-50 focus:bg-white focus:bg-cyangreen focus:outline-none" id="exampleInput7"
                 placeholder="Navn">
             </div>
             <div class="form-group mb-6">
@@ -59,7 +59,7 @@
               transition
               ease-in-out
               m-0
-              focus:text-gray-700 focus:bg-white focus:bg-cyangreen focus:outline-none" id="exampleInput8"
+              focus:text-slate-50 focus:bg-white focus:bg-cyangreen focus:outline-none" id="exampleInput8"
                 placeholder="Email">
             </div>
             <div class="form-group mb-6">
@@ -78,11 +78,11 @@
               transition
               ease-in-out
               m-0
-              focus:text-gray-700 focus:bg-white focus:bg-cyangreen focus:outline-none
+              focus:text-slate-50 focus:bg-white focus:bg-cyangreen focus:outline-none
             " id="exampleFormControlTextarea13" rows="3" placeholder="Hvad kan vi hjælpe med?"></textarea>
             </div>
             <div class="relative">
-                <div class="absolute -inset-x-1 -inset-y-0 bg-cyangreen rounded-lg blur-sm opacity-"></div>
+                <div class="bg-cyangreen rounded-lg blur-sm opacity-"></div>
             <button type="submit" class="
             relative
             w-full
