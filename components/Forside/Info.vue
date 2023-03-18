@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
   <section class="bg-cyangreen">
     <main class="wrapper py-20 grid md:flex">
       <div class="md:w-1/2">
@@ -30,23 +29,6 @@
       </div>
     </main>
   </section>
-=======
-<section class="wrapper py-20 grid md:flex bg-cyangreen">
-<div class="md:w-1/2">
-<span class="">
-  <h2 class="quoteTwo header">DIT FORTRUKNE INSTRUMENT VÆRKSTED</h2>
-  <br><br>
-  <h5 class="quote_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit cumque velit, nostrum nesciunt at placeat, blanditiis illum ex dolores, in cum odio incidunt ratione maiores dolorum eveniet? Optio molestiae dolorem quidem laboriosam maxime officia consequatur nulla doloribus ipsam unde odit consectetur, qui quae natus quos beatae aut debitis cupiditate minima.</h5>
-  
-</span>
-</div>
-<div class="md:w-1/2 relative">
-<img class="md:w-[30em] gsapimg m-auto relative z-10 " src="https://images-ext-1.discordapp.net/external/fdbZQta670jFTyPb0wwIzsR9cRDYDOngtis5xtN44g4/%3Fetag%3D%25221b9763-5be21834%2522%26sourceContentType%3Dimage%252Fjpeg%26quality%3D85/https/musikmekanikeren.dk/____impro/1/onewebmedia/Privat/Musik%2520Mekanikeren%2520Lodning%2520Elektronik.JPG?width=689&height=722" alt="">
-<img class="dotsBlue clusterPieces absolute" src="/img/dots_blue.svg" style="transform: translate(0%, 2.654%) translate3d(0px, 0px, 0px);"/>
-</div>
-
-</section>
->>>>>>> 61fdddf514c80d503b62a76cf218d0624574ed1f
 </template>
 
 <script setup>
