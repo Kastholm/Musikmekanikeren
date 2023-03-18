@@ -44,7 +44,7 @@ export default {
 
 </template>
 
-<style>
+<style scoped>
 .router-link-active {
   color: rgb(26, 255, 0);
   font-weight: bold;
@@ -54,11 +54,20 @@ export default {
 }
 .mainNav .logo{
      @apply w-[13em] h-[8em] absolute top-0;
-     border-radius: 400px;
 }
 .logo-bg{
-     @apply w-[13em] h-[7.4em] bg-Metric relative;
-     border-radius: 400px;
+     @apply w-[13em] h-[7.4em] relative;
+}
+.logo-bg::before{
+     content: '';
+     @apply bg-Metric;
+     position: absolute;
+     top: 0;
+     bottom: 0;
+     left: 23%;
+     height: 100%;
+     width: 57%;
+     border-radius: 100%;
 }
 .mainNav ul {
      @apply flex justify-center bg-Metric h-20 overflow-visible;

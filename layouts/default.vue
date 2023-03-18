@@ -1,29 +1,27 @@
 <template>
- <Nav />
+  <Nav />
   <main>
-      <slot /> 
+    <slot />
   </main>
- <Footer />
+  <Footer />
 </template>
 
-<script setup>
-
-</script>
+<script setup></script>
 
 <style>
 @import url("https://use.typekit.net/rwl1ktr.css");
 body {
-    @apply bg-Metric text-smooth overflow-x-hidden;
-  }
+  @apply bg-Metric text-smooth overflow-x-hidden;
+}
 .wrapper {
-@apply max-w-[1640px] xl:m-auto px-12;
+  @apply max-w-[1640px] xl:m-auto px-12;
 }
 /* Styling af Scrollbar */
 ::-webkit-scrollbar {
   @apply w-2;
 }
 ::-webkit-scrollbar-track {
-  @apply bg-gradient-to-t bg-Metric to-smooth
+  @apply bg-gradient-to-t bg-Metric to-smooth;
 }
 ::-webkit-scrollbar-thumb {
   @apply bg-cyangreen;
@@ -36,11 +34,11 @@ body {
     font-size: 4.2vw;
   }
 }
-    @media screen and (max-width: 23em) {
-      html {
-        font-size: 5vw;
-      }
-    }
+@media screen and (max-width: 23em) {
+  html {
+    font-size: 5vw;
+  }
+}
 /* 640px bigger */
 @media screen and (min-width: 31em) {
   html {
@@ -62,16 +60,24 @@ body {
 } */
 p {
   font-family: "source-sans-3", sans-serif;
-font-weight: 400;
-font-style: normal; 
+  font-weight: 400;
+  font-style: normal;
+  @apply text-[1.1rem];
 }
-h1, h2, h3, .header, .tab-title {
+h1,
+h2,
+h3,
+.header,
+.tab-title {
   font-family: "niveau-grotesk", sans-serif !important;
-font-weight: 600;
-font-style: normal;
-/* font-family: "montserrat", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  /* font-family: "montserrat", sans-serif;
 font-weight: 600;
 font-style: normal; */
-@apply uppercase;
+  @apply uppercase;
+}
+h4 {
+  @apply text-3xl;
 }
 </style>

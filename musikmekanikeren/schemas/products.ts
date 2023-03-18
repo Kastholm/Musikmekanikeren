@@ -1,3 +1,4 @@
+//Schema for produkter i shoppen
 import {FiTag} from 'react-icons/fi'
 
 export default {
@@ -7,39 +8,54 @@ export default {
   icon: FiTag,
   fields: [
     {
-      name: 'title', 
-      type: 'string'
+      name: 'title',
+      type: 'string',
+      title: 'Produkt Navn',
     },
     {
       name: 'myImage',
       type: 'image',
-      validation: Rule => Rule.required(),
+      title: 'Produkt Billede',
+      validation: (Rule) => Rule.required(),
     },
     {
+      //Refererer til Kategorier
       name: 'category',
       type: 'reference',
-      to: [{ type: 'category' }],
-      title: 'Category',
-    },
+      to: [{type: 'category'}],
+      title: 'Shop Kategori',
+      validation: (Rule) => Rule.required(),
+    },    
     {
-      name: 'categories',
-      title: 'Subcategory',
+      name: 'subcategory',
       type: 'reference',
+      title: 'Subcategory',
       to: [{ type: 'category' }],
       options: {
-        filter: 'category.categories == $categoryCategories',
-  filterParams: { categoryCategories: 'category.categories' }
-      }
+        filter: ({ document }) => {
+          const categoryId = document?.category.categories?._ref;
+          if (!categoryId) {
+            return false;
+          }
+          return {
+            filter: '_type == "category" && category.categories == $categoryId',
+            params: { categoryId },
+          };
+        },
+      },
+      validation: Rule => Rule.required(),
     },
     {
       name: 'price',
       type: 'number',
-      title: 'Price',
+      title: 'Pris',
+      validation: (Rule) => Rule.required(),
     },
     {
       name: 'description',
       type: 'text',
-      title: 'Description',
+      title: 'Beskrivelse',
+      validation: (Rule) => Rule.required(),
     },
   ],
 }
