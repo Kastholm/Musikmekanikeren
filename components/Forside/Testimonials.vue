@@ -5,7 +5,7 @@ const { data } = useSanityQuery(query);
 </script>
 <template>
   <section class="testi_section">
-<h2 >5 Stjerner på Trustpilot</h2>
+<h2 class="bg-cyangreen text-slate-200">5 Stjerner på Trustpilot</h2>
 
     <Swiper
     :modules="[SwiperAutoplay, SwiperEffectCreative]"

@@ -3,7 +3,6 @@
     <main class="wrapper py-20 grid md:flex">
       <div class="md:w-1/2">
         <span class="">
-          <p>Hej</p>
           <h2 class="quoteTwo header">DIT FORTRUKNE INSTRUMENT VÆRKSTED</h2>
           <h5 class="quote_text">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit

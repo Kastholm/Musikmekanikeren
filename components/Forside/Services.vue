@@ -95,7 +95,7 @@ onMounted(async () => {
       <ServiceTab title="Service" class="showcase">
         <div class="tab_content">
           <div
-            class="showcase_img"
+            class="showcase_img rounded-xl"
             style="
               background-image: url('https://getpaidstock.com/tmp/[GetPaidStock.com]-64020433685fc.jpg');
             "
@@ -193,7 +193,7 @@ onMounted(async () => {
       <ServiceTab class="showcase" title="Skoleservice">
         <div class="tab_content">
           <div
-            class="showcase_img"
+            class="showcase_img rounded-xl"
             style="
               background-image: url('https://musikmekanikeren.dk/____impro/1/onewebmedia/Kundemappe/Skoleservice/Musik%20Mekanikeren%20Skole%20Service%20Indretning%20Assentoftskolen%20EFTER.jpg?etag=%22fe73f-61d8bfca%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1448%2B1086&extract=0%2B16%2B1440%2B1012&quality=85');
             "
