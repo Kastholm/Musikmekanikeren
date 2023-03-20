@@ -17,7 +17,7 @@
       <div class="md:w-1/2 relative">
         <img
           class="md:w-[30em] gsapimg m-auto relative z-10"
-          src="https://images-ext-1.discordapp.net/external/fdbZQta670jFTyPb0wwIzsR9cRDYDOngtis5xtN44g4/%3Fetag%3D%25221b9763-5be21834%2522%26sourceContentType%3Dimage%252Fjpeg%26quality%3D85/https/musikmekanikeren.dk/____impro/1/onewebmedia/Privat/Musik%2520Mekanikeren%2520Lodning%2520Elektronik.JPG?width=689&height=722"
+          src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Shop/Produkter/KATEGORI/Musik%20Mekanikeren%20Brugte%20Instrumenter%20Guitar%20&%20Bas.jpg?etag=%223e2b3f-61533a92%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=340%2B255&extract=0%2B3%2B340%2B252&quality=85"
           alt=""
         />
         <img
@@ -77,7 +77,7 @@ onMounted(async () => {
       ".dotsBlue",
       {
         opacity: 1,
-        top: "125px",
+        top: "75px",
       },
       1
     )
@@ -102,6 +102,7 @@ onMounted(async () => {
   max-width: 434px;
   max-height: 434px;
   z-index: 0;
+  opacity: 0;
   left: 30px;
   top: 180px;
 }

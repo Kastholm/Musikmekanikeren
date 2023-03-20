@@ -79,13 +79,13 @@ onMounted(async () => {
 <template>
   <div class="overflow-hidden w-full relative">
     <div
-      class="float flex justify-center items-center py-4 font-bold text-[4rem] lg:text-[8rem] xl:text-[12rem] font-header text-zinc-100 space-x-8 lg:space-x-16"
+      class="float flex justify-center items-center py-4 font-bold text-[2rem] lg:text-[5rem] xl:text-[6rem] font-header text-zinc-100 space-x-8 lg:space-x-16"
     >
-      <span class="opacity-25">VELKOMMEN</span>
-      <span class="opacity-25">VELKOMMEN</span>
-      <span>VELKOMMEN</span>
-      <span class="opacity-25">VELKOMMEN</span>
-      <span class="opacity-25">VELKOMMEN</span>
+      <span class="opacity-25">MUSIKMEKANIKEREN</span>
+      <span class="opacity-25">MUSIKMEKANIKEREN</span>
+      <span>MUSIKMEKANIKEREN</span>
+      <span class="opacity-25">MUSIKMEKANIKEREN</span>
+      <span class="opacity-25">MUSIKMEKANIKEREN</span>
     </div>
   </div>
   <div class="circlePath"></div>
@@ -201,12 +201,17 @@ onMounted(async () => {
             <h3 class="showcase_title">Skole ..</h3>
           </div>
           <div class="showcase_text">
-             <span>
+            <span>
               <h4>Reperation af dit instrument</h4>
               <p>
-                Vi ved at tiden er knap, rundt om på landets skoler og institutioner.
+                Vi ved at tiden er knap, rundt om på landets skoler og
+                institutioner.
               </p>
-              <p>Derfor tilbyder Musik Mekanikeren, at levere et velspillende -og organiseret musiklokale, hvor alle instrumenter samt udstyr, står klar til at spille på.</p>
+              <p>
+                Derfor tilbyder Musik Mekanikeren, at levere et velspillende -og
+                organiseret musiklokale, hvor alle instrumenter samt udstyr,
+                står klar til at spille på.
+              </p>
             </span>
             <span>
               <h4>Det får du med i løsningen</h4>
@@ -260,23 +265,6 @@ onMounted(async () => {
                       d="M4.5 12.75l6 6 9-13.5"
                     />
                   </svg>
-                  Service på stedet
-                </li>
-                <li class="flex gap-3">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    class="h-5 w-5 text-cyangreen"
-                  >
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      d="M4.5 12.75l6 6 9-13.5"
-                    />
-                  </svg>
                   Kyndig vejledning
                 </li>
                 <li class="flex gap-3">
@@ -294,7 +282,7 @@ onMounted(async () => {
                       d="M4.5 12.75l6 6 9-13.5"
                     />
                   </svg>
-                  Løsningsorienteret sparring 
+                  Løsningsorienteret sparring
                 </li>
               </ul>
               <BaseButton>Læs mere</BaseButton>
@@ -329,7 +317,7 @@ onMounted(async () => {
   @apply grid grid-cols-2 text-center;
 }
 .tab-title {
-  @apply mt-6 pb-2 opacity-40 text-[3rem] hover:opacity-100 rounded-t-lg cursor-pointer;
+  @apply mt-6 pb-0 opacity-40 text-[2.5rem] hover:opacity-100 rounded-t-lg cursor-pointer;
   transition: 0.2s;
 }
 .tabs-content {
@@ -340,7 +328,7 @@ onMounted(async () => {
   @apply relative rounded-lg py-6 flex flex-wrap align-baseline gap-[1em];
 }
 .tab-active {
-  @apply opacity-100 text-[3.3rem] relative bg-Metric;
+  @apply opacity-100 text-[3rem] relative bg-Metric;
   transition: 0.2s;
 }
 .tab-active::after {
@@ -352,7 +340,7 @@ onMounted(async () => {
   border-bottom: 2px solid rgb(218, 178, 19);
 }
 .showcase_img {
-  @apply bg-cover h-[36em] relative m-auto;
+  @apply bg-cover h-[30em] relative m-auto;
   flex-basis: 500px;
   flex-grow: 999;
 }
@@ -364,8 +352,11 @@ onMounted(async () => {
   flex-basis: 550px;
   flex-grow: 1;
 }
+.showcase_text p {
+  @apply text-base;
+}
 .showcase_text span {
-  @apply mx-4 p-4 bg-smooth rounded-lg ;
+  @apply mx-4 p-4 bg-smooth rounded-lg;
 }
 .showcase_text h4 {
   @apply mb-4;

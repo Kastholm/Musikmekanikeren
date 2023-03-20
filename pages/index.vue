@@ -5,7 +5,6 @@
   <ForsideInfo />
   <ForsideServices />
   <ForsideInstrumenter />
-  <ForsideShortcuts />
   <div>
     <main>
       <!-- <h2>Pets</h2>

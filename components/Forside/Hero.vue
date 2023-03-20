@@ -1,12 +1,14 @@
 <template>
   <!-- <div class="relative z-30  w-screen" ></div> -->
   <!-- Hero -->
-  <main id="abc" class="w-screen h-[35em]">
+  <main id="abc" class="w-screen h-[40em]">
     <div
       class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-[7em] relative z-30"
     >
       <!-- Grid -->
-      <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
+      <div
+        class="grid place-content-center md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center"
+      >
         <div>
           <h1
             class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white quote"
@@ -66,11 +68,7 @@
         <!-- End Col -->
 
         <div class="relative ml-4">
-          <img
-            class="w-full rounded-md"
-            src="https://getpaidstock.com/tmp/[GetPaidStock.com]-64020433685fc.jpg"
-            alt="Image Description"
-          />
+          <span class="heroBg"></span>
           <div
             class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"
           ></div>
@@ -119,7 +117,9 @@ import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { onMounted } from "vue";
 import * as THREE from "three";
-import HALO from "vanta/dist/vanta.fog.min";
+/* import p5 from "p5"; */
+/* import * as P5 from "p5"; */
+import FOG from "vanta/dist/vanta.fog.min";
 
 onMounted(async () => {
   // Register gsap plugin
@@ -153,12 +153,13 @@ onMounted(async () => {
     gyroControls: false,
     minHeight: 200.0,
     minWidth: 200.0,
-    highlightColor: 0x1e391e,
-    midtoneColor: 0x1c481c,
-    lowlightColor: 0xb410b,
-    blurFactor: 0.9,
-    speed: 2.2,
-    zoom: 0.6,
+    highlightColor: 0x222222,
+    midtoneColor: 0x273e3f,
+    lowlightColor: 0x222222,
+    baseColor: 0x222222,
+    scale: 1.0,
+    size: 5.0,
+    speed: 0.9,
     THREE: window.THREE,
   });
   /*  } */
@@ -166,10 +167,11 @@ onMounted(async () => {
 </script>
 
 <style>
-/* .heroBg {
-     background-image: url("https://musikmekanikeren.dk/____impro/1/onewebmedia/Shop/Produkter/KATEGORI/Musik%20Mekanikeren%20Brugte%20Instrumenter%20Guitar%20&%20Bas.jpg?etag=%223e2b3f-61533a92%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1150,862&extract=0,212,1150,437");
-     @apply bg-cover block w-screen h-[35em] relative;
+.heroBg {
+  background-image: url("https://images-ext-1.discordapp.net/external/fdbZQta670jFTyPb0wwIzsR9cRDYDOngtis5xtN44g4/%3Fetag%3D%25221b9763-5be21834%2522%26sourceContentType%3Dimage%252Fjpeg%26quality%3D85/https/musikmekanikeren.dk/____impro/1/onewebmedia/Privat/Musik%2520Mekanikeren%2520Lodning%2520Elektronik.JPG?width=689&height=722");
+  @apply bg-cover block  h-[25em] relative;
 }
+/* 
 .heroShadow {
      @apply bg-black/0 h-[35em] relative;
 }

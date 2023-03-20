@@ -1,13 +1,13 @@
 <template>
   <section id="abc">
-    <ServicesHero />
-    <ServicesCards />
+    <SkoleservicesHero />
+    <SkoleservicesBeforeAfter />
   </section>
 </template>
 
 <script setup>
-import { gsap } from "gsap";
-import { SplitText } from "gsap/SplitText";
+/* import { gsap } from "gsap";
+import { SplitText } from "gsap/SplitText"; */
 import { onMounted } from "vue";
 import * as THREE from "three";
 /* import p5 from "p5"; */
@@ -15,8 +15,8 @@ import * as THREE from "three";
 import FOG from "vanta/dist/vanta.fog.min";
 
 onMounted(async () => {
-  // Register gsap plugin
- /*  gsap.registerPlugin(SplitText);
+ /*  // Register gsap plugin
+  gsap.registerPlugin(SplitText);
 
   var tl = gsap.timeline(),
     mySplitText = new SplitText(".quote", { type: "words,chars" }),
@@ -33,8 +33,8 @@ onMounted(async () => {
     transformOrigin: "0% 50% -50",
     ease: "back",
     stagger: 0.01,
-  }); */
-
+  });
+ */
   // window is only avaiable on browser
   /*  if (process.browser) { */
   window.THREE = THREE;

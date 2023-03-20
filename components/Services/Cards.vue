@@ -1,54 +1,119 @@
 <script setup>
+import { gsap } from "gsap";
+import { Grid } from "swiper";
+import { onMounted } from "vue";
 
-import { gsap } from 'gsap';
-import { Grid } from 'swiper';
-import { onMounted} from "vue";
+onMounted(async () => {
+  const items = document.querySelectorAll(".item");
 
+  const expand = (item, i) => {
+    items.forEach((it, ind) => {
+      if (i === ind) return;
+      it.clicked = false;
+    });
+    gsap.to(items, {
+      width: item.clicked ? "15vw" : "8vw",
+      duration: 0.5,
+      ease: "expo",
+    });
 
-onMounted(async () => { 
-const items = document.querySelectorAll('.item')
+    item.clicked = !item.clicked;
+    gsap.to(item, {
+      width: item.clicked ? "42vw" : "15vw",
+      duration: 1,
+      ease: "expo",
+    });
+  };
 
-const expand = (item, i) => {
-  items.forEach((it, ind) => {
-    if (i === ind) return
-    it.clicked = false
-  })
-  gsap.to(items, {
-    width: item.clicked ? '15vw' : '8vw',
-    duration: .5,
-    ease: 'expo'
-  })
-  
-  item.clicked = !item.clicked
-  gsap.to(item, {
-    width: item.clicked ? '42vw' : '15vw',
-    duration: 1,
-    ease: 'expo'
-  })
-}
-
-items.forEach((item, i) => {
-  item.clicked = false
-  item.addEventListener('click', () => expand(item, i))
-})
-
+  items.forEach((item, i) => {
+    item.clicked = false;
+    item.addEventListener("click", () => expand(item, i));
+  });
 });
-
-
-
-
-
 </script>
+
 <template>
-  <section class="relative bg-cyangreen z-10 py-16">
-       <h1 class='text-smooth text-6xl'>Hvilket instrument ønsker du repareret</h1>
-       <div class="group">
-       <div class="item itemFirst w-[42vw]" style="background-image: url(https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
-       <div class="item" style="background-image: url(https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
-       <br class="block md:hidden">
-       <div class="item" style="background-image: url(https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
-       <div class="item" style="background-image: url(https://images.pexels.com/photos/462439/pexels-photo-462439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
-     </div>
+  <section
+    class="relative z-10 py-16 max-w-[85rem] m-auto px-4 sm:px-6 lg:px-8"
+  >
+    <h2 class="text-smooth mb-4 text-5xl">
+      Hvilket instrument ønsker du repareret?
+    </h2>
+    <div class="group max-w-[85rem]">
+      <div
+        class="item itemFirst w-[42vw] relative"
+        style="
+          background-image: url(https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        "
+      >
+        <div class="itemContext">
+          <span
+            ><h2>
+              Strenge
+              <p>- Guitar</p>
+              <p>- Elektronik</p>
+              <p>- Meget mere</p>
+            </h2></span
+          >
+          <span><BaseButton>Kontakt</BaseButton></span>
+        </div>
+      </div>
+      <div
+        class="item"
+        style="
+          background-image: url(https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        "
+      >
+        <div class="itemContext">
+          <span
+            ><h2>
+              Strenge
+              <p>- Guitar</p>
+              <p>- Elektronik</p>
+              <p>- Meget mere</p>
+            </h2></span
+          >
+          <span><BaseButton>Kontakt</BaseButton></span>
+        </div>
+      </div>
+      <br class="block md:hidden" />
+      <div
+        class="item"
+        style="
+          background-image: url(https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        "
+      >
+        <div class="itemContext">
+          <span
+            ><h2>
+              Strenge
+              <p>- Guitar</p>
+              <p>- Elektronik</p>
+              <p>- Meget mere</p>
+            </h2></span
+          >
+          <span><BaseButton>Kontakt</BaseButton></span>
+        </div>
+      </div>
+      <div
+        class="item"
+        style="
+          background-image: url(https://images.pexels.com/photos/462439/pexels-photo-462439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        "
+      >
+        <div class="itemContext">
+          <span
+            ><h2>
+              Strenge
+              <p>- Guitar</p>
+              <p>- Elektronik</p>
+              <p>- Meget mere</p>
+            </h2></span
+          >
+          <span><BaseButton>Kontakt</BaseButton></span>
+        </div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -65,14 +130,31 @@ items.forEach((item, i) => {
   height: 40vh;
   background-position: center;
   background-size: 75vh;
-  
+  overflow: hidden;
   margin: 1vw;
+  position: relative;
   border-radius: 3vw;
   display: inline-block;
   cursor: pointer;
 }
-  .itemFirst {
-    width: 42vw ;
-  }
+.itemFirst {
+  width: 42vw;
+}
 
+.itemContext {
+  @apply flex justify-end align-bottom;
+  height: 100%;
+}
+.itemContext span {
+  @apply relative w-1/2;
+}
+.itemContext h2 {
+  @apply text-5xl absolute bottom-6 left-6 text-left;
+}
+.itemContext h2 p {
+  @apply mt-2;
+}
+.itemContext button {
+  @apply w-fit absolute bottom-6 right-6;
+}
 </style>

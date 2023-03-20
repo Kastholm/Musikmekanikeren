@@ -6,12 +6,12 @@
   <Footer />
 </template>
 
-<script setup></script>
+<script></script>
 
 <style>
 @import url("https://use.typekit.net/rwl1ktr.css");
 body {
-  @apply bg-Metric text-smooth overflow-x-hidden;
+  @apply text-smooth overflow-x-hidden;
 }
 .wrapper {
   @apply max-w-[1640px] xl:m-auto px-12;
