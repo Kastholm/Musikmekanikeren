@@ -16,7 +16,7 @@ onMounted(async () => {
 
 <template>
   <section class="z-10 relative wrapper">
-    <div class="w-[40em] h-[40em] m-auto">
+    <div class="max-w-[40em] max-h-[40em] m-auto">
       <h2>FørEfter</h2>
       <div class="image-compare">
         <img
@@ -29,7 +29,7 @@ onMounted(async () => {
         />
       </div>
     </div>
-    <div class="w-[40em] h-[40em] m-auto">
+    <div class="max-w-[40em] max-h-[40em] m-auto">
       <h2>FørEfter</h2>
       <div class="image-compare">
         <img
@@ -42,7 +42,7 @@ onMounted(async () => {
         />
       </div>
     </div>
-    <div class="w-[40em] h-[40em] m-auto">
+    <div class="max-w-[40em] max-h-[40em] m-auto">
       <h2>FørEfter</h2>
       <div class="image-compare">
         <img
