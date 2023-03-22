@@ -1,5 +1,4 @@
 <script setup>
-import { testimonialsdata } from "../../assets/json/testimonials.json";
 const query = groq`*[_type == "testimonials"]`;
 const { data } = useSanityQuery(query);
 </script>

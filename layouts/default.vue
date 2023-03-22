@@ -11,7 +11,7 @@
 <style>
 @import url("https://use.typekit.net/rwl1ktr.css");
 body {
-  @apply text-smooth overflow-x-hidden;
+  @apply text-smooth overflow-x-hidden bg-Metric;
 }
 .wrapper {
   @apply max-w-[1640px] xl:m-auto px-12;
