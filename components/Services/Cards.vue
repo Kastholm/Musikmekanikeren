@@ -2,10 +2,8 @@
 import { gsap } from "gsap";
 import { Grid } from "swiper";
 import { onMounted } from "vue";
-
 onMounted(async () => {
   const items = document.querySelectorAll(".item");
-
   const expand = (item, i) => {
     items.forEach((it, ind) => {
       if (i === ind) return;
@@ -16,7 +14,6 @@ onMounted(async () => {
       duration: 0.5,
       ease: "expo",
     });
-
     item.clicked = !item.clicked;
     gsap.to(item, {
       width: item.clicked ? "42vw" : "15vw",
@@ -24,7 +21,6 @@ onMounted(async () => {
       ease: "expo",
     });
   };
-
   items.forEach((item, i) => {
     item.clicked = false;
     item.addEventListener("click", () => expand(item, i));
@@ -123,7 +119,6 @@ onMounted(async () => {
   white-space: nowrap;
   overflow: hidden;
 }
-
 .item {
   width: 15vw;
   /* height: 75vh; */
@@ -140,7 +135,6 @@ onMounted(async () => {
 .itemFirst {
   width: 42vw;
 }
-
 .itemContext {
   @apply flex justify-end align-bottom;
   height: 100%;
