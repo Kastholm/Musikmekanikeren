@@ -114,7 +114,19 @@
 
 <script>
 export default {
-
+  name: 'KontaktSide',
+  head() {
+    return {
+      title: 'Musik Mekanikeren står altid klar til at hjælpe med dine instumenter.',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Dine instrumenter og forstærkere fortjener det bedste. Hos Musik Mekanikeren står vi altid klar med professionel reparation og vejledning. Kontakt os her'
+        }
+      ]
+    }
+  }
 }
 </script>
 

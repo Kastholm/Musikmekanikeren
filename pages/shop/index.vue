@@ -32,6 +32,21 @@ forveksle mellem dem -->
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+const pageTitle = ref('My Page Title')
+const pageDescription = ref('This is a description of my Nuxt.js app.')
+
+const head = () => ({
+  title: pageTitle.value,
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: pageDescription.value
+    }
+  ]
+})
 const query = `*[_type == "category"]`;
 const { data } = useSanityQuery(query);
 console.log(data);

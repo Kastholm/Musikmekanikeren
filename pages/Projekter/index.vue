@@ -6,6 +6,21 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+const pageTitle = ref('Se projekter på div. insturmenter og forstærkere - Musik Mekanikeren')
+const pageDescription = ref('Alle opgaver små som store fortjener en kompetent hånd - I årenes løb har vi hos Musik Mekanikeren haft nogle spændende projekter igennem butikken. Se dem her.')
+
+const head = () => ({
+  title: pageTitle.value,
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: pageDescription.value
+    }
+  ]
+})
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { onMounted } from "vue";

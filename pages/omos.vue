@@ -143,6 +143,21 @@
 </template>
 
 <script setup>
+import { ref } from 'vue'
+
+const pageTitle = ref('Læs mere om butikkens historie - Musik Mekanikeren')
+const pageDescription = ref('For 8 år tilbage åbnede Kaare Nygaard dørene og butikken har siden da været fast service-sted for både skoler og privates instrumenter og forstærkere.')
+
+const head = () => ({
+  title: pageTitle.value,
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: pageDescription.value
+    }
+  ]
+})
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

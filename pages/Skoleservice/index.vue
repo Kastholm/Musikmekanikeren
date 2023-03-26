@@ -57,6 +57,21 @@ onMounted(async () => {
   });
   /*  } */
 });
+import { ref } from 'vue'
+
+const pageTitle = ref('Skoleservice på alle typer instrumenter - Musik Mekanikeren')
+const pageDescription = ref('Giv jeres instrumenter den bedste vedligeholdelse med vores skoleservice. Vi kommer forbi med fast interval, og giver inventaret en kærlig og kompentent hånd')
+
+const head = () => ({
+  title: pageTitle.value,
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: pageDescription.value
+    }
+  ]
+})
 </script>
 
 <style></style>
