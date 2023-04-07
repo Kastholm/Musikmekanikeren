@@ -13,7 +13,7 @@
   <div class="footerContent mr-6 py-10 text-center md:text-left">
     <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <div class="grid place-content-center">
-        <p class="font-semibold bg-cyangreen bg-opacity-50 p-6 rounded-r-2xl" >
+        <p class="font-semibold bg-cyangreen bg-opacity-50 p-6 rounded-r-2xl">
           <h6 class="
             uppercase
             font-semibold

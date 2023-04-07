@@ -1,37 +1,28 @@
 <template>
   <NuxtPage />
-  <ForsideHero />
-  <ForsideTestimonials />
-  <ForsideInfo />
-  <ForsideServices />
-  <ForsideInstrumenter />
-  <div>
-    <main>
-      <!-- <h2>Pets</h2>
-      <ul v-if="data?.length">
-        <li v-for="pet in data" v-bind:key="pet._id">
-          {{ pet.name }}
-        </li>
-      </ul> -->
-      <!-- <p v-else>No pets to show</p>
-      <h2>Data</h2>
-      <div v-if="data">
-        <pre v-if="data">{{ JSON.stringify(data, null, 2) }}</pre>
-      </div>
-      <div v-else>
-        <div>¯\_(ツ)_/¯</div>
-        <p>
-          Your data will show up here when you've configured everything
-          correctly
-        </p>
-      </div> -->
-    </main>
-  </div>
+
 </template>
 
-<script setup>
-const query = groq`*[_type == "pet"]`;
-const { data } = useSanityQuery(query);
+<script>
+// Page title / Meta Description start
+import { ref } from 'vue'
+
+const pageTitle = ref('Musik Mekanikeren - Reparerer alle typer af instrumenter & forstærkere')
+const pageDescription = ref('Dit instruments bedste ven - Musik Mekanikeren har i løbet af de sidste 8 år været fast service-partner for diverse skoler og private. Find os online eller i butikken.')
+
+const head = () => ({
+  title: pageTitle.value,
+  meta: [
+    {
+      hid: 'description',
+      name: 'description',
+      content: pageDescription.value
+    }
+  ]
+})
+// Page title / Meta Description slut
 </script>
 
-<style></style>
+<style>
+
+</style>

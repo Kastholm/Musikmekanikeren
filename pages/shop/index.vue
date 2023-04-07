@@ -32,6 +32,7 @@ forveksle mellem dem -->
 </template>
 
 <script setup>
+// Page title / Meta Description start
 import { ref } from 'vue'
 
 const pageTitle = ref('My Page Title')
@@ -47,6 +48,7 @@ const head = () => ({
     }
   ]
 })
+// Page title / Meta Description slut
 const query = `*[_type == "category"]`;
 const { data } = useSanityQuery(query);
 console.log(data);

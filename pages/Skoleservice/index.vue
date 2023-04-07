@@ -57,9 +57,10 @@ onMounted(async () => {
   });
   /*  } */
 });
+// Page title / Meta Description start
 import { ref } from 'vue'
 
-const pageTitle = ref('Skoleservice på alle typer instrumenter - Musik Mekanikeren')
+const pageTitle = ref('Skoleservice på alle instrumenter og forstærkere - Musik Mekanikeren')
 const pageDescription = ref('Giv jeres instrumenter den bedste vedligeholdelse med vores skoleservice. Vi kommer forbi med fast interval, og giver inventaret en kærlig og kompentent hånd')
 
 const head = () => ({
@@ -72,6 +73,7 @@ const head = () => ({
     }
   ]
 })
+// Page title / Meta Description slut
 </script>
 
 <style></style>

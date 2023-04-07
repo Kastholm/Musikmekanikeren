@@ -1,9 +1,9 @@
 <template>
- <section class="mb-32 text-gray-800">
+ <section class="text-gray-700 pb-10 bg-cyangreen">
     <div class="relative overflow-hidden bg-no-repeat bg-cover"
       style="background-position: 50%; background-image: url('https://i.ibb.co/nrYFcP0/group-of-people-enjoying-concerts.jpg'); height: 350px;">
     </div>
-    <div class="container text-gray-800 px-4 md:px-12">
+    <div class="container text-cyangreen px-4 md:px-12">
       <div class="block rounded-lg shadow-lg py-10 md:py-12 px-4 md:px-6 opacity-95"
         style="margin-top: -100px; background: hsla(0, 0%, 0%, 0); backdrop-filter: blur(30px);">
         <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-6 mb-12">
@@ -35,7 +35,7 @@
               py-1.5
               text-base
               font-normal
-              text-grey-700
+              text-gray-700
               bg-white bg-clip-padding
               border border-solid border-gray-300
               rounded
@@ -110,14 +110,16 @@
     </div>
 
   </section>
+
 </template>
 
 <script>
+// Page title / Meta Description start
 export default {
   name: 'KontaktSide',
   head() {
     return {
-      title: 'Musik Mekanikeren står altid klar til at hjælpe med dine instumenter.',
+      title: 'Musik Mekanikeren står altid klar til at hjælpe med dine instrumenter.',
       meta: [
         {
           hid: 'description',
@@ -128,6 +130,7 @@ export default {
     }
   }
 }
+// Page title / Meta Description slut
 </script>
 
 <style>

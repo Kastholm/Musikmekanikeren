@@ -6,6 +6,7 @@
 </template>
 
 <script setup>
+// Page title / Meta Description start
 import { ref } from 'vue'
 
 const pageTitle = ref('Se projekter på div. insturmenter og forstærkere - Musik Mekanikeren')
@@ -21,6 +22,7 @@ const head = () => ({
     }
   ]
 })
+// Page title / Meta Description slut
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { onMounted } from "vue";

@@ -143,6 +143,7 @@
 </template>
 
 <script setup>
+// Page title / Meta Description start
 import { ref } from 'vue'
 
 const pageTitle = ref('Læs mere om butikkens historie - Musik Mekanikeren')
@@ -158,6 +159,7 @@ const head = () => ({
     }
   ]
 })
+// Page title / Meta Description slut
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
