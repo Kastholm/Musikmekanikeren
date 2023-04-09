@@ -1,13 +1,10 @@
 <template>
   <!-- Card Blog -->
   <div
-    class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto relative bg-white"
+    class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto relative bg-white border-cyangreen border-8"
   >
   
-  <img
-            class="w-[30em] h-full absolute bottom-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
-            src="https://i.ibb.co/brzHTyh/guitar4-1.jpg" alt="guitarstaa" border="0">
-          />
+  
     <!-- Title -->
     <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14 relative">
       <h2 class="relative text-2xl w-[20em] font-bold md:text-4xl md:leading-tight dark:text-cyangreen text-slate-900"
@@ -27,6 +24,11 @@
             src="https://i.ibb.co/9WCCVTj/solid-color-image.jpg"
             alt="Image Description"
           />
+          <img
+            class="w-full h-full absolute top-0 left-0 path3"
+            src="https://i.ibb.co/9WCCVTj/solid-color-image.jpg"
+            alt="Image Description"
+          />
       <!-- Card -->
       <a class="group rounded-xl overflow-hidden" href="#">
         <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
@@ -37,9 +39,9 @@
           />
         </div>
 
-        <div class="mt-7">
+        <div class="mt-7 relative">
           <h3
-            class="relative text-xl font-semibold text-cyangreen group-hover:text-cyangreen dark:text-cyangreen"
+            class="relative text-xl font-semibold text-cyangreen group-hover:text-cyangreen dark:text-cyangreen pt-10"
           >
             Hvem er jeg ?
           </h3>
@@ -121,9 +123,9 @@ export default {};
 }
 .clip-path2 {
   clip-path: polygon(20% 0, 27% 0, 29% 27%, 62% 39%, 78% 63%, 96% 77%, 91% 100%, 83% 100%, 77% 67%, 34% 60%);
-
-
-
+}
+.path3 {
+  clip-path: polygon(21% 41%, 15% 64%, 15% 100%, 12% 100%, 6% 72%, 17% 48%, 11% 22%, 0 24%, 0 15%, 19% 18%);
 
 }
 </style>

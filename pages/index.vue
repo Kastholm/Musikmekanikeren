@@ -1,5 +1,10 @@
 <template>
   <NuxtPage />
+  <ForsideHero />
+  <ForsideTestimonials />
+  <ForsideInfo />
+  <ForsideServices />
+  <ForsideInstrumenter />
 
 </template>
 
