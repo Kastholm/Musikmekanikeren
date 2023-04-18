@@ -2,6 +2,7 @@
   <section id="abc">
     <ProjekterHero />
     <ProjekterImageGrid />
+    <ProjekterInstrumentTab />
   </section>
 </template>
 

@@ -10,14 +10,14 @@ onMounted(async () => {
       it.clicked = false;
     });
     gsap.to(items, {
-      width: item.clicked ? "15vw" : "8vw",
-      duration: 0.5,
+      width: item.clicked ? "12em" : "10em",
+      duration: 0.3,
       ease: "expo",
     });
     item.clicked = !item.clicked;
     gsap.to(item, {
-      width: item.clicked ? "42vw" : "15vw",
-      duration: 1,
+      width: item.clicked ? "25em" : "15em",
+      duration: 0.6,
       ease: "expo",
     });
   };
@@ -29,15 +29,13 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section
-    class="relative z-10 py-16 max-w-[85rem] m-auto px-4 sm:px-6 lg:px-8"
-  >
+  <section class="relative z-10 py-16 m-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-smooth mb-4 text-5xl">
       Hvilket instrument ønsker du repareret?
     </h2>
-    <div class="group max-w-[85rem]">
+    <div class="group">
       <div
-        class="item itemFirst w-[42vw] relative"
+        class="item itemFirst w-[25em] relative"
         style="
           background-image: url(https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
         "
@@ -120,7 +118,7 @@ onMounted(async () => {
   overflow: hidden;
 }
 .item {
-  width: 15vw;
+  width: 10em;
   /* height: 75vh; */
   height: 40vh;
   background-position: center;
@@ -133,7 +131,7 @@ onMounted(async () => {
   cursor: pointer;
 }
 .itemFirst {
-  width: 42vw;
+  width: 25em;
 }
 .itemContext {
   @apply flex justify-end align-bottom;

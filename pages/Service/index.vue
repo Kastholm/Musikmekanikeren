@@ -1,10 +1,15 @@
 <template>
   <section id="abc">
     <ServicesHero />
-    <ServicesCards />
+    <div class="bg-cyangreen m-auto">
+      <ServicesCards />
+      <p class="text-yellow-300 w-screen text-center">
+        Note: Content ændrer sig udfra hvilket instrument der er foldet ud
+      </p>
+      <ServicesTabContent />
+    </div>
   </section>
 </template>
-
 <script setup>
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
@@ -16,7 +21,7 @@ import FOG from "vanta/dist/vanta.fog.min";
 
 onMounted(async () => {
   // Register gsap plugin
- /*  gsap.registerPlugin(SplitText);
+  /*  gsap.registerPlugin(SplitText);
 
   var tl = gsap.timeline(),
     mySplitText = new SplitText(".quote", { type: "words,chars" }),
