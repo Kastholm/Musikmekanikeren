@@ -7,7 +7,8 @@
     "postdev": "echo 'Nuxt dev server started'",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "end": "rm -rf node_modules && code --quit"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.3.1",
