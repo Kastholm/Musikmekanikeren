@@ -8,7 +8,7 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
-    "end": "rm -rf node_modules && code --quit"
+    "endWin": "rmdir /s /q node_modules && taskkill /F /IM code.exe"
   },
   "devDependencies": {
     "@nuxtjs/tailwindcss": "^6.3.1",
