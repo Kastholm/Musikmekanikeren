@@ -1,9 +1,15 @@
-<script>
+<script setup>
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { onMounted } from "vue";
 
-/* onMounted(async () => {
+//Navigating to a new page in the select
+const navigate = (event) => {
+  const router = useRouter();
+  router.push(event.target.value);
+};
+
+onMounted(async () => {
   const timeline = gsap.timeline({ defaults: { duration: 1 } });
 
   timeline
@@ -40,7 +46,7 @@ import { onMounted } from "vue";
     end: "bottom 20%",
     toggleActions: "restart none none none",
   });
-}); */
+});
 </script>
 <template>
   <header>
@@ -56,8 +62,15 @@ import { onMounted } from "vue";
             alt=""
         /></span>
         <li><NuxtLink to="/projekter"> Projekter</NuxtLink></li>
-        <li><NuxtLink to="/omos">Om os </NuxtLink></li>
-        <li><NuxtLink to="/kontakt">Kontakt</NuxtLink></li>
+        <li><NuxtLink to="/shop">Shop</NuxtLink></li>
+        <li>
+          <NuxtLink>
+            <select @change="navigate">
+              <option value="/kontakt">Kontakt</option>
+              <option value="/omos">Om os</option>
+            </select>
+          </NuxtLink>
+        </li>
       </ul>
     </nav>
     <nav class="phoneNav">
@@ -133,7 +146,10 @@ import { onMounted } from "vue";
 .router-link-active::before {
   width: 100%;
 }
-
+select,
+select option {
+  background: none !important;
+}
 .mainNav {
   @apply text-smooth hidden lg:block w-screen fixed z-50;
   background-color: rgba(34, 34, 34, 0.3);
