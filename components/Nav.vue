@@ -64,8 +64,8 @@ onMounted(async () => {
         <li><NuxtLink to="/projekter"> Projekter</NuxtLink></li>
         <li><NuxtLink to="/shop">Shop</NuxtLink></li>
         <li>
-          <NuxtLink>
-            <select @change="navigate">
+          <NuxtLink @change="navigate">
+            <select>
               <option value="/kontakt">Kontakt</option>
               <option value="/omos">Om os</option>
             </select>
