@@ -21,7 +21,7 @@
     "@nuxtjs/sanity": "^1.6.0",
     "@sanity/client": "^5.2.2",
     "@sanity/image-url": "^1.0.2",
-    "gsap": "npm:@gsap/shockingly@^3.11.4",
+    "gsap": "npm:@gsap/shockingly@^3.11.5",
     "image-compare-viewer": "^1.5.0",
     "nuxt-swiper": "^1.0.0",
     "p5": "^1.6.0",
