@@ -2,6 +2,7 @@
   <section id="abc">
     <SkoleservicesHero />
     <SkoleservicesBeforeAfter />
+    <SkoleservicesIndividuel />
   </section>
 </template>
 
@@ -15,7 +16,7 @@ import * as THREE from "three";
 import FOG from "vanta/dist/vanta.fog.min";
 
 onMounted(async () => {
- /*  // Register gsap plugin
+  /*  // Register gsap plugin
   gsap.registerPlugin(SplitText);
 
   var tl = gsap.timeline(),

@@ -47,7 +47,7 @@
       <div class="relative ml-4">
         <img
           class="w-full rounded-md"
-          src="https://getpaidstock.com/tmp/[GetPaidStock.com]-64020433685fc.jpg"
+          src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
           alt="Image Description"
         />
         <div
