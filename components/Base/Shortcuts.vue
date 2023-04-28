@@ -1,7 +1,7 @@
 <template>
   <!-- Card Blog -->
   <div
-    class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto relative bg-smooth "
+    class="px-4 py-10 sm:px-6 lg:px-8 lg:py-4 mx-auto relative bg-smooth "
   >
     <!-- Title -->
     <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
@@ -10,9 +10,7 @@
       >
         Lær mere om Musikmekanikeren
       </h2>
-      <p class="mt-1 text-cyangreen dark:text-metric">
-        Stay in the know with insights from industry experts.
-      </p>
+      
     </div>
     <!-- End Title -->
 
@@ -26,11 +24,7 @@
             src="https://musikmekanikeren.dk/____impro/1/onewebmedia/S%C3%A6rlige%20projekter/Kasuga%20Les%20Paul%20Custom/Kasuga%20Les%20Paul%20Custom%202.jpg?etag=%22343f20-5c599b59%22&sourceContentType=image%2Fjpeg&rotate=270&ignoreAspectRatio&resize=670%2B503&extract=0%2B117%2B670%2B295&quality=85"
             alt="Image Description"
           />
-          <span
-            class="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-gray-800 text-cyangreen py-1.5 px-3 dark:bg-gray-900"
-          >
-            Sponsored
-          </span>
+          
         </div>
 
         <div class="mt-7">
@@ -44,9 +38,9 @@
             instrumenter som har været igennem værkstedet..
           </p>
           <p
-            class="mt-5 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 group-hover:underline font-medium"
+            class="mt-5 inline-flex items-center gap-x-1.5 text-cyangreen font-semibold decoration-2 hover:border-x-2 text-sm border-cyangreen p-1"
           >
-            Read more
+            Læs mere her
             <svg
               class="w-2.5 h-2.5"
               width="16"
@@ -83,13 +77,12 @@
             Hvem er jeg ?
           </h3>
           <p class="mt-3 text-cyangreen dark:text-cyangreen whitespace-normal">
-            Optimize your in-person experience with best-in-class capabilities
-            like badge printing and lead retrieval
+            Siden barns ben har en passion for mig været musikken og instrumenterne bag. Igennem de sidste 7 år har jeg....
           </p>
           <p
-            class="mt-5 inline-flex items-center gap-x-1.5 text-blue-600 decoration-2 group-hover:underline font-medium"
+            class="mt-5 inline-flex items-center gap-x-1.5 text-cyangreen decoration-2 hover:border-x-2 border-cyangreen font-semibold text-sm p-1"
           >
-            Read more
+            Læs mere her
             <svg
               class="w-2.5 h-2.5"
               width="16"
@@ -116,7 +109,7 @@
       >
         <div class="flex-auto p-4 md:p-6">
           <h3 class="text-xl text-white/[.9] group-hover:text-white whitespace-normal text-left">
-            <span class="font-bold text-2xl">Besgøg vores Shop</span> 
+            <span class="font-bold text-2xl">Besøg vores Shop</span> 
             <p>
               Leder du efter nyt udstyr til dit instrument?
             </p>
@@ -126,7 +119,7 @@
           <div
             class="inline-flex items-center gap-2 text-sm font-medium text-white group-hover:text-white/[.7]"
           >
-            Visit the site
+            Se vores produkter
             <svg
               class="w-2.5 h-2.5"
               width="16"
