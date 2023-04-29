@@ -5,20 +5,18 @@
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
             <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              class="block h-96 w-full"
+              src="https://i.ibb.co/X5SFnRF/pexels-lucas-andrade-16445726-1.jpg"
               alt="Card 1"
             />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 1">
-                Card 1
+                Projekt 1
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -31,20 +29,18 @@
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
             <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
-              alt="Card 2"
+              class="block h-96 w-full"
+              src="https://i.ibb.co/X5SFnRF/pexels-lucas-andrade-16445726-1.jpg"
+              alt="Projekt 2"
             />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 2">
-                Card 2
+                Projekt 2
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -57,20 +53,18 @@
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
             <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
-              alt="Card 3"
+              class="block h-96 w-full"
+              src="https://i.ibb.co/X5SFnRF/pexels-lucas-andrade-16445726-1.jpg"
+              alt="Projekt 3"
             />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 3">
-                Card 3
+                Projekt 3
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+           
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -83,20 +77,18 @@
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
             <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              class="block h-96 w-full"
+              src="https://i.ibb.co/X5SFnRF/pexels-lucas-andrade-16445726-1.jpg"
               alt="Card 4"
             />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 4">
-                Card 4
+                Projekt 4
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -109,20 +101,18 @@
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
             <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              class="block h-96 w-full"
+              src="https://i.ibb.co/X5SFnRF/pexels-lucas-andrade-16445726-1.jpg"
               alt="Card 5"
             />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 5">
-                Card 5
+                Projekt 5
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -135,20 +125,18 @@
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
             <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              class="block h-96 w-full"
+              src="https://i.ibb.co/X5SFnRF/pexels-lucas-andrade-16445726-1.jpg"
               alt="Card 6"
             />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 6">
-                Card 6
+                projekt 6
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.

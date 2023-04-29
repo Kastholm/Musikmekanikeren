@@ -6,7 +6,7 @@ const { data } = useSanityQuery(query);
   <section class="testi_section">
     <div class="grid place-content-center">
       <h2 class="testi_h2">
-        Musik Mekanikeren er Autoriseret Servicecenter for
+        Se hvad andre skoler fortæller om os
       </h2>
     </div>
 
@@ -32,24 +32,21 @@ const { data } = useSanityQuery(query);
         <div class="testi_container">
           <span class="testi_box">
             <h3>{{ testimonials.navn }} - {{ testimonials.by }}</h3>
-            <img
-              class="w-24 bg-smooth my-1"
-              loading="lazy"
-              width="85"
-              height="17"
-              src="/img/stars.gif"
-              alt=""
-            />
+            
             <blockquote>{{ testimonials.anmeldelse }}</blockquote>
           </span>
         </div>
       </SwiperSlide>
     </Swiper>
+    <p class="inline-block text-4xl font-bold">
+      AUTORISERET SERVICECENTER FOR 
+      </p>
  <img
-        class="m-auto pb-8 w-[13em]"
+        class="m-auto pb-8 w-[13em] inline-block ml-24"
         src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
         alt=""
       />
+      
     <!-- <div class="bg-red-200 grid place-content-center">
       <h2>Musik Mekanikeren er Autoriseret Servicecenter for</h2>
       <img

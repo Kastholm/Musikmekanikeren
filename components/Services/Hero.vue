@@ -10,7 +10,7 @@
         <h1
           class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
         >
-          Hvorfor vælge <span class="text-cyangreen">Musik mekanikeren?</span>
+          Hvorfor vælge <span class="text-[#3f5a60]">Musik mekanikeren?</span>
         </h1>
         <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
           Personligt har jeg det på samme måde, når jeg afleverer bilen hos

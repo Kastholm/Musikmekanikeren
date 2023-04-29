@@ -19,7 +19,7 @@
           organiseret musiklokale, hvor alle instrumenter samt udstyr, står klar
           til at spille på. På denne måde, kan du som musiklærer fra starten
           undgå bekymringer ift. udstyret og i stedet fokusere på at gøre dét at
-          lære til en succesoplevelse!
+          lære til en succesoplevelse.
           <br />
           <br />
           At få foretaget denne gennemgang af musiklokalet koster ingenting, og

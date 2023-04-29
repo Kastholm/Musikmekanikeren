@@ -43,7 +43,7 @@ const benefits = [
         >
           <img
             class="h-96 w-full flex-none rounded-2xl object-cover shadow-xl lg:aspect-square lg:h-auto lg:max-w-sm"
-            src="https://images.unsplash.com/photo-1519338381761-c7523edc1f46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=80"
+            src="https://i.ibb.co/qCB1cCk/pexels-jonas-mohamadi-2495569-1-1.jpg"
             alt=""
           />
           <div class="w-full flex-auto">
