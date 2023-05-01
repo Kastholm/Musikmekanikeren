@@ -8,12 +8,11 @@
     <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
       <div>
         <h1
-          class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
+          class="block text-3xl font-bold text-[#304a4d] sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
         >
-          Lad os optimere jeres
-          <span class="text-cyangreen">Musik lokale</span>
+          Lad os optimere jeres Musik lokale
         </h1>
-        <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
+        <p class="mt-3 text-lg text-white dark:text-gray-400">
           Vi ved at tiden er knap, rundt om på landets skoler og institutioner.
           Derfor tilbyder Musik Mekanikeren, at levere et velspillende -og
           organiseret musiklokale, hvor alle instrumenter samt udstyr, står klar

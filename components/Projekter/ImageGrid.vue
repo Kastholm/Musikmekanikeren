@@ -3,13 +3,12 @@
     <!-- Title -->
     <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
       <h2
-        class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
+        class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white mt-14"
       >
-        Customer stories
+        Se resten af vores projekter!
       </h2>
-      <p class="mt-1 text-gray-600 dark:text-gray-400">
-        See how game-changing companies are making the most of every engagement
-        with Preline.
+      <p class="mt-5 text-white dark:text-gray-400">
+        Mange spændende projekter har været igennem værkstedet over de sidste 7 - se nogle af dem her!
       </p>
     </div>
     <!-- End Title -->
@@ -81,17 +80,16 @@
             >
               <div class="p-12 md:pr-24 md:pl-16 md:py-12">
                 <p class="text-gray-600">
-                  <span class="text-gray-900">Overskrift</span> is a UK-based
-                  fashion retailer that has nearly doubled in size since last
-                  year. They integrated Stripe to deliver seamless checkout
-                  across mobile and web for customers in 100+ countries, all
-                  while automatically combating fraud.
+                  <span class="text-gray-900 font-bold">Overskrift</span> 
+                  <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <a
-                  class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900"
+                  class="flex items-baseline mt-3 text-[#304a4d] font-semibold hover:text-[#000000] focus:text-[#000000]"
                   href=""
                 >
-                  <span>Learn more about our users</span>
+                  <span>Se hele processen</span>
                   <span class="text-xs ml-1">&#x279c;</span>
                 </a>
               </div>
@@ -143,17 +141,15 @@
             >
               <div class="p-12 md:pr-24 md:pl-16 md:py-12">
                 <p class="text-gray-600">
-                  <span class="text-gray-900">Overskrift</span> is a UK-based
-                  fashion retailer that has nearly doubled in size since last
-                  year. They integrated Stripe to deliver seamless checkout
-                  across mobile and web for customers in 100+ countries, all
-                  while automatically combating fraud.
+                  <span class="text-gray-900 font-bold">Overskrift</span> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <a
-                  class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900"
+                  class="flex items-baseline mt-3 text-[#304a4d] font-semibold hover:text-[#000000] focus:text-[#000000]"
                   href=""
                 >
-                  <span>Learn more about our users</span>
+                  <span>Se hele processen</span>
                   <span class="text-xs ml-1">&#x279c;</span>
                 </a>
               </div>
@@ -205,17 +201,15 @@
             >
               <div class="p-12 md:pr-24 md:pl-16 md:py-12">
                 <p class="text-gray-600">
-                  <span class="text-gray-900">Overskrift</span> is a UK-based
-                  fashion retailer that has nearly doubled in size since last
-                  year. They integrated Stripe to deliver seamless checkout
-                  across mobile and web for customers in 100+ countries, all
-                  while automatically combating fraud.
+                  <span class="text-gray-900 font-bold">Overskrift</span> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <a
-                  class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900"
+                  class="flex items-baseline mt-3 text-[#304a4d] font-semibold hover:text-[#000000] focus:text-[#000000]"
                   href=""
                 >
-                  <span>Learn more about our users</span>
+                  <span>Se hele processen</span>
                   <span class="text-xs ml-1">&#x279c;</span>
                 </a>
               </div>
@@ -267,17 +261,15 @@
             >
               <div class="p-12 md:pr-24 md:pl-16 md:py-12">
                 <p class="text-gray-600">
-                  <span class="text-gray-900">Overskrift</span> is a UK-based
-                  fashion retailer that has nearly doubled in size since last
-                  year. They integrated Stripe to deliver seamless checkout
-                  across mobile and web for customers in 100+ countries, all
-                  while automatically combating fraud.
+                  <span class="text-gray-900 font-bold">Overskrift</span> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <a
-                  class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900"
+                  class="flex items-baseline mt-3 text-[#304a4d] font-semibold hover:text-[#000000] focus:text-[#000000]"
                   href=""
                 >
-                  <span>Learn more about our users</span>
+                  <span>Se hele processen</span>
                   <span class="text-xs ml-1">&#x279c;</span>
                 </a>
               </div>
@@ -329,17 +321,15 @@
             >
               <div class="p-12 md:pr-24 md:pl-16 md:py-12">
                 <p class="text-gray-600">
-                  <span class="text-gray-900">Overskrift</span> is a UK-based
-                  fashion retailer that has nearly doubled in size since last
-                  year. They integrated Stripe to deliver seamless checkout
-                  across mobile and web for customers in 100+ countries, all
-                  while automatically combating fraud.
+                  <span class="text-gray-900 font-bold">Overskrift</span> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <a
-                  class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900"
+                  class="flex items-baseline mt-3 text-[#304a4d] font-semibold hover:text-[#000000] focus:text-[#000000]"
                   href=""
                 >
-                  <span>Learn more about our users</span>
+                  <span>Se hele processen</span>
                   <span class="text-xs ml-1">&#x279c;</span>
                 </a>
               </div>
@@ -391,17 +381,15 @@
             >
               <div class="p-12 md:pr-24 md:pl-16 md:py-12">
                 <p class="text-gray-600">
-                  <span class="text-gray-900">Overskrift</span> is a UK-based
-                  fashion retailer that has nearly doubled in size since last
-                  year. They integrated Stripe to deliver seamless checkout
-                  across mobile and web for customers in 100+ countries, all
-                  while automatically combating fraud.
+                  <span class="text-gray-900 font-bold ">Overskrift</span> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <a
-                  class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900"
+                  class="flex items-baseline mt-3 text-[#304a4d] font-semibold hover:text-[#000000] focus:text-[#000000]"
                   href=""
                 >
-                  <span>Learn more about our users</span>
+                  <span>Se hele processen</span>
                   <span class="text-xs ml-1">&#x279c;</span>
                 </a>
               </div>
@@ -453,17 +441,15 @@
             >
               <div class="p-12 md:pr-24 md:pl-16 md:py-12">
                 <p class="text-gray-600">
-                  <span class="text-gray-900">Overskrift</span> is a UK-based
-                  fashion retailer that has nearly doubled in size since last
-                  year. They integrated Stripe to deliver seamless checkout
-                  across mobile and web for customers in 100+ countries, all
-                  while automatically combating fraud.
+                  <span class="text-gray-900 font-bold">Overskrift</span> <br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
                 </p>
                 <a
-                  class="flex items-baseline mt-3 text-indigo-600 hover:text-indigo-900 focus:text-indigo-900"
+                  class="flex items-baseline mt-3 text-[#304a4d] font-semibold hover:text-[#000000] focus:text-[#000000]"
                   href=""
                 >
-                  <span>Learn more about our users</span>
+                  <span>Se hele processen</span>
                   <span class="text-xs ml-1">&#x279c;</span>
                 </a>
               </div>

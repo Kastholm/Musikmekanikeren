@@ -11,12 +11,12 @@
       >
         <div>
           <h1
-            class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white quote"
+            class="block text-3xl font-bold text-[#304a4d] sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white quote"
           >
-            Lad os reparer dit instrument
-            <span class="text-cyangreen">Preline</span>
+            Lad os reparere dit instrument
+          
           </h1>
-          <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
+          <p class="mt-3 text-lg text-white dark:text-gray-400">
             Det kræver stor tillid at aflevere sit højtelskede og værdsatte
             instrument til en anden, både til et generelt service-tjek men især
             når det gælder dybere-gående reparationer.

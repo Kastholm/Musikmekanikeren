@@ -252,8 +252,8 @@ const filters = [
     id: "category",
     name: "Category",
     options: [
-      { value: "new-arrivals", label: "All New Arrivals" },
-      { value: "tees", label: "Tees" },
+      { value: "new-arrivals", label: "udstyr Blæseinstrumenter" },
+      { value: "tees", label: "Guitartilbehør" },
       { value: "crewnecks", label: "Crewnecks" },
       { value: "sweatshirts", label: "Sweatshirts" },
       { value: "pants-shorts", label: "Pants & Shorts" },

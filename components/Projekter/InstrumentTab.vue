@@ -1,24 +1,14 @@
 <template>
   <div class="container mx-auto p-8">
     <!-- Title -->
-    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-      <h2
-        class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
-      >
-        Customer stories
-      </h2>
-      <p class="mt-1 text-gray-600 dark:text-gray-400">
-        See how game-changing companies are making the most of every engagement
-        with Preline.
-      </p>
-    </div>
+    
     <div class="flex flex-row flex-wrap -mx-2">
       <div class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
               alt="Card 1"
             />
           </picture>
@@ -28,9 +18,7 @@
                 Card 1
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -44,7 +32,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
               alt="Card 2"
             />
           </picture>
@@ -54,9 +42,7 @@
                 Card 2
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -70,7 +56,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
               alt="Card 3"
             />
           </picture>
@@ -80,9 +66,7 @@
                 Card 3
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -96,7 +80,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
               alt="Card 4"
             />
           </picture>
@@ -106,9 +90,7 @@
                 Card 4
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -122,7 +104,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
               alt="Card 5"
             />
           </picture>
@@ -132,9 +114,7 @@
                 Card 5
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -148,7 +128,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
               alt="Card 6"
             />
           </picture>
@@ -158,9 +138,7 @@
                 Card 6
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
