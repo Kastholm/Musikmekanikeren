@@ -10,7 +10,7 @@
         <h1
           class="block text-3xl font-bold text-[#304a4d] sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
         >
-          Se tidligere projekter fra Musik Mekanikeren
+          Se tidligere vores tidligere projekter her
         </h1>
         <p class="mt-3 text-lg text-white dark:text-gray-400">
           Personligt har jeg det på samme måde, når jeg afleverer bilen hos

@@ -211,7 +211,6 @@
         </div>
       </main>
     </div>
-    <h1>NOTE: MED SANITY (OPTIMER SENERE)</h1>
   </section>
 </template>
 
@@ -236,39 +235,28 @@ import { XMarkIcon } from "@heroicons/vue/24/outline";
 import { ChevronDownIcon, PlusIcon } from "@heroicons/vue/20/solid";
 
 const filters = [
-  {
-    id: "color",
-    name: "Color",
-    options: [
-      { value: "white", label: "White" },
-      { value: "beige", label: "Beige" },
-      { value: "blue", label: "Blue" },
-      { value: "brown", label: "Brown" },
-      { value: "green", label: "Green" },
-      { value: "purple", label: "Purple" },
-    ],
-  },
+  
   {
     id: "category",
     name: "Category",
     options: [
-      { value: "new-arrivals", label: "udstyr Blæseinstrumenter" },
-      { value: "tees", label: "Guitartilbehør" },
-      { value: "crewnecks", label: "Crewnecks" },
-      { value: "sweatshirts", label: "Sweatshirts" },
-      { value: "pants-shorts", label: "Pants & Shorts" },
+      { value: "new-arrivals", label: "Blæs" },
+      { value: "tees", label: "Guitar" },
+      { value: "crewnecks", label: "Bass" },
+      { value: "sweatshirts", label: "kabler" },
+      { value: "pants-shorts", label: "Forstærkere" },
     ],
   },
   {
-    id: "sizes",
-    name: "Sizes",
+    id: "Mærker",
+    name: "Mærker",
     options: [
-      { value: "xs", label: "XS" },
-      { value: "s", label: "S" },
-      { value: "m", label: "M" },
-      { value: "l", label: "L" },
-      { value: "xl", label: "XL" },
-      { value: "2xl", label: "2XL" },
+      { value: "Mærke1", label: "Mærke1" },
+      { value: "Mærke2", label: "Mærke2" },
+      { value: "Mærke3", label: "Mærke3" },
+      { value: "Mærke4", label: "Mærke4" },
+      { value: "Mærke5", label: "Mærke5" },
+      { value: "Mærke6", label: "Mærke6" },
     ],
   },
 ];

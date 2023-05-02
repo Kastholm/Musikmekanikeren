@@ -8,7 +8,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
+              src="https://i.ibb.co/6Y7NZLR/pexels-lucas-andrade-16445726-1-1-1.jpg"
               alt="Card 1"
             />
           </picture>
@@ -32,7 +32,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
+              src="https://i.ibb.co/6Y7NZLR/pexels-lucas-andrade-16445726-1-1-1.jpg"
               alt="Card 2"
             />
           </picture>
@@ -56,7 +56,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
+              src="https://i.ibb.co/6Y7NZLR/pexels-lucas-andrade-16445726-1-1-1.jpg"
               alt="Card 3"
             />
           </picture>
@@ -80,7 +80,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
+              src="https://i.ibb.co/6Y7NZLR/pexels-lucas-andrade-16445726-1-1-1.jpg"
               alt="Card 4"
             />
           </picture>
@@ -104,7 +104,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
+              src="https://i.ibb.co/6Y7NZLR/pexels-lucas-andrade-16445726-1-1-1.jpg"
               alt="Card 5"
             />
           </picture>
@@ -128,7 +128,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://i.ibb.co/nr3h2f5/pexels-lucas-andrade-16445726-1-1.jpg"
+              src="https://i.ibb.co/6Y7NZLR/pexels-lucas-andrade-16445726-1-1-1.jpg"
               alt="Card 6"
             />
           </picture>

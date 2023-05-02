@@ -8,7 +8,7 @@
         Se resten af vores projekter!
       </h2>
       <p class="mt-5 text-white dark:text-gray-400">
-        Mange spændende projekter har været igennem værkstedet over de sidste 7 - se nogle af dem her!
+        Mange spændende projekter har været igennem værkstedet over de sidste 7 år 
       </p>
     </div>
     <!-- End Title -->

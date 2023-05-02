@@ -7,7 +7,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/vzwnMts/pexels-cristian-benavides-2049414-1.jpg"
               alt="Card 1"
             />
           </picture>
@@ -17,9 +17,8 @@
                 Card 1
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -33,7 +32,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/vzwnMts/pexels-cristian-benavides-2049414-1.jpg"
               alt="Card 2"
             />
           </picture>
@@ -43,9 +42,7 @@
                 Card 2
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -59,7 +56,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/vzwnMts/pexels-cristian-benavides-2049414-1.jpg"
               alt="Card 3"
             />
           </picture>
@@ -69,9 +66,7 @@
                 Card 3
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -85,7 +80,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/vzwnMts/pexels-cristian-benavides-2049414-1.jpg"
               alt="Card 4"
             />
           </picture>
@@ -95,9 +90,7 @@
                 Card 4
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -111,7 +104,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/vzwnMts/pexels-cristian-benavides-2049414-1.jpg"
               alt="Card 5"
             />
           </picture>
@@ -121,9 +114,7 @@
                 Card 5
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -137,7 +128,7 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+              src="https://i.ibb.co/vzwnMts/pexels-cristian-benavides-2049414-1.jpg"
               alt="Card 6"
             />
           </picture>
@@ -147,9 +138,7 @@
                 Card 6
               </a>
             </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >1st January 2019</time
-            >
+            
             <p class="text-gray-800">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua.
