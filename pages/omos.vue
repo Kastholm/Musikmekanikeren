@@ -37,7 +37,7 @@
           <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
             Velkommen til Musik Mekanikeren
           </h2>
-          <p class="mt-6 text-lg leading-8 text-gray-300">
+          <p class="mt-6 text-lg leading-8 text-gray-300 underline underline-offset-8">
             Kan det ikke repareres her - kan det højst sandsynligt ikke repareres!
           </p>
         </div>

@@ -11,7 +11,7 @@
       >
         <div>
           <h1
-            class="block text-3xl font-bold text-[#304a4d] sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white quote"
+            class="block text-3xl font-bold text-[#3d5f63] sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white quote"
           >
             Lad os reparere dit instrument
           

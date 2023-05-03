@@ -8,7 +8,7 @@
     <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
       <div>
         <h1
-          class="block text-3xl font-bold text-[#304a4d] sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
+          class="block text-3xl font-bold text-[#3d5f63] sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
         >
           Hvorfor vælge Musik mekanikeren?
         </h1>

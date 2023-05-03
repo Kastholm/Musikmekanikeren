@@ -5,10 +5,10 @@
       <h2
         class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white mt-14"
       >
-        Se resten af vores projekter!
+        Se resten af vores projekter
       </h2>
-      <p class="mt-5 text-white dark:text-gray-400">
-        Mange spændende projekter har været igennem værkstedet over de sidste 7 år 
+      <p class="mt-5 text-white dark:text-gray-400 underline underline-offset-8">
+        Mange spændende projekter har været igennem værkstedet igennem de sidste 7 år
       </p>
     </div>
     <!-- End Title -->

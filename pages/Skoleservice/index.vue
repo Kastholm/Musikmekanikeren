@@ -58,6 +58,10 @@ onMounted(async () => {
   });
   /*  } */
 });
+
+const query = groq`*[_type == "pet"]`;
+const { data } = useSanityQuery(query);
+
 </script>
 
 <style></style>
