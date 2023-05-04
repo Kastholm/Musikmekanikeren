@@ -8,14 +8,14 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://i.ibb.co/6Y7NZLR/pexels-lucas-andrade-16445726-1-1-1.jpg"
+              src="https://i.ibb.co/59F7tq2/pexels-lucas-andrade-16445710-1.jpg"
               alt="Card 1"
             />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 1">
-                Card 1
+                Projekt1
               </a>
             </h3>
             
@@ -32,14 +32,14 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://i.ibb.co/6Y7NZLR/pexels-lucas-andrade-16445726-1-1-1.jpg"
+              src="https://i.ibb.co/59F7tq2/pexels-lucas-andrade-16445710-1.jpg"
               alt="Card 2"
             />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 2">
-                Card 2
+                Projekt2
               </a>
             </h3>
             
@@ -56,14 +56,14 @@
           <picture class="block bg-gray-200 border-b">
             <img
               class="block"
-              src="https://i.ibb.co/6Y7NZLR/pexels-lucas-andrade-16445726-1-1-1.jpg"
+              src="https://i.ibb.co/59F7tq2/pexels-lucas-andrade-16445710-1.jpg"
               alt="Card 3"
             />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 3">
-                Card 3
+                Projekt3
               </a>
             </h3>
             
@@ -87,7 +87,7 @@
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 4">
-                Card 4
+                Projekt4
               </a>
             </h3>
             
@@ -111,7 +111,7 @@
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 5">
-                Card 5
+                Projekt 5
               </a>
             </h3>
             
@@ -135,7 +135,7 @@
           <div class="p-4">
             <h3 class="text-lg font-bold">
               <a class="stretched-link text-gray-900" href="#" title="Card 6">
-                Card 6
+                Projekt6
               </a>
             </h3>
             

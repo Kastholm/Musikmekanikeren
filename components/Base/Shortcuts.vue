@@ -15,7 +15,7 @@
     <!-- End Title -->
 
     <!-- Grid -->
-    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[85rem] m-auto">
+    <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[85rem] m-auto mb-10">
       <!-- Card -->
       <a class="group rounded-xl overflow-hidden" href="#">
         <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
@@ -77,7 +77,7 @@
             Hvem er jeg ?
           </h3>
           <p class="mt-3 text-cyangreen dark:text-cyangreen whitespace-normal">
-            Siden barns ben har en passion for mig været musikken og instrumenterne bag. Igennem de sidste 7 år har jeg....
+            Siden barns ben har en passion for mig været musikken og instrumenterne bag. Igennem de sidste 7 år har jeg håndteret mange delikate processer og reparationer....
           </p>
           <p
             class="mt-5 inline-flex items-center gap-x-1.5 text-cyangreen decoration-2 hover:border-x-2 border-cyangreen font-semibold text-sm p-1"

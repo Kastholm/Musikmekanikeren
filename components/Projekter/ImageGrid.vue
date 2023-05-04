@@ -3,11 +3,11 @@
     <!-- Title -->
     <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
       <h2
-        class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white mt-14"
+        class="text-4xl font-bold md:text-4xl md:leading-tight dark:text-white mt-28"
       >
-        Se resten af vores projekter
+        Se vores projekter her
       </h2>
-      <p class="mt-5 text-white dark:text-gray-400 underline underline-offset-8">
+      <p class="mt-3 text-white dark:text-gray-400 underline underline-offset-8 font-semibold">
         Mange spændende projekter har været igennem værkstedet igennem de sidste 7 år
       </p>
     </div>

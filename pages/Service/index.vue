@@ -3,9 +3,7 @@
     <ServicesHero />
     <div class="bg-cyangreen m-auto">
       <ServicesCards />
-      <p class="text-yellow-300 w-screen text-center">
-        Note: Content ændrer sig udfra hvilket instrument der er foldet ud
-      </p>
+      
       <ServicesTabContent />
     </div>
   </section>

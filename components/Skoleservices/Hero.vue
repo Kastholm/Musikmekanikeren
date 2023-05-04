@@ -45,7 +45,7 @@
       <div class="relative ml-4">
         <img
           class="w-full rounded-md"
-          src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
+          src="https://i.ibb.co/GCrFMk7/pexels-rodnae-productions-8363103.jpg"
           alt="Image Description"
         />
         <div

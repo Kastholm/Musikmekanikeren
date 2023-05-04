@@ -92,19 +92,19 @@ onMounted(async () => {
   <section class="wrapper relative portfolio">
     <h2>Vores Services</h2>
     <ServiceTabs>
-      <ServiceTab title="Service" class="showcase">
+      <ServiceTab title="Service" class="showcase mb-20">
         <div class="tab_content">
           <div
             class="showcase_img rounded-xl"
             style="
-              background-image: url('https://getpaidstock.com/tmp/[GetPaidStock.com]-64020433685fc.jpg');
+              background-image: url('https://i.ibb.co/zsxVHXQ/pexels-tima-miroshnichenko-6755142.jpg');
             "
           >
             <h3 class="showcase_title">SERVICE</h3>
           </div>
           <div class="showcase_text">
             <span>
-              <h4>Reperation af dit instrument</h4>
+              <h4>Reparation af dit instrument</h4>
               <p>
                 Jeg tager hver enkelt opgave meget seriøst og sætter en ære i at
                 fastholde mit gode ry og rygte. i selve arbejdet anvender jeg
@@ -198,11 +198,11 @@ onMounted(async () => {
               background-image: url('https://musikmekanikeren.dk/____impro/1/onewebmedia/Kundemappe/Skoleservice/Musik%20Mekanikeren%20Skole%20Service%20Indretning%20Assentoftskolen%20EFTER.jpg?etag=%22fe73f-61d8bfca%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1448%2B1086&extract=0%2B16%2B1440%2B1012&quality=85');
             "
           >
-            <h3 class="showcase_title">Skole ..</h3>
+            <h3 class="showcase_title">Skoleservice</h3>
           </div>
           <div class="showcase_text">
             <span>
-              <h4>Reperation af dit instrument</h4>
+              <h4>Reparation af dit instrument</h4>
               <p>
                 Vi ved at tiden er knap, rundt om på landets skoler og
                 institutioner.

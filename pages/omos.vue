@@ -35,10 +35,10 @@
       <div class="px-6 pt-14 lg:px-8">
         <div class="mx-auto max-w-2xl pt-24 text-center sm:pt-40">
           <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Velkommen til Musik Mekanikeren
-          </h2>
-          <p class="mt-6 text-lg leading-8 text-gray-300 underline underline-offset-8">
-            Kan det ikke repareres her - kan det højst sandsynligt ikke repareres!
+            Velkommen til </h2><br> <span class=" mt-6 text-4xl font-bold sm:text-6xl tracking-tight text-white"> MUSIK MEKANIKEREN </span>
+          
+          <p class="mt-6 text-lg leading-8 text-hite underline underline-offset-8 font-semibold">
+            Kan det ikke repareres her - kan det højst sandsynlig ikke repareres.
           </p>
         </div>
       </div>
