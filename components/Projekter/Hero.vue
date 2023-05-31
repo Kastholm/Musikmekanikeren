@@ -1,7 +1,6 @@
 <template>
   <!-- Hero -->
   <div
-    id="abc"
     class="max-w-[85rem] mx-auto z-20 px-4 sm:px-6 lg:px-8 pt-[7em]"
   >
     <!-- Grid -->

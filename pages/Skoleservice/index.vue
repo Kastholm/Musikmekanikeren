@@ -10,10 +10,7 @@
 /* import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText"; */
 import { onMounted } from "vue";
-import * as THREE from "three";
-/* import p5 from "p5"; */
-/* import * as P5 from "p5"; */
-import FOG from "vanta/dist/vanta.fog.min";
+
 
 onMounted(async () => {
   /*  // Register gsap plugin
@@ -36,28 +33,11 @@ onMounted(async () => {
     stagger: 0.01,
   });
  */
-  // window is only avaiable on browser
-  /*  if (process.browser) { */
-  window.THREE = THREE;
-  const { default: FOG } = await import("vanta/dist/vanta.fog.min");
-  FOG({
-    el: "#abc",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.0,
-    minWidth: 200.0,
-    highlightColor: 0x222222,
-    midtoneColor: 0x273e3f,
-    lowlightColor: 0x222222,
-    baseColor: 0x222222,
-    scale: 1.0,
-    size: 5.0,
-    speed: 0.9,
-    THREE: window.THREE,
-  });
-  /*  } */
 });
 </script>
 
-<style></style>
+<style>
+#abc {
+  background: linear-gradient(to bottom, #222222, #273e3f, #222222, #222222);
+}
+</style>

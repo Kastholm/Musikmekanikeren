@@ -29,11 +29,11 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section class="relative z-10 py-16 m-auto px-4 sm:px-6 lg:px-8">
+  <section class="relative z-10 py-4 md:py-8 m-auto px-4 sm:px-6 lg:px-8">
     <h2 class="text-smooth mb-4 text-5xl">
       Hvilket instrument ønsker du repareret?
     </h2>
-    <div class="group">
+    <div class="group hidden md:block">
       <div
         class="item itemFirst w-[25em] relative"
         style="
@@ -49,7 +49,7 @@ onMounted(async () => {
               <p>- Meget mere</p>
             </h2></span
           >
-          <span><BaseButton>Kontakt</BaseButton></span>
+          <span></span>
         </div>
       </div>
       <div
@@ -67,7 +67,7 @@ onMounted(async () => {
               <p>- Meget mere</p>
             </h2></span
           >
-          <span><BaseButton>Kontakt</BaseButton></span>
+          <span></span>
         </div>
       </div>
       <br class="block md:hidden" />
@@ -86,7 +86,7 @@ onMounted(async () => {
               <p>- Meget mere</p>
             </h2></span
           >
-          <span><BaseButton>Kontakt</BaseButton></span>
+          <span></span>
         </div>
       </div>
       <div
@@ -104,9 +104,27 @@ onMounted(async () => {
               <p>- Meget mere</p>
             </h2></span
           >
-          <span><BaseButton>Kontakt</BaseButton></span>
+          <span></span>
         </div>
       </div>
+    </div>
+    <div class="inline md:hidden grid grid-cols-1 gap-2 place-content-center">
+      <span
+        class="bg-indigo-600 w-full h-12 text-center grid place-content-center"
+        ><p>Strenge</p></span
+      >
+      <span
+        class="bg-indigo-600 w-full h-12 text-center grid place-content-center"
+        ><p>Trommer</p></span
+      >
+      <span
+        class="bg-indigo-600 w-full h-12 text-center grid place-content-center"
+        ><p>Klaver</p></span
+      >
+      <span
+        class="bg-indigo-600 w-full h-12 text-center grid place-content-center"
+        ><p>Elek</p></span
+      >
     </div>
   </section>
 </template>

@@ -111,7 +111,7 @@ const benefits = [
     <div class="bg-cyangreen mt-4 py-8 grid">
       <h2 class="text-5xl m-auto py-8">Se vores tidligere løsninger</h2>
       <div
-        class="max-h-[40em] m-auto grid grid-cols-1 lg:grid-cols-2 py-12 px-[8vw]"
+        class="max-h-[40em] overflow-hidden m-auto grid grid-cols-1 lg:grid-cols-2 py-12 px-[8vw]"
       >
         <div class="order-2 px-4">
           <h2 class="text-4xl mb-2">Overskrift</h2>
@@ -137,7 +137,7 @@ const benefits = [
         </div>
       </div>
       <div
-        class="max-h-[40em] m-auto grid grid-cols-2 text-Metric bg-smooth py-12 px-[8vw]"
+        class="max-h-[40em] overflow-hidden m-auto grid grid-cols-2 text-Metric bg-smooth py-12 px-[8vw]"
       >
         <div class="order-1 px-4">
           <h2 class="text-4xl mb-2">Overskrift</h2>
@@ -163,7 +163,7 @@ const benefits = [
         </div>
       </div>
       <div
-        class="max-h-[40em] m-auto grid grid-cols-1 lg:grid-cols-2 py-12 px-[8vw]"
+        class="max-h-[40em] overflow-hidden m-auto grid grid-cols-1 lg:grid-cols-2 py-12 px-[8vw]"
       >
         <div class="order-2 px-4">
           <h2 class="text-4xl mb-2">Overskrift</h2>
