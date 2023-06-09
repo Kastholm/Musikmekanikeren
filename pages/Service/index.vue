@@ -2,7 +2,7 @@
   <section id="abc">
     <ServicesHero />
     <div class="bg-cyangreen m-auto">
-      <ServicesCards />
+      <!-- <ServicesCards /> -->
       <ServicesTabContent />
     </div>
   </section>
