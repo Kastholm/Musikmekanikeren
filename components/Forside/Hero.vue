@@ -14,8 +14,9 @@
             class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white quote"
           >
             Lad os reparer dit instrument
-            <span class="text-cyangreen">Preline</span>
+            <!-- <span class="text-cyangreen">Preline</span> -->
           </h1>
+          <span class="heroBg lg:hidden block h-[10em] "></span>
           <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
             Det kræver stor tillid at aflevere sit højtelskede og værdsatte
             instrument til en anden, både til et generelt service-tjek men især
@@ -25,7 +26,7 @@
           <!-- Buttons -->
           <div class="mt-7 grid gap-3 w-full sm:inline-flex">
             <a
-              class="inline-flex justify-center items-center gap-x-3 text-center bg-cyangreen hover:bg-cyangreen border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:focus:ring-offset-gray-800"
+              class="inline-flex justify-center items-center gap-x-3 text-center bg-cyangreen hover:bg-cyangreen border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-white transition py-3 px-4 hover:scale-[1.01]"
               href="#"
             >
               Vælg instrument du ønsker repareret
@@ -44,12 +45,14 @@
                 />
               </svg>
             </a>
-            <a
-              class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border hover:border-cyangreen hover:bg-cyangreen shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 dark:shadow-slate-700/[.7] text-smooth dark:text-cyangreen dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
-              href="#"
-            >
-              Se vores produkter
-            </a>
+            <p>
+              <a
+                class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border border-smooth bg-smooth hover:scale-[1.01] shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 text-cyangreen dark:focus:ring-gray-700"
+                href="#"
+              >
+                Se vores produkter
+              </a>
+            </p>
           </div>
           <!-- End Buttons -->
 
@@ -68,7 +71,7 @@
         <!-- End Col -->
 
         <div class="relative ml-4">
-          <span class="heroBg"></span>
+          <span class="heroBg hidden lg:block h-[25em] "></span>
           <!--  <img class="absolute -bottom-12 -left-32 rotate-[-20deg] w-[40%]"
         src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
         alt=""
@@ -78,7 +81,7 @@
           ></div>
 
           <!-- SVG-->
-          <div class="absolute bottom-0 left-0">
+          <!--  <div class="absolute bottom-0 left-0">
             <svg
               class="w-2/3 ml-auto h-auto text-white dark:text-slate-900"
               width="630"
@@ -105,7 +108,7 @@
               <rect x="507" y="124" width="49" height="24" fill="#fbfbfb" />
               <rect x="531" y="49" width="99" height="99" fill="#fbfbfb" />
             </svg>
-          </div>
+          </div> -->
           <!-- End SVG-->
         </div>
         <!-- End Col -->
@@ -120,7 +123,6 @@
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { onMounted } from "vue";
-
 
 onMounted(async () => {
   // Register gsap plugin
@@ -142,15 +144,13 @@ onMounted(async () => {
     ease: "back",
     stagger: 0.01,
   });
-
-  
 });
 </script>
 
 <style>
 .heroBg {
   background-image: url("https://images-ext-1.discordapp.net/external/fdbZQta670jFTyPb0wwIzsR9cRDYDOngtis5xtN44g4/%3Fetag%3D%25221b9763-5be21834%2522%26sourceContentType%3Dimage%252Fjpeg%26quality%3D85/https/musikmekanikeren.dk/____impro/1/onewebmedia/Privat/Musik%2520Mekanikeren%2520Lodning%2520Elektronik.JPG?width=689&height=722");
-  @apply bg-cover block  h-[25em] relative;
+  @apply bg-cover   relative;
 }
 
 #abc {

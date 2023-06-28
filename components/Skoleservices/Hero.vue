@@ -8,7 +8,7 @@
           class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
         >
           Lad os optimere jeres
-          <span class="text-cyangreen">Musik lokale</span>
+          Musik lokale
         </h1>
         <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
           Vi ved at tiden er knap, rundt om på landets skoler og institutioner.

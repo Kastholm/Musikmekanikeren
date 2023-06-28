@@ -49,8 +49,8 @@ onMounted(async () => {
 });
 </script>
 <template>
-  <header class="hidden md:inline">
-    <nav class="mainNav hidden md:inline">
+  <header class="hidden sm:inline">
+    <nav class="mainNav hidden sm:inline">
       <ul>
         <li><NuxtLink to="/">Forside</NuxtLink></li>
         <li><NuxtLink to="/Service">Service</NuxtLink></li>
@@ -130,7 +130,7 @@ select option {
   background: none !important;
 }
 .mainNav {
-  @apply text-smooth hidden lg:block w-screen fixed z-50;
+  @apply text-smooth hidden md:block w-screen fixed z-50;
   background-color: rgba(34, 34, 34, 0.3);
 }
 .mainNav .logo {
