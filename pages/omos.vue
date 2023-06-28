@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-900">
+  <div class="bg-cyangreen">
     <main class="relative isolate">
       <!-- Background -->
       <div
@@ -7,7 +7,7 @@
         aria-hidden="true"
       >
         <div
-          class="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-[#80caff] to-[#4f46e5] opacity-25"
+          class="aspect-[1108/632] w-[69.25rem] flex-none bg-gradient-to-r from-[#80caff] to-[#ffffff] opacity-25"
           style="
             clip-path: polygon(
               73.6% 51.7%,
@@ -35,12 +35,10 @@
       <div class="px-6 pt-14 lg:px-8">
         <div class="mx-auto max-w-2xl pt-24 text-center sm:pt-40">
           <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            We love creators
+            Velkommen til Musik Mekanikeren
           </h2>
           <p class="mt-6 text-lg leading-8 text-gray-300">
-            Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui
-            lorem cupidatat commodo. Elit sunt amet fugiat veniam occaecat
-            fugiat aliqua.
+            Kan det ikke repareres her - kan det højst sandsynligt ikke repareres!
           </p>
         </div>
       </div>
@@ -53,8 +51,7 @@
           >
             <div>
               <p>
-                Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                risus enim. Mattis mauris semper sed amet vitae sed turpis id.
+                Vi har xx års erfaring med instrumenter og forstærkere, fra barns ben.... 
                 Id dolor praesent donec est. Odio penatibus risus viverra tellus
                 varius sit neque erat velit. Faucibus commodo massa rhoncus,
                 volutpat. Dignissim sed eget risus enim. Mattis mauris semper
@@ -86,18 +83,6 @@
           <dl
             class="mt-16 grid grid-cols-1 gap-x-8 gap-y-12 sm:mt-20 sm:grid-cols-2 sm:gap-y-16 lg:mt-28 lg:grid-cols-4"
           >
-            <div
-              v-for="(stat, statIdx) in stats"
-              :key="statIdx"
-              class="flex flex-col-reverse gap-y-3 border-l border-white/20 pl-6"
-            >
-              <dt class="text-base leading-7 text-gray-300">
-                {{ stat.label }}
-              </dt>
-              <dd class="text-3xl font-semibold tracking-tight text-white">
-                {{ stat.value }}
-              </dd>
-            </div>
           </dl>
         </div>
       </div>
@@ -144,17 +129,13 @@
           >
             <div class="lg:pr-4">
               <div class="lg:max-w-lg">
-                <p class="text-base font-semibold leading-7 text-indigo-600">
-                  Deploy faster
-                </p>
                 <h1
                   class="mt-2 text-3xl font-bold tracking-tight text-white-900 sm:text-4xl"
                 >
-                  A better workflow
+                  Vi bruger hænderne
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white-700">
-                  Aliquet nec orci mattis amet quisque ullamcorper neque, nibh
-                  sem. At arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
+                  Hos Musik Mekanikeren gør vi en dyd ud af kvalitetsbevidst arbejde lavet i hænderne.... Arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
                   id at vitae feugiat egestas.
                 </p>
               </div>
@@ -165,7 +146,7 @@
           >
             <img
               class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-              src="https://tailwindui.com/img/component-images/dark-project-app-screenshot.png"
+              src="https://i.ibb.co/FHYgZzC/pexels-anna-tarazevich-5963182-1.jpg"
               alt=""
             />
           </div>
@@ -192,7 +173,7 @@
                     />
                     <span
                       ><strong class="font-semibold text-white-900"
-                        >Push to deploy.</strong
+                        >Punkt 1.</strong
                       >
                       Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                       Maiores impedit perferendis suscipit eaque, iste dolor
@@ -206,7 +187,7 @@
                     />
                     <span
                       ><strong class="font-semibold text-white-900"
-                        >SSL certificates.</strong
+                        >Punkt 2.</strong
                       >
                       Anim aute id magna aliqua ad ad non deserunt sunt. Qui
                       irure qui lorem cupidatat commodo.</span
@@ -219,7 +200,7 @@
                     />
                     <span
                       ><strong class="font-semibold text-white-900"
-                        >Database backups.</strong
+                        >Punkt 3.</strong
                       >
                       Ac tincidunt sapien vehicula erat auctor pellentesque
                       rhoncus. Et magna sit morbi lobortis.</span
@@ -236,11 +217,10 @@
                 <h2
                   class="mt-16 text-2xl font-bold tracking-tight text-white-900"
                 >
-                  No server? No problem.
+                  Svært ved at give slip?
                 </h2>
                 <p class="mt-6">
-                  Id orci tellus laoreet id ac. Dolor, aenean leo, ac etiam
-                  consequat in. Convallis arcu ipsum urna nibh. Pharetra,
+                  Vi forstår din ømhed overfor dit udstyr - frygt ej! Hos os kan du med ro i maven.... Convallis arcu ipsum urna nibh. Pharetra,
                   euismod vitae interdum mauris enim, consequat vulputate nibh.
                   Maecenas pellentesque id sed tellus mauris, ultrices mauris.
                   Tincidunt enim cursus ridiculus mi. Pellentesque nam sed
@@ -252,6 +232,9 @@
         </div>
       </div>
     </main>
+  </div>
+  <div>
+   <Clippath />
   </div>
 </template>
 

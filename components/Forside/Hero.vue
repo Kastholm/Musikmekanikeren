@@ -11,12 +11,12 @@
       >
         <div>
           <h1
-            class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white quote"
+            class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-2xl lg:text-6xl lg:leading-tight dark:text-white quote"
           >
             Lad os reparer dit instrument
             <!-- <span class="text-cyangreen">Preline</span> -->
           </h1>
-          <span class="heroBg lg:hidden block h-[10em] "></span>
+          <span class="heroBg md:hidden block h-[10em]"></span>
           <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
             Det kræver stor tillid at aflevere sit højtelskede og værdsatte
             instrument til en anden, både til et generelt service-tjek men især
@@ -47,7 +47,7 @@
             </a>
             <p>
               <a
-                class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border border-smooth bg-smooth hover:scale-[1.01] shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 text-cyangreen dark:focus:ring-gray-700"
+                class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border border-smooth bg-smooth hover:scale-[1.01] shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 text-cyangreen dark:focus:ring-gray-700 w-full"
                 href="#"
               >
                 Se vores produkter
@@ -71,7 +71,7 @@
         <!-- End Col -->
 
         <div class="relative ml-4">
-          <span class="heroBg hidden lg:block h-[25em] "></span>
+          <span class="heroBg hidden md:block h-[25em]"></span>
           <!--  <img class="absolute -bottom-12 -left-32 rotate-[-20deg] w-[40%]"
         src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
         alt=""

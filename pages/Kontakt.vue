@@ -1,5 +1,5 @@
 <template>
-  <div class="relative isolate bg-gray-900">
+  <div class="relative isolate bg-cyangreen">
     <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
       <div
         class="relative px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48"
@@ -39,7 +39,7 @@
               aria-hidden="true"
             >
               <div
-                class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#80caff] to-[#4f46e5] opacity-20"
+                class="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-br from-[#80caff] to-[#ffffff] opacity-20"
                 style="
                   clip-path: polygon(
                     74.1% 56.1%,
@@ -64,7 +64,7 @@
             </div>
           </div>
           <h2 class="text-3xl font-bold tracking-tight text-white">
-            Get in touch
+            Kontakt os alle hverdage
           </h2>
           <p class="mt-6 text-lg leading-8 text-gray-300">
             Proin volutpat consequat porttitor cras nullam gravida at. Orci
@@ -80,22 +80,23 @@
                   aria-hidden="true"
                 />
               </dt>
-              <dd>545 Mavis Island<br />Chicago, IL 99191</dd>
+              <dd>Jørgensens Allè 28
+               <br />8722 Hedensted</dd>
             </div>
             <div class="flex gap-x-4">
               <dt class="flex-none">
-                <span class="sr-only">Telephone</span>
+                <span class="sr-only">Telefon</span>
                 <PhoneIcon class="h-7 w-6 text-gray-400" aria-hidden="true" />
               </dt>
               <dd>
                 <a class="hover:text-white" href="tel:+1 (555) 234-5678"
-                  >+1 (555) 234-5678</a
+                  >+45 60 21 76 02</a
                 >
               </dd>
             </div>
             <div class="flex gap-x-4">
               <dt class="flex-none">
-                <span class="sr-only">Telephone</span>
+                <span class="sr-only">Mail</span>
                 <EnvelopeIcon
                   class="h-7 w-6 text-gray-400"
                   aria-hidden="true"
@@ -103,7 +104,7 @@
               </dt>
               <dd>
                 <a class="hover:text-white" href="mailto:hello@example.com"
-                  >hello@example.com</a
+                  >Kaare@musikmekanikeren.dk</a
                 >
               </dd>
             </div>
@@ -113,7 +114,7 @@
       <form
         action="#"
         method="POST"
-        class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48"
+        class="px-6 pb-24 pt-20 sm:pb-32 lg:px-8 lg:py-48 bg-[#304a4d]"
       >
         <div class="mx-auto max-w-xl lg:mr-0 lg:max-w-lg">
           <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
@@ -121,7 +122,7 @@
               <label
                 for="first-name"
                 class="block text-sm font-semibold leading-6 text-white"
-                >First name</label
+                >Navn*</label
               >
               <div class="mt-2.5">
                 <input
@@ -133,27 +134,12 @@
                 />
               </div>
             </div>
-            <div>
-              <label
-                for="last-name"
-                class="block text-sm font-semibold leading-6 text-white"
-                >Last name</label
-              >
-              <div class="mt-2.5">
-                <input
-                  type="text"
-                  name="last-name"
-                  id="last-name"
-                  autocomplete="family-name"
-                  class="block w-full rounded-md border-0 bg-white/5 px-3.5 py-2 text-white shadow-sm ring-1 ring-inset ring-white/10 focus:ring-2 focus:ring-inset focus:ring-indigo-500 sm:text-sm sm:leading-6"
-                />
-              </div>
-            </div>
+            
             <div class="sm:col-span-2">
               <label
                 for="email"
                 class="block text-sm font-semibold leading-6 text-white"
-                >Email</label
+                >Email*</label
               >
               <div class="mt-2.5">
                 <input
@@ -169,7 +155,7 @@
               <label
                 for="phone-number"
                 class="block text-sm font-semibold leading-6 text-white"
-                >Phone number</label
+                >Telefon</label
               >
               <div class="mt-2.5">
                 <input
@@ -185,7 +171,7 @@
               <label
                 for="message"
                 class="block text-sm font-semibold leading-6 text-white"
-                >Message</label
+                >Skriv din besked her</label
               >
               <div class="mt-2.5">
                 <textarea
@@ -202,7 +188,7 @@
               type="submit"
               class="rounded-md bg-indigo-500 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500"
             >
-              Send message
+              Send besked
             </button>
           </div>
         </div>
