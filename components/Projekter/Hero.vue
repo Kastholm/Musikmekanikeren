@@ -1,7 +1,6 @@
 <template>
   <!-- Hero -->
   <div
-    id="abc"
     class="max-w-[85rem] mx-auto z-20 px-4 sm:px-6 lg:px-8 pt-[7em]"
   >
     <!-- Grid -->
@@ -10,13 +9,18 @@
         <h1
           class="block text-3xl font-bold text-[#3d5f63] sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
         >
+<<<<<<< HEAD
           Her bliver alle projekter taget seriøst
+=======
+          Se tidligere projekte
+          <span class="text-cyangreen">Musk mekaikeren?</span>
+>>>>>>> 1d3997245c2aea39a236209b12cb71d4382bebe5
         </h1>
         <p class="mt-3 text-lg text-white dark:text-gray-400">
           Personligt har jeg det på samme måde, når jeg afleverer bilen hos
-          mekanikeren - man ønsker den tilbage så den både føles, kører og ser
-          ud i sin bedst mulige stand! Jeg tager hver enkelt opgave meget
-          seriøst og sætter en ære i at fastholde mit gode ry og rygte.
+          mekanikeren - man ønsker den tilbage så den både øles, kører og ser ud
+          i sin bedst mulige stand! Jeg tager hver enkelt opgave meget seriøst
+          og sætter en ære i at fastholde mit gode ry og rygte.
           <br />
           <br />
           I selve arbejdet anvender jeg kun de bedste værktøjer og metoder til

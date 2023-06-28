@@ -198,7 +198,11 @@ onMounted(async () => {
               background-image: url('https://musikmekanikeren.dk/____impro/1/onewebmedia/Kundemappe/Skoleservice/Musik%20Mekanikeren%20Skole%20Service%20Indretning%20Assentoftskolen%20EFTER.jpg?etag=%22fe73f-61d8bfca%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1448%2B1086&extract=0%2B16%2B1440%2B1012&quality=85');
             "
           >
+<<<<<<< HEAD
             <h3 class="showcase_title">Skoleservice</h3>
+=======
+            <h3 class="showcase_title">Skole Service</h3>
+>>>>>>> 1d3997245c2aea39a236209b12cb71d4382bebe5
           </div>
           <div class="showcase_text">
             <span>
@@ -340,12 +344,13 @@ onMounted(async () => {
   border-bottom: 2px solid rgb(218, 178, 19);
 }
 .showcase_img {
-  @apply bg-cover h-[30em] relative m-auto;
+  @apply hidden md:block bg-cover h-[30em] relative m-auto;
   flex-basis: 500px;
   flex-grow: 999;
 }
 .showcase_title {
-  @apply text-[8rem] absolute -bottom-10 uppercase;
+  @apply text-[2rem] md:text-[6rem] h-fit absolute bottom-0 md:-bottom-10 uppercase;
+  line-height: 5rem;
 }
 .showcase_text {
   @apply grid gap-4 text-cyangreen leading-relaxed;

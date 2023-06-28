@@ -1,10 +1,15 @@
 // schemas/index.js
 
 import testimonials from './testimonials'
+import testimonials_skoleservice from './testimonials-skoleservice'
 /* import products from './productsold' */
 import products from './products'
 import category from './products_categories'
-export const schemaTypes = [testimonials, category, products]
+import strenge from './service_instrumenter/strenge'
+import trommer from './service_instrumenter/trommer'
+import klaver from './service_instrumenter/klaver'
+import PA from './service_instrumenter/PA'
+export const schemaTypes = [testimonials, testimonials_skoleservice, strenge, trommer, klaver, PA, category, products]
 
 /* import T from '@sanity/base/initial-value-template-builder'
 

@@ -49,8 +49,8 @@ onMounted(async () => {
 });
 </script>
 <template>
-  <header>
-    <nav class="mainNav">
+  <header class="hidden md:inline">
+    <nav class="mainNav hidden md:inline">
       <ul>
         <li><NuxtLink to="/">Forside</NuxtLink></li>
         <li><NuxtLink to="/Service">Service</NuxtLink></li>
@@ -62,51 +62,30 @@ onMounted(async () => {
             alt=""
         /></span>
         <li><NuxtLink to="/projekter"> Projekter</NuxtLink></li>
-        <li><NuxtLink to="/shop">Shop</NuxtLink></li>
-        <li>
+        <li><NuxtLink to="/kontakt">Kontakt</NuxtLink></li>
+        <li><NuxtLink to="/omos"> Om os</NuxtLink></li>
+        <!-- <li><NuxtLink to="/shop">Shop</NuxtLink></li> -->
+        <!-- <li>
           <NuxtLink @change="navigate">
             <select>
               <option value="/kontakt">Kontakt</option>
               <option value="/omos">Om os</option>
             </select>
           </NuxtLink>
-        </li>
+        </li> -->
       </ul>
     </nav>
-    <nav class="phoneNav">
-      <img
-        class="logo"
-        src="https://kiwswbakieolzufmufjq.supabase.co/storage/v1/object/public/public/logo.png"
-        alt=""
-      />
-      <span class="burger">
-        <svg
-          class="ham hamRotate ham1"
-          viewBox="0 0 100 100"
-          width="80"
-          onclick="this.classList.toggle('active')"
-        >
-          <path
-            class="line top"
-            d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40"
-          />
-          <path class="line middle" d="m 30,50 h 40" />
-          <path
-            class="line bottom"
-            d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40"
-          />
-        </svg>
-      </span>
-      <ul class="links">
+    <nav class="phoneNav"></nav>
+  </header>
+  <phone-nav />
+  <!-- <ul class="links">
         <li><NuxtLink to="/">Forside</NuxtLink></li>
         <li><NuxtLink to="/Service">Service</NuxtLink></li>
         <li><NuxtLink to="/Skoleservice">Skoleservice</NuxtLink></li>
         <li><NuxtLink to="/projekter"> Projekter</NuxtLink></li>
         <li><NuxtLink to="/omos">Om os </NuxtLink></li>
         <li><NuxtLink to="/kontakt">Kontakt</NuxtLink></li>
-      </ul>
-    </nav>
-  </header>
+      </ul> -->
 </template>
 
 <style scoped>
@@ -178,9 +157,9 @@ select option {
   @apply m-auto;
 }
 
-.phoneNav {
+/* .phoneNav {
   @apply text-smooth text-center h-36 block lg:hidden bg-red-800;
-}
+} */
 .phoneNav .logo {
   @apply w-[14em] m-auto fixed;
 }

@@ -1,5 +1,5 @@
 <script setup>
-const query = groq`*[_type == "testimonials"]`;
+const query = groq`*[_type == "testimonials_skoleservice"]`;
 const { data } = useSanityQuery(query);
 </script>
 <template>

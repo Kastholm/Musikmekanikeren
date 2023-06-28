@@ -69,7 +69,7 @@
 
         <div class="relative ml-4">
           <span class="heroBg"></span>
-         <!--  <img class="absolute -bottom-12 -left-32 rotate-[-20deg] w-[40%]"
+          <!--  <img class="absolute -bottom-12 -left-32 rotate-[-20deg] w-[40%]"
         src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
         alt=""
       /> -->
@@ -120,10 +120,7 @@
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { onMounted } from "vue";
-import * as THREE from "three";
-/* import p5 from "p5"; */
-/* import * as P5 from "p5"; */
-import FOG from "vanta/dist/vanta.fog.min";
+
 
 onMounted(async () => {
   // Register gsap plugin
@@ -146,27 +143,7 @@ onMounted(async () => {
     stagger: 0.01,
   });
 
-  // window is only avaiable on browser
-  /*  if (process.browser) { */
-  window.THREE = THREE;
-  const { default: FOG } = await import("vanta/dist/vanta.fog.min");
-  FOG({
-    el: "#abc",
-    mouseControls: true,
-    touchControls: true,
-    gyroControls: false,
-    minHeight: 200.0,
-    minWidth: 200.0,
-    highlightColor: 0x222222,
-    midtoneColor: 0x273e3f,
-    lowlightColor: 0x222222,
-    baseColor: 0x222222,
-    scale: 1.0,
-    size: 5.0,
-    speed: 0.9,
-    THREE: window.THREE,
-  });
-  /*  } */
+  
 });
 </script>
 
@@ -174,6 +151,10 @@ onMounted(async () => {
 .heroBg {
   background-image: url("https://images-ext-1.discordapp.net/external/fdbZQta670jFTyPb0wwIzsR9cRDYDOngtis5xtN44g4/%3Fetag%3D%25221b9763-5be21834%2522%26sourceContentType%3Dimage%252Fjpeg%26quality%3D85/https/musikmekanikeren.dk/____impro/1/onewebmedia/Privat/Musik%2520Mekanikeren%2520Lodning%2520Elektronik.JPG?width=689&height=722");
   @apply bg-cover block  h-[25em] relative;
+}
+
+#abc {
+  background: linear-gradient(to bottom, #222222, #273e3f, #222222, #222222);
 }
 /* 
 .heroShadow {
