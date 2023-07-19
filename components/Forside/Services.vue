@@ -90,7 +90,7 @@ onMounted(async () => {
   </div>
   <div class="circlePath"></div>
   <section class="wrapper relative portfolio">
-    <h2>Vores Services</h2>
+    
     <ServiceTabs>
       <ServiceTab title="Service" class="showcase">
         <div class="tab_content">
@@ -198,7 +198,7 @@ onMounted(async () => {
               background-image: url('https://musikmekanikeren.dk/____impro/1/onewebmedia/Kundemappe/Skoleservice/Musik%20Mekanikeren%20Skole%20Service%20Indretning%20Assentoftskolen%20EFTER.jpg?etag=%22fe73f-61d8bfca%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1448%2B1086&extract=0%2B16%2B1440%2B1012&quality=85');
             "
           >
-            <h3 class="showcase_title">Skole Service</h3>
+            <h3 class="showcase_title text-md">Skole Service</h3>
           </div>
           <div class="showcase_text">
             <span>
@@ -317,7 +317,7 @@ onMounted(async () => {
   @apply grid grid-cols-2 text-center;
 }
 .tab-title {
-  @apply mt-6 pb-0 opacity-40 text-[2.5rem] hover:opacity-100 rounded-t-lg cursor-pointer;
+  @apply mt-6 py-4 md:py-0 opacity-40 text-[1.5rem] md:text-[2.5rem] hover:opacity-100 rounded-t-lg cursor-pointer;
   transition: 0.2s;
 }
 .tabs-content {
@@ -328,7 +328,7 @@ onMounted(async () => {
   @apply relative rounded-lg py-6 flex flex-wrap align-baseline gap-[1em];
 }
 .tab-active {
-  @apply opacity-100 text-[3rem] relative bg-Metric;
+  @apply opacity-100 text-[1.8rem] md:text-[3rem] relative bg-Metric;
   transition: 0.2s;
 }
 .tab-active::after {
@@ -345,7 +345,7 @@ onMounted(async () => {
   flex-grow: 999;
 }
 .showcase_title {
-  @apply text-[2rem] md:text-[6rem] h-fit absolute bottom-0 md:-bottom-10 uppercase;
+  @apply text-[2rem] md:text-[4rem] h-fit absolute bottom-0 md:-bottom-4 uppercase;
   line-height: 5rem;
 }
 .showcase_text {

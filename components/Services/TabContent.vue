@@ -31,7 +31,7 @@ onMounted(async () => {
 
 <template>
   <section class="relative z-10 py-4 md:py-8 m-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-smooth mb-4 text-5xl">
+    <h2 class="text-smooth text-center mb-4 text-5xl">
       Hvilket instrument ønsker du repareret?
     </h2>
     <div class="group hidden md:block">

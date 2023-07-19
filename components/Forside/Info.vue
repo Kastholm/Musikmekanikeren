@@ -1,10 +1,10 @@
 <template>
   <section class="bg-cyangreen">
-    <main class="wrapper py-20 grid md:flex">
+    <main class="wrapper py-32 md:py-24 grid md:flex">
       <div class="md:w-1/2">
         <span class="">
           <h2 class="quoteTwo header">DIT FORTRUKNE INSTRUMENT VÆRKSTED</h2>
-          <h5 class="quote_text">
+          <h5 class="quote_text text-[1.2rem] md:text-[1.35rem] mt-2">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
             cumque velit, nostrum nesciunt at placeat, blanditiis illum ex
             dolores, in cum odio incidunt ratione maiores dolorum eveniet? Optio
@@ -94,16 +94,15 @@ onMounted(async () => {
 <style>
 .quote,
 .quoteTwo {
-  @apply md:text-6xl leading-snug;
+  @apply text-4xl md:text-6xl leading-snug;
 }
 .dotsBlue {
   width: 100%;
   height: auto;
-  max-width: 434px;
-  max-height: 434px;
   z-index: 0;
   opacity: 0;
   left: 30px;
   top: 180px;
+  @apply max-h-[234px] max-w-[234px] md:max-h-[434px] md:max-w-[434px] ;
 }
 </style>

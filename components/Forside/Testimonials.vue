@@ -1,6 +1,22 @@
 <script setup>
 const query = groq`*[_type == "testimonials"]`;
 const { data } = useSanityQuery(query);
+
+// Detect device screen width
+const screenWidth =
+  window.innerWidth ||
+  document.documentElement.clientWidth ||
+  document.body.clientWidth;
+let slidesPerView = 3; // Default value for larger screens
+
+// Adjust slidesPerView based on device screen width
+if (screenWidth < 768) {
+  // Mobile breakpoint
+  slidesPerView = 1;
+} else if (screenWidth < 1024) {
+  // Tablet breakpoint
+  slidesPerView = 2;
+}
 </script>
 <template>
   <section class="testi_section">
@@ -12,7 +28,7 @@ const { data } = useSanityQuery(query);
 
     <Swiper
       :modules="[SwiperAutoplay, SwiperEffectCreative]"
-      :slides-per-view="3"
+      :slides-per-view="slidesPerView"
       :loop="true"
       :autoplay="{
         delay: 8000,

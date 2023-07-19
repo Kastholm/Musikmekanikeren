@@ -14,7 +14,7 @@ body {
   @apply text-smooth overflow-x-hidden bg-Metric;
 }
 .wrapper {
-  @apply max-w-[1640px] xl:m-auto px-12;
+  @apply max-w-[1640px] xl:m-auto px-4 md:px-12;
 }
 /* Styling af Scrollbar */
 ::-webkit-scrollbar {
