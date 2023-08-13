@@ -1,8 +1,10 @@
 <script setup>
 import { gsap } from "gsap";
 import { Grid } from "swiper";
-import { onMounted, ref } from "vue";
+import { onMounted, ref, watch } from "vue";
+
 let selectedInstrument = ref("Strenge");
+
 onMounted(async () => {
   const items = document.querySelectorAll(".item");
   const expand = (item, i) => {
@@ -97,19 +99,23 @@ onMounted(async () => {
         ><p>Trommer</p></span
       >
       <span
-        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer" @click="selectedInstrument = 'Klaver'"
+        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer"
+        @click="selectedInstrument = 'Klaver'"
         ><p>Klaver</p></span
       >
       <span
-        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer" @click="selectedInstrument = 'PA'"
+        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer"
+        @click="selectedInstrument = 'PA'"
         ><p>Elek</p></span
       >
     </div>
   </section>
-  <ServicesInstrumentsStrenge v-if="selectedInstrument === 'Strenge'" />
-  <ServicesInstrumentsTrommer v-if="selectedInstrument === 'Trommer'" />
-  <ServicesInstrumentsKlaver v-if="selectedInstrument === 'Klaver'" />
-  <ServicesInstrumentsPA v-if="selectedInstrument === 'PA'" />
+  <div ref="contentWrapper">
+    <ServicesInstrumentsStrenge v-if="selectedInstrument === 'Strenge'" />
+    <ServicesInstrumentsTrommer v-if="selectedInstrument === 'Trommer'" />
+    <ServicesInstrumentsKlaver v-if="selectedInstrument === 'Klaver'" />
+    <ServicesInstrumentsPA v-if="selectedInstrument === 'PA'" />
+  </div>
 </template>
 <style>
 .group {
@@ -148,5 +154,13 @@ onMounted(async () => {
 }
 .itemContext button {
   @apply w-fit absolute bottom-6 right-6;
+}
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: height 0.5s ease;
+}
+.slide-fade-enter, .slide-fade-leave-to /* .slide-fade-leave-active in <2.6 */ {
+  height: 0;
+  overflow: hidden;
 }
 </style>

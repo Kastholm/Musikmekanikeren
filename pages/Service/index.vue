@@ -12,7 +12,6 @@ import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import { onMounted } from "vue";
 
-
 onMounted(async () => {
   // Register gsap plugin
   /*  gsap.registerPlugin(SplitText);
@@ -37,7 +36,7 @@ onMounted(async () => {
 </script>
 
 <style>
-#abc {
+/* #abc {
   background: linear-gradient(to bottom, #222222, #273e3f, #222222, #222222);
-}
+} */
 </style>

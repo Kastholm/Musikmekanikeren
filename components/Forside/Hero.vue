@@ -9,23 +9,28 @@
       <div
         class="grid place-content-center md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center"
       >
-        <div>
+        <div class="relative">
           <h1
-            class="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-2xl lg:text-6xl lg:leading-tight dark:text-white quote"
+            class="block text-3xl relative font-bold text-gray-800 sm:text-4xl md:text-2xl lg:text-6xl lg:leading-tight dark:text-white quote"
           >
             Lad os reparer dit instrument
             <!-- <span class="text-cyangreen">Preline</span> -->
           </h1>
+          <!--   <img
+            class="absolute top-16 right-16 rotate-[-20deg] w-[10em]"
+            src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
+            alt=""
+          /> -->
           <span class="heroBg md:hidden block h-[10em]"></span>
           <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
             Det kræver stor tillid at aflevere sit højtelskede og værdsatte
             instrument til en anden, både til et generelt service-tjek men især
             når det gælder dybere-gående reparationer.
           </p>
-<div class="relative py-8">
-            <h3 class="text-2xl" >Taylor Certificeret</h3>
+          <div class="relative py-8">
+            <h3 class="text-2xl">Taylor Certificeret</h3>
             <img
-              class="absolute -bottom-2 right-28 rotate-[-20deg] w-[10em]"
+              class="absolute -bottom-2 lg:right-28 rotate-[-20deg] lg:w-[9em] md:w-[8em] md:right-6 sm:w-[10em] w-[6em] right-0"
               src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
               alt=""
             />
@@ -62,7 +67,7 @@
             </p>
           </div>
           <!-- End Buttons -->
-          
+
           <!-- Review -->
           <div class="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5">
             <!-- Review -->
@@ -157,10 +162,10 @@ onMounted(async () => {
   @apply bg-cover   relative;
 }
 
-#abc {
+/* /* #abc {
   background: linear-gradient(to bottom, #222222, #273e3f, #222222, #222222);
-}
-/* 
+} */
+/*
 .heroShadow {
      @apply bg-black/0 h-[35em] relative;
 }

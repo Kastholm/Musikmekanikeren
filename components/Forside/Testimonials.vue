@@ -53,7 +53,7 @@ onMounted(() => {
     >
       <SwiperSlide v-for="testimonials in data" v-bind:key="testimonials._id">
         <div class="testi_container">
-          <span class="testi_box">
+          <span class="testi_box cursor-grabbing ">
             <h3>{{ testimonials.navn }} - {{ testimonials.by }}</h3>
             <img
               class="w-24 bg-smooth my-1"
@@ -68,11 +68,11 @@ onMounted(() => {
         </div>
       </SwiperSlide>
     </Swiper>
-    <img
+  <!--   <img
       class="m-auto pb-8 w-[13em]"
       src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
       alt=""
-    />
+    /> -->
     <!-- <div class="bg-red-200 grid place-content-center">
       <h2>Musik Mekanikeren er Autoriseret Servicecenter for</h2>
       <img
