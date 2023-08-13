@@ -22,7 +22,14 @@
             instrument til en anden, både til et generelt service-tjek men især
             når det gælder dybere-gående reparationer.
           </p>
-
+<div class="relative py-8">
+            <h3 class="text-2xl" >Taylor Certificeret</h3>
+            <img
+              class="absolute -bottom-2 right-28 rotate-[-20deg] w-[10em]"
+              src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
+              alt=""
+            />
+          </div>
           <!-- Buttons -->
           <div class="mt-7 grid gap-3 w-full sm:inline-flex">
             <a
@@ -55,7 +62,7 @@
             </p>
           </div>
           <!-- End Buttons -->
-
+          
           <!-- Review -->
           <div class="mt-6 lg:mt-10 grid grid-cols-2 gap-x-5">
             <!-- Review -->
@@ -72,10 +79,7 @@
 
         <div class="relative ml-4">
           <span class="heroBg hidden md:block h-[25em]"></span>
-          <!--  <img class="absolute -bottom-12 -left-32 rotate-[-20deg] w-[40%]"
-        src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
-        alt=""
-      /> -->
+
           <div
             class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"
           ></div>

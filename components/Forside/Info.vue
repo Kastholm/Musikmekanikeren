@@ -34,12 +34,12 @@
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { onMounted } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
 onMounted(async () => {
   // Register gsap plugin
   gsap.registerPlugin(SplitText);
   gsap.registerPlugin(ScrollTrigger);
-
   var tl = gsap.timeline(),
     myInfoText = new SplitText(".quoteTwo", { type: "words,chars" }),
     chars = myInfoText.chars; //an array of all the divs that wrap each character
@@ -101,6 +101,9 @@ onMounted(async () => {
       },
       "-=0.2"
     );
+onBeforeUnmount(() => {
+  myInfoText.revert();
+});
 });
 </script>
 

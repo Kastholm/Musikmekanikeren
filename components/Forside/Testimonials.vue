@@ -1,23 +1,30 @@
 <script setup>
+import { ref, onMounted } from "vue";
 const query = groq`*[_type == "testimonials"]`;
 const { data } = useSanityQuery(query);
 
-// Detect device screen width
-const screenWidth =
-  window.innerWidth ||
-  document.documentElement.clientWidth ||
-  document.body.clientWidth;
-let slidesPerView = 3; // Default value for larger screens
+const screenWidth = ref(0); // Declare it as a ref
+let slidesPerView = ref(3); // Default value for larger screens
 
-// Adjust slidesPerView based on device screen width
-if (screenWidth < 768) {
-  // Mobile breakpoint
-  slidesPerView = 1;
-} else if (screenWidth < 1024) {
-  // Tablet breakpoint
-  slidesPerView = 2;
-}
+onMounted(() => {
+  // Access window object inside onMounted
+  const width =
+    window.innerWidth ||
+    document.documentElement.clientWidth ||
+    document.body.clientWidth;
+  screenWidth.value = width;
+
+  // Adjust slidesPerView based on device screen width
+  if (width < 768) {
+    // Mobile breakpoint
+    slidesPerView.value = 1;
+  } else if (width < 1024) {
+    // Tablet breakpoint
+    slidesPerView.value = 2;
+  }
+});
 </script>
+
 <template>
   <section class="testi_section">
     <div class="grid place-content-center">

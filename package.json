@@ -2,7 +2,7 @@
   "private": true,
   "scripts": {
     "build": "nuxt build",
-    "predev": "git pull && npm i && npm cache verify",
+    "prediv": "git pull && npm i && npm cache verify",
     "dev": "nuxt dev",
     "postdev": "echo 'Nuxt dev server started'",
     "generate": "nuxt generate",
