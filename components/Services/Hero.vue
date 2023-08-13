@@ -41,11 +41,7 @@
       <!-- End Col -->
 
       <div class="relative ml-4">
-        <img
-          class="w-full rounded-md"
-          src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
-          alt="Image Description"
-        />
+        <img class="w-full rounded-md" src="" alt="Image Description" />
         <div
           class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"
         ></div>

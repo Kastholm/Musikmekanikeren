@@ -14,13 +14,13 @@
             <h3
               class="text-lg font-bold absolute -top-10 left-0 p-2 bg-white rounded-tr-lg"
             >
-              <a
+              <NuxtLink
                 class="stretched-link text-[2rem] text-gray-800"
-                href="#"
+                :to="'/Service/' + trommer.title + '?type=trommer'"
                 title="Card 1"
               >
                 {{ trommer.title }}
-              </a>
+              </NuxtLink>
             </h3>
             <!-- <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
               >1st January 2019</time
@@ -42,7 +42,9 @@
 <script setup>
 const query = groq`*[_type == "trommer"]`;
 const { data } = useSanityQuery(query);
-
+import { useRouter } from "vue-router";
+const router = useRouter();
+const type = router.currentRoute.value.query.type;
 //make a for loop of 4
 </script>
 

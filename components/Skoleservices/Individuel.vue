@@ -5,11 +5,7 @@
       <div class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
-            <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
-              alt="Card 1"
-            />
+            <img class="block" src="" alt="Card 1" />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
@@ -31,11 +27,7 @@
       <div class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
-            <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
-              alt="Card 2"
-            />
+            <img class="block" src="" alt="Card 2" />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
@@ -57,11 +49,7 @@
       <div class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
-            <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
-              alt="Card 3"
-            />
+            <img class="block" src="" alt="Card 3" />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
@@ -83,11 +71,7 @@
       <div class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
-            <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
-              alt="Card 4"
-            />
+            <img class="block" src="" alt="Card 4" />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
@@ -109,11 +93,7 @@
       <div class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
-            <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
-              alt="Card 5"
-            />
+            <img class="block" src="" alt="Card 5" />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
@@ -135,11 +115,7 @@
       <div class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">
-            <img
-              class="block"
-              src="https://via.placeholder.com/800x600/EDF2F7/E2E8F0"
-              alt="Card 6"
-            />
+            <img class="block" src="" alt="Card 6" />
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
