@@ -1,6 +1,6 @@
 <template>
   <section class="bg-cyangreen">
-    <main class="wrapper py-32 md:py-24 grid md:flex">
+    <main class="wrapper py-16 md:py-24 grid md:flex">
       <div class="md:w-1/2">
         <span class="">
           <h2 class="quoteTwo header">DIT FORTRUKNE INSTRUMENT VÆRKSTED</h2>
@@ -46,6 +46,12 @@ onMounted(async () => {
 
   gsap.set(".quoteTwo", { perspective: 400 });
 
+  // Set initial states for animated elements
+  gsap.set(chars, { opacity: 1 });
+  gsap.set(".quote_text", { opacity: 1 });
+  gsap.set(".dotsBlue", { opacity: 0 });
+  gsap.set(".gsapimg", { y: "0%" });
+
   /* console.log(chars); */
 
   ScrollTrigger.create({
@@ -55,6 +61,10 @@ onMounted(async () => {
     start: "top 75%",
     end: "bottom center",
     scrub: 1,
+    onEnter: () => tl.restart(),
+    onLeave: () => tl.pause(),
+    onEnterBack: () => tl.restart(),
+    onLeaveBack: () => tl.pause(),
   });
   tl.from(chars, {
     duration: 0.8,
@@ -69,24 +79,27 @@ onMounted(async () => {
     .from(
       ".quote_text",
       {
+        duration: 0.8,
         opacity: 0,
       },
-      1
-    )
+      "-=0.4"
+    ) // This will start 0.4 seconds before the previous animation ends.
     .to(
       ".dotsBlue",
       {
+        duration: 0.8,
         opacity: 1,
         top: "75px",
       },
-      1
-    )
+      "-=0.2"
+    ) // This will start 0.2 seconds before the previous animation ends.
     .from(
-      ".gsapimg ",
+      ".gsapimg",
       {
+        duration: 0.8,
         y: "-10%",
       },
-      1
+      "-=0.2"
     );
 });
 </script>
@@ -103,6 +116,6 @@ onMounted(async () => {
   opacity: 0;
   left: 30px;
   top: 180px;
-  @apply max-h-[234px] max-w-[234px] md:max-h-[434px] md:max-w-[434px] ;
+  @apply max-h-[234px] max-w-[234px] md:max-h-[434px] md:max-w-[434px];
 }
 </style>

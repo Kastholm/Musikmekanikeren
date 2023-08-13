@@ -87,19 +87,21 @@ onMounted(async () => {
     </div>
     <div class="inline md:hidden grid grid-cols-1 gap-2 place-content-center">
       <span
-        class="bg-indigo-600 w-full h-12 text-center grid place-content-center"
+        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer"
+        @click="selectedInstrument = 'Strenge'"
         ><p>Strenge</p></span
       >
       <span
-        class="bg-indigo-600 w-full h-12 text-center grid place-content-center"
+        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer"
+        @click="selectedInstrument = 'Trommer'"
         ><p>Trommer</p></span
       >
       <span
-        class="bg-indigo-600 w-full h-12 text-center grid place-content-center"
+        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer" @click="selectedInstrument = 'Klaver'"
         ><p>Klaver</p></span
       >
       <span
-        class="bg-indigo-600 w-full h-12 text-center grid place-content-center"
+        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer" @click="selectedInstrument = 'PA'"
         ><p>Elek</p></span
       >
     </div>
