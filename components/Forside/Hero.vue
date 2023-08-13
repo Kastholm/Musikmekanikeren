@@ -9,20 +9,32 @@
       <div
         class="grid place-content-center md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center"
       >
-        <div>
+        <div class="relative">
           <h1
-            class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white quote"
+            class="block text-3xl relative font-bold text-gray-800 sm:text-4xl md:text-2xl lg:text-6xl lg:leading-tight dark:text-white quote"
           >
             Lad os reparer dit instrument
             <!-- <span class="text-cyangreen">Preline</span> -->
           </h1>
-          <span class="heroBg lg:hidden block h-[10em] "></span>
+          <!--   <img
+            class="absolute top-16 right-16 rotate-[-20deg] w-[10em]"
+            src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
+            alt=""
+          /> -->
+          <span class="heroBg md:hidden block h-[10em]"></span>
           <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
             Det kræver stor tillid at aflevere sit højtelskede og værdsatte
             instrument til en anden, både til et generelt service-tjek men især
             når det gælder dybere-gående reparationer.
           </p>
-
+          <div class="relative py-8">
+            <h3 class="text-2xl">Taylor Certificeret</h3>
+            <img
+              class="absolute -bottom-2 lg:right-28 rotate-[-20deg] lg:w-[9em] md:w-[8em] md:right-6 sm:w-[10em] w-[6em] right-0"
+              src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
+              alt=""
+            />
+          </div>
           <!-- Buttons -->
           <div class="mt-7 grid gap-3 w-full sm:inline-flex">
             <a
@@ -47,7 +59,7 @@
             </a>
             <p>
               <a
-                class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border border-smooth bg-smooth hover:scale-[1.01] shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 text-cyangreen dark:focus:ring-gray-700"
+                class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border border-smooth bg-smooth hover:scale-[1.01] shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 text-cyangreen dark:focus:ring-gray-700 w-full"
                 href="#"
               >
                 Se vores produkter
@@ -71,11 +83,8 @@
         <!-- End Col -->
 
         <div class="relative ml-4">
-          <span class="heroBg hidden lg:block h-[25em] "></span>
-          <!--  <img class="absolute -bottom-12 -left-32 rotate-[-20deg] w-[40%]"
-        src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
-        alt=""
-      /> -->
+          <span class="heroBg hidden md:block h-[25em]"></span>
+
           <div
             class="absolute inset-0 -z-[1] bg-gradient-to-tr from-gray-200 via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"
           ></div>
@@ -153,10 +162,10 @@ onMounted(async () => {
   @apply bg-cover   relative;
 }
 
-#abc {
+/* /* #abc {
   background: linear-gradient(to bottom, #222222, #273e3f, #222222, #222222);
-}
-/* 
+} */
+/*
 .heroShadow {
      @apply bg-black/0 h-[35em] relative;
 }

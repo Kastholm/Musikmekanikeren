@@ -1,7 +1,10 @@
 <template>
-  <header class="bg-gray-800 fixed w-screen block md:hidden">
+  <header
+    style="z-index: 9"
+    class="bg-gray-800 z-10 fixed w-screen block md:hidden"
+  >
     <nav
-      class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8"
+      class="mx-auto flex z-50 max-w-7xl items-center justify-between p-6 lg:px-8"
       aria-label="Global"
     >
       <div class="flex lg:flex-1">
@@ -158,7 +161,7 @@
     >
       <div class="fixed inset-0 z-10" />
       <DialogPanel
-        class="fixed inset-y-0 right-0 z-10 flex w-full flex-col justify-between overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+        class="fixed inset-y-0 right-0 z-10 flex w-full flex-col justify-between overflow-y-auto bg-Metric sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
       >
         <div class="p-6">
           <div class="flex items-center justify-between">
@@ -166,7 +169,7 @@
               <span class="sr-only">Your Company</span>
               <img
                 class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                src="https://kiwswbakieolzufmufjq.supabase.co/storage/v1/object/public/public/logo.png"
                 alt=""
               />
             </a>
@@ -182,23 +185,24 @@
           <div class="mt-6 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
-                <a
+                <NuxtLink
                   v-for="item in products"
                   :key="item.name"
-                  :href="item.href"
-                  class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  :to="item.href"
+                  @click="mobileMenuOpen = false"
+                  class="group -mx-3 flex items-center gap-x-6 rounded-lg p-3 text-base font-semibold leading-7 text-smooth"
                 >
                   <div
-                    class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white"
+                    class="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-cyangreen group-hover:bg-white"
                   >
                     <component
                       :is="item.icon"
-                      class="h-6 w-6 text-gray-600 group-hover:text-indigo-600"
+                      class="h-6 w-6 text-smooth group-hover:text-cyangreen"
                       aria-hidden="true"
                     />
                   </div>
                   {{ item.name }}
-                </a>
+                </NuxtLink>
               </div>
               <div class="space-y-2 py-6">
                 <!-- <a
@@ -273,40 +277,43 @@ import {
 
 const products = [
   {
-    name: "Analytics",
-    description: "Get a better understanding of your traffic",
-    href: "#",
+    name: "Forside",
+    description: "Home page",
+    href: "/",
     icon: ChartPieIcon,
   },
   {
-    name: "Engagement",
-    description: "Speak directly to your customers",
-    href: "#",
+    name: "Service",
+    description: "Our services",
+    href: "/Service",
     icon: CursorArrowRaysIcon,
   },
   {
-    name: "Security",
-    description: "Your customers’ data will be safe and secure",
-    href: "#",
+    name: "Skoleservice",
+    description: "School services",
+    href: "/Skoleservice",
     icon: FingerPrintIcon,
   },
   {
-    name: "Integrations",
-    description: "Connect with third-party tools",
-    href: "#",
+    name: "Projekter",
+    description: "Our projects",
+    href: "/projekter",
     icon: SquaresPlusIcon,
   },
   {
-    name: "Automations",
-    description: "Build strategic funnels that will convert",
-    href: "#",
+    name: "Kontakt",
+    description: "Contact us",
+    href: "/kontakt",
+    icon: ArrowPathIcon,
+  },
+  {
+    name: "Om os",
+    description: "About us",
+    href: "/omos",
     icon: ArrowPathIcon,
   },
 ];
-const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
-];
+
 const company = [
   {
     name: "About us",

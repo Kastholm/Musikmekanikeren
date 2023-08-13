@@ -1,9 +1,9 @@
 <template>
 <BaseShortcuts />
 <section class="bg-cyangreen relative z-10">
-
-<div class="w-screen h-64  text-smooth grid place-content-center">
-  <h2 class="text-6xl">Nyhedsbrev</h2>
+<!-- h-64 tidligere h;jde  -->
+<div class="w-screen  text-smooth h-12 grid place-content-center">
+  <!-- <h2 class="text-6xl">Nyhedsbrev</h2> -->
 </div>
 
 <footer class="w-[95vw] h-[20em] bg-black m-auto rounded-t-[4em] relative overflow-hidden">

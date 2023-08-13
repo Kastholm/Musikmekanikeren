@@ -1,10 +1,10 @@
 <template>
   <section class="bg-cyangreen">
-    <main class="wrapper py-20 grid md:flex">
+    <main class="wrapper py-16 md:py-24 grid md:flex">
       <div class="md:w-1/2">
         <span class="">
           <h2 class="quoteTwo header">DIT FORTRUKNE INSTRUMENT VÆRKSTED</h2>
-          <h5 class="quote_text">
+          <h5 class="quote_text text-[1.2rem] md:text-[1.35rem] mt-2">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
             cumque velit, nostrum nesciunt at placeat, blanditiis illum ex
             dolores, in cum odio incidunt ratione maiores dolorum eveniet? Optio
@@ -34,17 +34,23 @@
 import { gsap } from "gsap";
 import { SplitText } from "gsap/SplitText";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import { onMounted } from "vue";
+import { ref, onMounted, onBeforeUnmount } from "vue";
+
 onMounted(async () => {
   // Register gsap plugin
   gsap.registerPlugin(SplitText);
   gsap.registerPlugin(ScrollTrigger);
-
   var tl = gsap.timeline(),
     myInfoText = new SplitText(".quoteTwo", { type: "words,chars" }),
     chars = myInfoText.chars; //an array of all the divs that wrap each character
 
   gsap.set(".quoteTwo", { perspective: 400 });
+
+  // Set initial states for animated elements
+  gsap.set(chars, { opacity: 1 });
+  gsap.set(".quote_text", { opacity: 1 });
+  gsap.set(".dotsBlue", { opacity: 0 });
+  gsap.set(".gsapimg", { y: "0%" });
 
   /* console.log(chars); */
 
@@ -55,6 +61,10 @@ onMounted(async () => {
     start: "top 75%",
     end: "bottom center",
     scrub: 1,
+    onEnter: () => tl.restart(),
+    onLeave: () => tl.pause(),
+    onEnterBack: () => tl.restart(),
+    onLeaveBack: () => tl.pause(),
   });
   tl.from(chars, {
     duration: 0.8,
@@ -69,41 +79,46 @@ onMounted(async () => {
     .from(
       ".quote_text",
       {
+        duration: 0.8,
         opacity: 0,
       },
-      1
-    )
+      "-=0.4"
+    ) // This will start 0.4 seconds before the previous animation ends.
     .to(
       ".dotsBlue",
       {
+        duration: 0.8,
         opacity: 1,
         top: "75px",
       },
-      1
-    )
+      "-=0.2"
+    ) // This will start 0.2 seconds before the previous animation ends.
     .from(
-      ".gsapimg ",
+      ".gsapimg",
       {
+        duration: 0.8,
         y: "-10%",
       },
-      1
+      "-=0.2"
     );
+onBeforeUnmount(() => {
+  myInfoText.revert();
+});
 });
 </script>
 
 <style>
 .quote,
 .quoteTwo {
-  @apply md:text-6xl leading-snug;
+  @apply text-4xl md:text-6xl leading-snug;
 }
 .dotsBlue {
   width: 100%;
   height: auto;
-  max-width: 434px;
-  max-height: 434px;
   z-index: 0;
   opacity: 0;
   left: 30px;
   top: 180px;
+  @apply max-h-[234px] max-w-[234px] md:max-h-[434px] md:max-w-[434px];
 }
 </style>

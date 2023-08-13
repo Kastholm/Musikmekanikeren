@@ -4,7 +4,7 @@
       <div
         v-for="klaver in data"
         :key="klaver._id"
-        class="w-full md:w-1/2 lg:w-1/2 mb-12 px-2"
+        class="w-full md:w-1/2 lg:w-1/3 mb-12 px-2"
       >
         <div class="relative bg-white rounded border">
           <picture class="block bg-gray-200 border-b">

@@ -58,7 +58,7 @@ onMounted(async () => {
         <span class="logo-bg"
           ><img
             class="logo"
-            src="https://kiwswbakieolzufmufjq.supabase.co/storage/v1/object/public/public/logo.png"
+            src="https://cdn.sanity.io/images/1f5ltia2/production/512bbd4914d06fd46e1dfca3086b178d042e7f4c-322x208.png"
             alt=""
         /></span>
         <li><NuxtLink to="/projekter"> Projekter</NuxtLink></li>
