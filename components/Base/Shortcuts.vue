@@ -17,11 +17,6 @@
             src="https://musikmekanikeren.dk/____impro/1/onewebmedia/S%C3%A6rlige%20projekter/Kasuga%20Les%20Paul%20Custom/Kasuga%20Les%20Paul%20Custom%202.jpg?etag=%22343f20-5c599b59%22&sourceContentType=image%2Fjpeg&rotate=270&ignoreAspectRatio&resize=670%2B503&extract=0%2B117%2B670%2B295&quality=85"
             alt="Image Description"
           />
-          <span
-            class="absolute top-0 right-0 rounded-tr-xl rounded-bl-xl text-xs font-medium bg-gray-800 text-cyangreen py-1.5 px-3 dark:bg-gray-900"
-          >
-            Sponsored
-          </span>
         </div>
 
         <div class="mt-7">
