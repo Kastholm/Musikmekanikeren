@@ -1,6 +1,6 @@
 <template v-if="data && data.length > 0">
-  <main v-for="type in data" :key="type._id" class="relative isolate">
-    <div v-if="type.title === kategori">
+  <main v-for="type in data" :key="type?._id" class="relative isolate">
+    <div >
       <div
         class="absolute inset-x-0 top-4 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
         aria-hidden="true"
@@ -90,7 +90,7 @@
           >
             <img
               class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-              src="https://i.ibb.co/FHYgZzC/pexels-anna-tarazevich-5963182-1.jpg"
+              :src="type.imgurl"
               alt=""
             />
           </div>
@@ -177,7 +177,7 @@
 </template>
 
 <script setup>
-import { ref, onMounted } from "vue";
+import { ref, onMounted, onBeforeMount } from "vue";
 import { useRouter, useRoute } from "vue-router";
 import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
 import {
@@ -202,36 +202,22 @@ const data = ref([]);
 onMounted(async () => {
   try {
     const type = router.currentRoute.value.query.type;
-    kategori.value = route.params.kategori; // brug route i stedet for useRoute().params
+    kategori.value = route.params.kategori;
+    console.log("Hentet type:", type);
+    console.log("Hentet kategori:", kategori.value); 
     let query;
-    kategori.value = useRoute().params.kategori;
-    switch (type) {
-      case "strenge":
-        query = groq`*[_type == "strenge" && title == "${kategori}"]`;
-        break;
-      case "klaver":
-        query = groq`*[_type == "klaver" && title == "${kategori}"]`;
-        break;
-      case "trommer":
-        query = groq`*[_type == "trommer" && title == "${kategori}"]`;
-        break;
-      case "PA":
-        query = groq`*[_type == "PA" && title == "${kategori}"]`;
-        break;
-      default:
-        console.error("Ugyldig type:", type);
-        return;
-    }
-
+      
+    query = groq`*[_type == "${type}" && title == "${kategori.value}"]`;
+    
+    console.log('Benyttet query:', query);
     const result = await useSanityQuery(query);
-    data.value = result.data;
+    console.log('Komplet result objekt:', result);
+    data.value = result.data._rawValue;
+    console.log("Overordnet data:", data.value);
   } catch (error) {
     console.error("Der opstod en fejl under hentning af data:", error);
   }
 });
-/* console.log(query + "is made of" + type + "and" + kategori);
-const query = groq`*[_type == "${type}" && title == "${kategori}"]`;
-const { data } = useSanityQuery(query); */
 </script>
 
 <style scoped></style>
