@@ -1,11 +1,13 @@
 # example netlify.toml
 [build]
-    command = """
+  command = """
     npm config set //npm.greensock.com/:_authToken $GSAP_AUTH_TOKEN &&
     npm config set @gsap:registry https://npm.greensock.com &&
     npm install gsap@npm:@gsap/shockingly &&
+    npm install gsap --registry https://npm.greensock.com &&
     npm config delete //npm.greensock.com/:_authToken &&
     npm config delete @gsap:registry &&
+    npm i &&
     npm run generate
   """
   functions = "netlify/functions"
