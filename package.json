@@ -5,7 +5,7 @@
     "prediv": "git pull && npm i && npm cache verify",
     "dev": "nuxt dev",
     "postdev": "echo 'Nuxt dev server started'",
-    "pregenrate": "npm config set //npm.greensock.com/:_authToken=1ded3c6b-0848-40fd-a209-097c9c59f2ed && npm config set @gsap:registry https://npm.greensock.com && npm install gsap@npm:@gsap/shockingly && npm install gsap --registry https://npm.greensock.com && npm config delete //npm.greensock.com/:_authToken && npm config delete @gsap:registry && npm i",
+    "pregenerate": "npm config set //npm.greensock.com/:_authToken=1ded3c6b-0848-40fd-a209-097c9c59f2ed && npm config set @gsap:registry https://npm.greensock.com && npm install gsap@npm:@gsap/shockingly && npm install gsap --registry https://npm.greensock.com && npm config delete //npm.greensock.com/:_authToken && npm config delete @gsap:registry && npm i",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
