@@ -3,7 +3,7 @@ import {FiTag} from 'react-icons/fi'
 
 export default {
   name: 'trommer',
-  title: 'Trommer',
+  title: 'Trommer Service',
   type: 'document',
   icon: FiTag,
   fields: [

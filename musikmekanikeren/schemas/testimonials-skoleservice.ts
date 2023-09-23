@@ -4,7 +4,7 @@ import {UsersIcon} from '@sanity/icons'
 export default {
   name: 'testimonials_skoleservice',
   type: 'document',
-  title: 'Testimonials-Skoleservice',
+  title: 'Testimonials På Skoleservice siden',
   icon: UsersIcon,
   fields: [
     defineField({

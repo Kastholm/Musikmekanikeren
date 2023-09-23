@@ -5,7 +5,7 @@ export default {
 
   name: 'testimonials',
   type: 'document',
-  title: 'Testimonials',
+  title: 'Testimonials På Forsiden',
   icon: UsersIcon,
   fields: [
      defineField({

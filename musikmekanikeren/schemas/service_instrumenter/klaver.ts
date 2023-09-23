@@ -3,7 +3,7 @@ import {FiTag} from 'react-icons/fi'
 
 export default {
   name: 'klaver',
-  title: 'Klaver',
+  title: 'Klaver Service',
   type: 'document',
   icon: FiTag,
   fields: [

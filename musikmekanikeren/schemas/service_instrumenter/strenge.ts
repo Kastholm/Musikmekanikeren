@@ -3,7 +3,7 @@ import {FiTag} from 'react-icons/fi'
 
 export default {
   name: 'strenge',
-  title: 'Strenge',
+  title: 'Strenge Service',
   type: 'document',
   icon: FiTag,
   fields: [
