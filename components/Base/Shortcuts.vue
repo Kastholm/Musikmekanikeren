@@ -1,7 +1,7 @@
 <template>
   <!-- Card Blog -->
   <div
-    class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto relative bg-smooth "
+    class="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto relative bg-[#304a4d] "
   >
     <!-- Title -->
     
@@ -21,11 +21,11 @@
 
         <div class="mt-7">
           <h3
-            class="text-xl font-semibold text-cyangreen group-hover:text-cyangreen dark:text-cyangreen"
+            class="text-xl font-semibold text-white group-hover:text-white dark:text-white"
           >
             Projekter
           </h3>
-          <p class="mt-3 text-cyangreen dark:text-cyangreen whitespace-normal">
+          <p class="mt-3 text-white dark:text-white whitespace-normal">
             Få indblik i nogle gode historier & billedserier for spændende
             instrumenter som har været igennem værkstedet..
           </p>
@@ -64,11 +64,11 @@
 
         <div class="mt-7">
           <h3
-            class="text-xl font-semibold text-cyangreen group-hover:text-cyangreen dark:text-cyangreen"
+            class="text-xl font-semibold text-white group-hover:text-white dark:text-white"
           >
             Hvem står bag Musik Mekanikeren?
           </h3>
-          <p class="mt-3 text-cyangreen dark:text-cyangreen whitespace-normal">
+          <p class="mt-3 text-white dark:text-white whitespace-normal">
             Læs mere om mig og min erfaring med musikinstrumenter og forstærkere igennem <br>de sidste 16 år..
           </p>
           <p

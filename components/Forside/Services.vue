@@ -114,7 +114,7 @@ onMounted(async () => {
             </span>
             <span>
               <h4>Reparation af et bred udvalg</h4>
-              <ul class="space-y-3 text-cyangreen">
+              <ul class="space-y-3 text-smooth">
                 <li class="flex gap-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -122,7 +122,7 @@ onMounted(async () => {
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-5 w-5 text-cyangreen"
+                    class="h-5 w-5 text-smooth"
                   >
                     <path
                       stroke-linecap="round"
@@ -139,7 +139,7 @@ onMounted(async () => {
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-5 w-5 text-cyangreen"
+                    class="h-5 w-5 text-smooth"
                   >
                     <path
                       stroke-linecap="round"
@@ -156,7 +156,7 @@ onMounted(async () => {
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-5 w-5 text-cyangreen"
+                    class="h-5 w-5 text-smooth"
                   >
                     <path
                       stroke-linecap="round"
@@ -173,7 +173,7 @@ onMounted(async () => {
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-5 w-5 text-cyangreen"
+                    class="h-5 w-5 text-smooth"
                   >
                     <path
                       stroke-linecap="round"
@@ -215,7 +215,7 @@ onMounted(async () => {
             </span>
             <span>
               <h4>Det får du med i løsningen</h4>
-              <ul class="space-y-3 text-cyangreen">
+              <ul class="space-y-3 text-smooth">
                 <li class="flex gap-3">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -223,7 +223,7 @@ onMounted(async () => {
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-5 w-5 text-cyangreen"
+                    class="h-5 w-5 text-smooth"
                   >
                     <path
                       stroke-linecap="round"
@@ -240,7 +240,7 @@ onMounted(async () => {
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-5 w-5 text-cyangreen"
+                    class="h-5 w-5 text-smooth"
                   >
                     <path
                       stroke-linecap="round"
@@ -257,7 +257,7 @@ onMounted(async () => {
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-5 w-5 text-cyangreen"
+                    class="h-5 w-5 text-smooth"
                   >
                     <path
                       stroke-linecap="round"
@@ -274,7 +274,7 @@ onMounted(async () => {
                     viewBox="0 0 24 24"
                     stroke-width="1.5"
                     stroke="currentColor"
-                    class="h-5 w-5 text-cyangreen"
+                    class="h-5 w-5 text-smooth"
                   >
                     <path
                       stroke-linecap="round"
@@ -349,7 +349,7 @@ onMounted(async () => {
   line-height: 5rem;
 }
 .showcase_text {
-  @apply grid gap-4 text-cyangreen leading-relaxed;
+  @apply grid gap-4 text-smooth leading-relaxed;
   flex-basis: 550px;
   flex-grow: 1;
 }
@@ -357,7 +357,7 @@ onMounted(async () => {
   @apply text-base;
 }
 .showcase_text span {
-  @apply mx-4 p-4 bg-smooth rounded-lg;
+  @apply mx-4 p-4 bg-[#304a4d] rounded-lg;
 }
 .showcase_text h4 {
   @apply mb-4;
