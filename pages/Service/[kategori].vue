@@ -1,6 +1,6 @@
 <template v-if="data && data.length > 0">
   <main v-for="type in data" :key="type?._id" class="relative isolate">
-    <div >
+    <div>
       <div
         class="absolute inset-x-0 top-4 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
         aria-hidden="true"
@@ -78,9 +78,7 @@
                   {{ type.title }}
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white-700">
-                  Hos Musik Mekanikeren gør vi en dyd ud af kvalitetsbevidst
-                  arbejde lavet i hænderne.... Arcu, sit dui mi, nibh dui, diam
-                  eget aliquam. Quisque id at vitae feugiat egestas.
+                  {{ type.description }}
                 </p>
               </div>
             </div>
@@ -101,72 +99,13 @@
               <div
                 class="max-w-xl text-base leading-7 text-white-700 lg:max-w-lg"
               >
-                <p>
-                  {{ type.description }}
-                </p>
-                <ul role="list" class="mt-8 space-y-8 text-white-600">
-                  <li class="flex gap-x-3">
-                    <CloudArrowUpIcon
-                      class="mt-1 h-5 w-5 flex-none text-white-600"
-                      aria-hidden="true"
-                    />
-                    <span
-                      ><strong class="font-semibold text-white-900"
-                        >Punkt 1.</strong
-                      >
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.</span
-                    >
-                  </li>
-                  <li class="flex gap-x-3">
-                    <LockClosedIcon
-                      class="mt-1 h-5 w-5 flex-none text-white-600"
-                      aria-hidden="true"
-                    />
-                    <span
-                      ><strong class="font-semibold text-white-900"
-                        >Punkt 2.</strong
-                      >
-                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                      irure qui lorem cupidatat commodo.</span
-                    >
-                  </li>
-                  <li class="flex gap-x-3">
-                    <ServerIcon
-                      class="mt-1 h-5 w-5 flex-none text-white-600"
-                      aria-hidden="true"
-                    />
-                    <span
-                      ><strong class="font-semibold text-white-900"
-                        >Punkt 3.</strong
-                      >
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.</span
-                    >
-                  </li>
-                </ul>
-                <p class="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
-                </p>
-                <h2
-                  class="mt-16 text-2xl font-bold tracking-tight text-white-900"
-                >
-                  Svært ved at give slip?
-                </h2>
-                <p class="mt-6">
-                  Vi forstår din ømhed overfor dit udstyr - frygt ej! Hos os kan
-                  du med ro i maven.... Convallis arcu ipsum urna nibh.
-                  Pharetra, euismod vitae interdum mauris enim, consequat
-                  vulputate nibh. Maecenas pellentesque id sed tellus mauris,
-                  ultrices mauris. Tincidunt enim cursus ridiculus mi.
-                  Pellentesque nam sed nullam sed diam turpis ipsum eu a sed
-                  convallis diam.
-                </p>
+                <div class="sanityBlock">
+                  <SanityBlocks
+                    :blocks="type.content"
+                    :serializers="serializers"
+                  />
+                </div>
+             
               </div>
             </div>
           </div>
@@ -194,7 +133,7 @@ import {
   SunIcon,
   UserGroupIcon,
 } from "@heroicons/vue/20/solid";
-
+import { SanityBlocks } from "sanity-blocks-vue-component";
 const router = useRouter();
 const route = useRoute();
 const kategori = ref("");
@@ -204,14 +143,14 @@ onMounted(async () => {
     const type = router.currentRoute.value.query.type;
     kategori.value = route.params.kategori;
     console.log("Hentet type:", type);
-    console.log("Hentet kategori:", kategori.value); 
+    console.log("Hentet kategori:", kategori.value);
     let query;
-      
+
     query = groq`*[_type == "${type}" && title == "${kategori.value}"]`;
-    
-    console.log('Benyttet query:', query);
+
+    console.log("Benyttet query:", query);
     const result = await useSanityQuery(query);
-    console.log('Komplet result objekt:', result);
+    console.log("Komplet result objekt:", result);
     data.value = result.data._rawValue;
     console.log("Overordnet data:", data.value);
   } catch (error) {
@@ -220,4 +159,8 @@ onMounted(async () => {
 });
 </script>
 
-<style scoped></style>
+<style>
+.sanityBlock li {
+  margin: 1em 0;
+}
+</style>

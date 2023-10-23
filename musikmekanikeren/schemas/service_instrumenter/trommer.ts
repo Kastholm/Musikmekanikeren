@@ -1,5 +1,5 @@
 //Schema for produkter i shoppen
-import {FiTag} from 'react-icons/fi'
+import { FiTag } from 'react-icons/fi'
 
 export default {
   name: 'trommer',
@@ -31,6 +31,17 @@ export default {
       title: 'Beskrivelse',
       validation: (Rule) => Rule.required(),
     },
+    {
+      name: 'content',
+      type: 'array',
+      title: 'Content',
+      of: [
+        {
+          type: 'block'
+        },
+      ],
+      validation: (Rule) => Rule.required(),
+    }
   ],
 }
 // Customise the preview so parents are visualised in the studio

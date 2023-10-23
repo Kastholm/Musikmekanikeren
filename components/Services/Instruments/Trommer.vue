@@ -46,6 +46,7 @@ import { useRouter } from "vue-router";
 const router = useRouter();
 const type = router.currentRoute.value.query.type;
 //make a for loop of 4
+
 </script>
 
 <style>
