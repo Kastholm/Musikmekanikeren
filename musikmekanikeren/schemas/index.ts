@@ -11,7 +11,10 @@ import klaver from './service_instrumenter/klaver'
 import PA from './service_instrumenter/PA'
 import bigUserStory from './fremhævedeBruger'
 import smallUserStory from './andreBrugerHistorier'
-export const schemaTypes = [testimonials, testimonials_skoleservice, strenge, trommer, klaver, PA, bigUserStory, smallUserStory]
+import beforeAfter from './beforeAfter'
+import individualIndretning from './individualIndretning'
+import keypoints from './keypoints'
+export const schemaTypes = [testimonials, testimonials_skoleservice, strenge, trommer, klaver, PA, bigUserStory, smallUserStory, beforeAfter, individualIndretning, keypoints]
 
 /* import T from '@sanity/base/initial-value-template-builder'
 
