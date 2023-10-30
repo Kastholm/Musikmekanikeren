@@ -105,7 +105,6 @@
                     :serializers="serializers"
                   />
                 </div>
-             
               </div>
             </div>
           </div>
@@ -134,10 +133,12 @@ import {
   UserGroupIcon,
 } from "@heroicons/vue/20/solid";
 import { SanityBlocks } from "sanity-blocks-vue-component";
+
 const router = useRouter();
 const route = useRoute();
 const kategori = ref("");
 const data = ref([]);
+
 onMounted(async () => {
   try {
     const type = router.currentRoute.value.query.type;

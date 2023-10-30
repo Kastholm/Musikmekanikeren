@@ -12,26 +12,41 @@
         with Preline.
       </p>
     </div>
-    <div  class="flex flex-row flex-wrap -mx-2">
-      <div v-for="story in data" :key="story.id" class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2">
-        <div class="relative bg-white rounded border">
-          <picture class="block bg-gray-200 border-b">
-            <img class="block" :src="story.imgurl" alt="Card 1" />
-          </picture>
-          <div class="p-4">
-            <h3 class="text-lg font-bold">
-              <a class="stretched-link text-gray-900" :title="story.historieTitle">
-                {{ story.historieTitle }}
-              </a>
-            </h3>
-            <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
-              >{{ story.historieDate }}</time
-            >
-            <p class="text-gray-800">
-              {{ story.historieText }}
-            </p>
+    <div class="flex flex-row flex-wrap -mx-2">
+      <div
+        v-for="story in data"
+        :key="story.id"
+        class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2"
+      >
+          <div class="relative bg-white rounded border">
+            <picture class="block bg-gray-200 border-b">
+              <img class="block" :src="story.imgurl" alt="Card Image" />
+            </picture>
+            <div class="p-4">
+              <NuxtLink :to="`/projekter/${story.historieTitle }`">
+                <h3 class="text-lg font-bold">
+                  <a
+                    class="stretched-link text-gray-900"
+                    :title="story.historieTitle"
+                  >
+                    {{ story.historieTitle }}
+                  </a>
+                </h3>
+              </NuxtLink>
+
+              <time
+                class="block mb-2 text-sm text-gray-600"
+                datetime="2019-01-01"
+                >{{ story.historieDate }}</time
+              >
+              <p class="text-gray-800">
+                {{ story.historieText }}
+              </p>
+              <span class="stretched-link text-[2rem] text-gray-800">{{
+                story.title
+              }}</span>
+            </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
@@ -44,4 +59,6 @@ const { data } = useSanityQuery(query);
 console.log(data);
 </script>
 
-<style></style>
+<style>
+/* Eventuelt kan du tilføje mere specifik styling her */
+</style>

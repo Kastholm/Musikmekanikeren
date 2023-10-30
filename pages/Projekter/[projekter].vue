@@ -1,48 +1,37 @@
-<template></template>
-
-
-
+<template>
+  <div v-for="story in data" :key="story.id" class="py-[20em]">
+    <h2>{{ story.historieTitle }}</h2>
+    <img :src="story.imgurl" alt="Historie Billede" />
+    <p>{{ story.historieText }}</p>
+  </div>
+</template>
 
 <script setup>
-import { ref, onMounted, onBeforeMount } from "vue";
-import { useRouter, useRoute } from "vue-router";
-import { Bars3Icon, XMarkIcon } from "@heroicons/vue/24/outline";
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/vue/20/solid";
-import {
-  AcademicCapIcon,
-  CheckCircleIcon,
-  HandRaisedIcon,
-  RocketLaunchIcon,
-  SparklesIcon,
-  SunIcon,
-  UserGroupIcon,
-} from "@heroicons/vue/20/solid";
-import { SanityBlocks } from "sanity-blocks-vue-component";
+import { ref, onMounted } from "vue";
+import { useRouter } from "vue-router";
+
+/* 
+let storyId = router.currentRoute.value.params.id;
+console.log('storyID', storyId) */
 const router = useRouter();
-const route = useRoute();
-const kategori = ref("");
-const data = ref([]);
-onMounted(async () => {
-  try {
-    const type = router.currentRoute.value.query.type;
-    kategori.value = route.params.kategori;
-    console.log("Hentet type:", type);
-    console.log("Hentet kategori:", kategori.value);
-    let query;
+console.log(router);
+const query = groq`*[_type == "smallUserStory" && historieTitle == "Nummer1" ]`;
+const { data } = useSanityQuery(query);
 
-    query = groq`*[_type == "${type}" && title == "${kategori.value}"]`;
+/* const storyData = ref({}); */
 
-    console.log("Benyttet query:", query);
-    const result = await useSanityQuery(query);
-    console.log("Komplet result objekt:", result);
-    data.value = result.data._rawValue;
-    console.log("Overordnet data:", data.value);
-  } catch (error) {
-    console.error("Der opstod en fejl under hentning af data:", error);
-  }
-});
+/* onMounted(async () => {
+  let query;
+
+  query = groq`*[_type == "smallUserStory" && _id == "${storyId}"][0]`; 
+  const response = await useSanityQuery(query); 
+
+  storyData.value = response.data;
+
+  console.log(storyData.value); 
+}); */
 </script>
+
+<style>
+/* Eventuelle styles du vil bruge */
+</style>
