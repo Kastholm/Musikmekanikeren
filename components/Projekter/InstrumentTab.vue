@@ -19,11 +19,11 @@
         class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2"
       >
           <div class="relative bg-white rounded border">
+              <NuxtLink :to="`/projekter/${story.historieTitle }`">
             <picture class="block bg-gray-200 border-b">
               <img class="block" :src="story.imgurl" alt="Card Image" />
             </picture>
             <div class="p-4">
-              <NuxtLink :to="`/projekter/${story.historieTitle }`">
                 <h3 class="text-lg font-bold">
                   <a
                     class="stretched-link text-gray-900"
@@ -32,7 +32,6 @@
                     {{ story.historieTitle }}
                   </a>
                 </h3>
-              </NuxtLink>
 
               <time
                 class="block mb-2 text-sm text-gray-600"
@@ -46,6 +45,7 @@
                 story.title
               }}</span>
             </div>
+              </NuxtLink>
           </div>
       </div>
     </div>

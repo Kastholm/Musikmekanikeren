@@ -9,8 +9,8 @@ module.exports = {
     extend: {
       colors: {
         Metric: "#222222",
-        /* cyangreen: "#273e3f", */
-        cyangreen: "black",
+        cyangreen: "#273e3f",
+        /* cyangreen: "black", */
         smooth: "#FAF9F7",
         elipse: "#191919",
         //smooth: "#FAF9F7"
