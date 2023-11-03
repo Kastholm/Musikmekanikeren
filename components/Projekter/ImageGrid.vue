@@ -1,7 +1,7 @@
 <template>
   <section>
-    <!-- Title -->
-    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+    
+   <!--  <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
       <h2
         class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
       >
@@ -12,7 +12,7 @@
         with Preline.
       </p>
     </div>
-    <!-- End Title -->
+  
     <Swiper
       class="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto"
       :modules="[SwiperAutoplay, SwiperEffectCreative, SwiperNavigation]"
@@ -46,8 +46,7 @@
     >
       <SwiperSlide v-for="story in data" :key="story.id" class="slider">
         <div>
-          <!-- Card -->
-          <!-- Carousel Body -->
+        
           <div
             class="relative rounded-lg block md:flex items-center bg-gray-100 shadow-xl"
             style="min-height: 23rem"
@@ -85,7 +84,7 @@
       </SwiperSlide>
       <div class="swiper-button-next"></div>
       <div class="swiper-button-prev"></div>
-    </Swiper>
+    </Swiper> -->
   </section>
 </template>
 
@@ -98,7 +97,7 @@ console.log(data);
 </script>
 
 <style scoped>
-.slider {
+/* .slider {
   display: inline-block;
   padding: 20px;
 
@@ -112,5 +111,5 @@ console.log(data);
 .slider:hover {
   transform: scale(1.05);
   box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
-}
+} */
 </style>

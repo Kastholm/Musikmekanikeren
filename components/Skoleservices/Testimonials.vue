@@ -45,18 +45,7 @@ const { data } = useSanityQuery(query);
         </div>
       </SwiperSlide>
     </Swiper>
- <img
-        class="m-auto pb-8 w-[13em]"
-        src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
-        alt=""
-      />
-    <!-- <div class="bg-red-200 grid place-content-center">
-      <h2>Musik Mekanikeren er Autoriseret Servicecenter for</h2>
-      <img
-        src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
-        alt=""
-      />
-    </div> -->
+ 
   </section>
 </template>
 

@@ -35,7 +35,7 @@ onMounted(async () => {
   <section
     class="relative z-10 bg-smooth py-4 md:py-8 m-auto px-4 sm:px-6 lg:px-8"
   >
-    <h2 class="text-Metric text-center mb-4 text-5xl">
+    <h2 class="text-Metric text-center mt-8 mb-16 text-5xl">
       Hvilket instrument ønsker du repareret?
     </h2>
     <!-- <div class="group hidden md:block">

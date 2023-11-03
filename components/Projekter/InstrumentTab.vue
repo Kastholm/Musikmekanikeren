@@ -16,7 +16,7 @@
       <div
         v-for="story in data"
         :key="story.id"
-        class="w-full sm:w-1/2 md:w-1/3 mb-4 px-2"
+        class="w-full sm:w-1/2 md:w-1/4 mb-4 px-2"
       >
           <div class="relative bg-white rounded border">
               <NuxtLink :to="`/projekter/${story.historieTitle }`">
