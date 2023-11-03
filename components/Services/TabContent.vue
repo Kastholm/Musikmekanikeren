@@ -32,11 +32,13 @@ onMounted(async () => {
 </script>
 
 <template>
-  <section class="relative z-10 py-4 md:py-8 m-auto px-4 sm:px-6 lg:px-8">
-    <h2 class="text-smooth text-center mb-4 text-5xl">
+  <section
+    class="relative z-10 bg-smooth py-4 md:py-8 m-auto px-4 sm:px-6 lg:px-8"
+  >
+    <h2 class="text-Metric text-center mb-4 text-5xl">
       Hvilket instrument ønsker du repareret?
     </h2>
-    <div class="group hidden md:block">
+    <!-- <div class="group hidden md:block">
       <div
         class="item itemFirst w-[25em] relative"
         style="
@@ -86,7 +88,68 @@ onMounted(async () => {
           <span></span>
         </div>
       </div>
+    </div> -->
+
+    <div>
+      <div class="">
+        <nav class=" flex">
+          <div
+            @click="selectedInstrument = 'Strenge'"
+            :class="
+              selectedInstrument === 'Strenge'
+                ? 'bg-cyangreen text-xl border-transparent'
+                : 'bg-Metric hover:bg-cyangreen hover:scale-[1.01]  transform transition border-b-2'
+            "
+            class="hover:cursor-pointer rounded-t-lg mr-1 text-center w-1/4 py-6 px-1"
+          >
+            <h2 class="text-xl">Strengeinstrumenter</h2>
+          </div>
+          <div
+            @click="selectedInstrument = 'Trommer'"
+            :class="
+              selectedInstrument === 'Trommer'
+                ? 'bg-cyangreen text-xl border-transparent'
+                : 'bg-Metric hover:bg-cyangreen hover:scale-[1.01]  transform transition border-b-2'
+            "
+            class="hover:cursor-pointer rounded-t-lg mr-1 text-center w-1/4 py-6 px-1"
+          >
+            <h2 class="text-xl">Trommer & Slagtøj</h2>
+          </div>
+          <div
+            @click="selectedInstrument = 'Klaver'"
+            :class="
+              selectedInstrument === 'Klaver'
+                ? 'bg-cyangreen text-xl border-transparent'
+                : 'bg-Metric hover:bg-cyangreen hover:scale-[1.01]  hover:bg-cayangreen transform transition border-b-2'
+            "
+            class="hover:cursor-pointer rounded-t-lg text-center w-1/4 py-6 px-1"
+          >
+            <h2 class="text-xl">Klaverer & Keyboards</h2>
+          </div>
+          <div
+            @click="selectedInstrument = 'PA'"
+            :class="
+              selectedInstrument === 'PA'
+                ? 'bg-cyangreen text-2xl border-transparent'
+                : 'bg-Metric hover:bg-cyangreen hover:scale-[1.01]  transform transition border-b-2'
+            "
+            class="hover:cursor-pointer rounded-t-lg ml-1 text-center w-1/4 py-6 px-1"
+          >
+            <h2 class="text-xl">Forstærkere & PA</h2>
+          </div>
+        </nav>
+      </div>
+
+      <div class="bg-cyangreen rounded-b-lg" ref="contentWrapper">
+        <ServicesInstrumentsStrenge v-if="selectedInstrument === 'Strenge'" />
+        <ServicesInstrumentsTrommer v-if="selectedInstrument === 'Trommer'" />
+        <ServicesInstrumentsKlaver v-if="selectedInstrument === 'Klaver'" />
+        <ServicesInstrumentsPA v-if="selectedInstrument === 'PA'" />
+      </div>
+
+      <!-- Tab Content går her -->
     </div>
+
     <div class="inline md:hidden grid grid-cols-1 gap-2 place-content-center">
       <span
         class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer"
@@ -110,12 +173,6 @@ onMounted(async () => {
       >
     </div>
   </section>
-  <div ref="contentWrapper">
-    <ServicesInstrumentsStrenge v-if="selectedInstrument === 'Strenge'" />
-    <ServicesInstrumentsTrommer v-if="selectedInstrument === 'Trommer'" />
-    <ServicesInstrumentsKlaver v-if="selectedInstrument === 'Klaver'" />
-    <ServicesInstrumentsPA v-if="selectedInstrument === 'PA'" />
-  </div>
 </template>
 <style>
 .group {

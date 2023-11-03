@@ -4,36 +4,36 @@
       <div
         v-for="PA in data"
         :key="PA._id"
-        class="w-full md:w-1/2 lg:w-1/3 mb-12 px-2"
+        class="w-full md:w-1/2 lg:w-1/3 mb-12 px-2 hover:scale-[1.005] hover:shadow-black"
       >
-        <div class="relative bg-white rounded border">
-          <picture class="block bg-gray-200 border-b">
-            <img class="block" :src="PA.imgurl" :alt="PA.title" />
-          </picture>
-          <div class="p-4 relative">
-            <h3
-              class="text-lg font-bold absolute -top-10 left-0 p-2 bg-white rounded-tr-lg"
-            >
-              <NuxtLink
-                class="stretched-link text-[2rem] text-gray-800"
-                :to="'/Service/' + PA.title + '?type=PA'"
-                title="Card 1"
+        <NuxtLink
+          class="stretched-link text-[2rem] text-gray-800"
+          :to="'/Service/' + PA.title + '?type=PA'"
+          title="Card 1"
+        >
+          <div class="relative bg-white rounded border">
+            <picture class="block bg-gray-200 border-b">
+              <img class="block" :src="PA.imgurl" :alt="PA.title" />
+            </picture>
+            <div class="p-4 relative">
+              <h3
+                class="text-2xl  font-bold absolute -top-10 left-0 p-2 bg-white rounded-tr-lg"
               >
                 {{ PA.title }}
-              </NuxtLink>
-            </h3>
-            <!-- <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
+              </h3>
+              <!-- <time class="block mb-2 text-sm text-gray-600" datetime="2019-01-01"
               >1st January 2019</time
             > -->
-            <p
-              class="text-gray-800 readMore"
-              :class="{ expanded: PA.expanded }"
-              @click="PA.expanded = !PA.expanded"
-            >
-              {{ PA.description }}
-            </p>
+              <p
+                class="text-gray-800 readMore"
+                :class="{ expanded: PA.expanded }"
+                @click="PA.expanded = !PA.expanded"
+              >
+                {{ PA.description }}
+              </p>
+            </div>
           </div>
-        </div>
+        </NuxtLink>
       </div>
     </div>
   </div>
@@ -50,26 +50,7 @@ const type = router.currentRoute.value.query.type;
 
 <style>
 .readMore {
-  height: 4.5em;
+  height: fit-content;
   overflow: hidden;
-}
-.expanded {
-  height: 100%;
-}
-.readMore::after {
-  content: "Læs mere \A \2193";
-  white-space: pre;
-  position: absolute;
-  display: grid;
-  place-content: center;
-  bottom: -40px;
-  right: 45%;
-  width: fit-content;
-  text-align: center;
-  padding: 0.5em;
-  height: 3em;
-  color: white;
-  border-radius: 10px;
-  background: rgb(54, 48, 48);
 }
 </style>
