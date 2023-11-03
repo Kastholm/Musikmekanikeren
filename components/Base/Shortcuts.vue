@@ -10,7 +10,8 @@
     <!-- Grid -->
     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-[85rem] m-auto">
       <!-- Card -->
-      <a class="group rounded-xl overflow-hidden" href="#">
+      <div class="group rounded-xl overflow-hidden">
+        <NuxtLink to="/projekter">
         <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
           <img
             class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
@@ -49,11 +50,13 @@
             </svg>
           </p>
         </div>
-      </a>
+      </NuxtLink>
+      </div>
       <!-- End Card -->
 
       <!-- Card -->
-      <a class="group rounded-xl overflow-hidden" href="#">
+      <div class="group rounded-xl overflow-hidden">
+        <NuxtLink to="/omos">
         <div class="relative pt-[50%] sm:pt-[70%] rounded-xl overflow-hidden">
           <img
             class="w-full h-full absolute top-0 left-0 object-cover group-hover:scale-105 transition-transform duration-500 ease-in-out rounded-xl"
@@ -91,15 +94,15 @@
             </svg>
           </p>
         </div>
-      </a>
+      </NuxtLink>
+      </div>
       <!-- End Card -->
 
       <!-- Card -->
-      <a
-        class="group relative flex flex-col w-full min-h-[15rem] bg-center bg-cover rounded-xl hover:shadow-lg transition bg-[url('https://i.ibb.co/JHHXnF2/chris-hardy-xu-47ojzho8-unsplash.jpg')]"
-        href="#"
-      >
-        <div class="flex-auto p-4 md:p-6">
+      <div
+        class="group relative flex flex-col w-full min-h-[15rem] bg-center bg-cover rounded-xl hover:shadow-lg transition bg-[url('https://i.ibb.co/JHHXnF2/chris-hardy-xu-47ojzho8-unsplash.jpg')]">
+        <NuxtLink to="/kontakt"> 
+        <div class="flex-auto p-4 md:p-6 h-full">
           <h3 class="text-xl text-white/[.9] group-hover:text-white whitespace-normal ">
             <span class="font-bold text-3xl">Kontakt os her på siden</span> 
             <p class=" text-xltranslate-y-4">
@@ -107,9 +110,9 @@
             </p>
           </h3>
         </div>
-        <div class="pt-0 p-4 md:p-6">
+        <div class=" h-full pt-14">
           <div
-            class="inline-flex items-center gap-2 text-sm font-medium text-white group-hover:text-white/[.7]"
+            class="inline-flex gap-2 text-sm font-medium text-white group-hover:text-white/[.7] h-full items-end lg:-translate-y-0 -translate-y-[320px]" 
           >
             Kontakt
             <svg
@@ -128,7 +131,8 @@
             </svg>
           </div>
         </div>
-      </a>
+      </NuxtLink>
+      </div>
       <!-- End Card -->
     </div>
     <!-- End Grid -->
