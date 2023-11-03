@@ -117,7 +117,7 @@ onMounted(async () => {
 
 <style>
 .heroBg {
-  background-image: url("https://images-ext-1.discordapp.net/external/fdbZQta670jFTyPb0wwIzsR9cRDYDOngtis5xtN44g4/%3Fetag%3D%25221b9763-5be21834%2522%26sourceContentType%3Dimage%252Fjpeg%26quality%3D85/https/musikmekanikeren.dk/____impro/1/onewebmedia/Privat/Musik%2520Mekanikeren%2520Lodning%2520Elektronik.JPG?width=689&height=722");
+  background-image: url("https://cdn.sanity.io/images/1f5ltia2/production/b1cacd887d2f0c4442f12265fb137c821d33d87b-689x722.jpg");
   @apply bg-cover   relative;
 }
 #abc {

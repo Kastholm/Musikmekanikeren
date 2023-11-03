@@ -28,7 +28,7 @@
       <!-- End Col -->
 
       <div class="relative ml-4">
-          <span class="heroBg hidden md:block h-[25em] border-r-8 border-t-8 border-[#304a4d] gradient-border"></span>
+          <span class="heroBg block h-[25em] border-r-8 border-t-8 border-[#304a4d] gradient-border"></span>
 
           <div
             class="absolute inset-0 -z-[1] bg-gradient-to-tr from-[#304a4d] via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"
