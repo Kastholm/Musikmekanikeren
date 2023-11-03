@@ -57,7 +57,6 @@ onMounted(async () => {
   ScrollTrigger.create({
     animation: tl,
     trigger: ".quoteTwo",
-    //markers:true,
     start: "top 75%",
     end: "bottom center",
     scrub: 1,
@@ -101,9 +100,9 @@ onMounted(async () => {
       },
       "-=0.2"
     );
-onBeforeUnmount(() => {
-  myInfoText.revert();
-});
+  onBeforeUnmount(() => {
+    myInfoText.revert();
+  });
 });
 </script>
 

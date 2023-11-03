@@ -38,66 +38,58 @@ onMounted(async () => {
     <h2 class="text-Metric text-center mt-8 mb-16 text-5xl">
       Hvilket instrument ønsker du repareret?
     </h2>
-    <!-- <div class="group hidden md:block">
-      <div
-        class="item itemFirst w-[25em] relative"
-        style="
-          background-image: url(https://images.pexels.com/photos/1407322/pexels-photo-1407322.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
-        "
+    <div
+      class="inline bg-cyangreen lg:hidden p-4 lg:p-0 lg:mb-4 grid grid-cols-1 gap-2 place-content-center"
+    >
+      <span
+        class="w-full h-12 text-center grid place-content-center cursor-pointer"
         @click="selectedInstrument = 'Strenge'"
-      >
-        <div class="itemContext">
-          <span><h2>Strenge</h2></span>
-          <span></span>
-        </div>
-      </div>
-      <div
-        class="item"
-        style="
-          background-image: url(https://images.pexels.com/photos/995301/pexels-photo-995301.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        :class="
+          selectedInstrument === 'Strenge'
+            ? 'bg-smooth text-Metric text-xl border-transparent'
+            : 'bg-Metric hover:bg-cyangreen hover:scale-[1.01]  transform transition border-b-2'
         "
+        ><p>Strenge</p></span
+      >
+      <span
+        class="w-full h-12 text-center grid place-content-center cursor-pointer"
         @click="selectedInstrument = 'Trommer'"
-      >
-        <div class="itemContext">
-          <span><h2>Trommer</h2></span>
-          <span></span>
-        </div>
-      </div>
-      <br class="block md:hidden" />
-      <div
-        class="item"
-        style="
-          background-image: url(https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        :class="
+          selectedInstrument === 'Trommer'
+            ? 'bg-smooth text-Metric text-xl border-transparent'
+            : 'bg-Metric hover:bg-cyangreen hover:scale-[1.01]  transform transition border-b-2'
         "
+        ><p>Trommer</p></span
+      >
+      <span
+        class="w-full h-12 text-center grid place-content-center cursor-pointer"
         @click="selectedInstrument = 'Klaver'"
-      >
-        <div class="itemContext">
-          <span><h2>Klaver</h2></span>
-          <span></span>
-        </div>
-      </div>
-      <div
-        class="item"
-        style="
-          background-image: url(https://images.pexels.com/photos/462439/pexels-photo-462439.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        :class="
+          selectedInstrument === 'Klaver'
+            ? 'bg-smooth text-Metric text-xl border-transparent'
+            : 'bg-Metric hover:bg-cyangreen hover:scale-[1.01]  transform transition border-b-2'
         "
-        @click="selectedInstrument = 'PA'"
+        ><p>Klaver</p></span
       >
-        <div class="itemContext">
-          <span><h2>PA</h2></span>
-          <span></span>
-        </div>
-      </div>
-    </div> -->
-
+      <span
+        class="bg-Metric w-full h-12 text-center grid place-content-center cursor-pointer"
+        @click="selectedInstrument = 'PA'"
+        :class="
+          selectedInstrument === 'PA'
+            ? 'bg-smooth text-Metric text-xl border-transparent'
+            : 'bg-Metric hover:bg-cyangreen hover:scale-[1.01]  transform transition border-b-2'
+        "
+        ><p>Elek</p></span
+      >
+    </div>
     <div>
-      <div class="">
-        <nav class=" flex">
+      <div class="hidden lg:block">
+        <nav class="flex">
           <div
             @click="selectedInstrument = 'Strenge'"
             :class="
               selectedInstrument === 'Strenge'
-                ? 'bg-cyangreen text-xl border-transparent'
+                ? 'bg-cyangreen  text-xl border-transparent'
                 : 'bg-Metric hover:bg-cyangreen hover:scale-[1.01]  transform transition border-b-2'
             "
             class="hover:cursor-pointer rounded-t-lg mr-1 text-center w-1/4 py-6 px-1"
@@ -140,7 +132,7 @@ onMounted(async () => {
         </nav>
       </div>
 
-      <div class="bg-cyangreen rounded-b-lg" ref="contentWrapper">
+      <div class="bg-cyangreen pt-6 lg:pt-0 rounded-b-lg" ref="contentWrapper">
         <ServicesInstrumentsStrenge v-if="selectedInstrument === 'Strenge'" />
         <ServicesInstrumentsTrommer v-if="selectedInstrument === 'Trommer'" />
         <ServicesInstrumentsKlaver v-if="selectedInstrument === 'Klaver'" />
@@ -148,29 +140,6 @@ onMounted(async () => {
       </div>
 
       <!-- Tab Content går her -->
-    </div>
-
-    <div class="inline md:hidden grid grid-cols-1 gap-2 place-content-center">
-      <span
-        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer"
-        @click="selectedInstrument = 'Strenge'"
-        ><p>Strenge</p></span
-      >
-      <span
-        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer"
-        @click="selectedInstrument = 'Trommer'"
-        ><p>Trommer</p></span
-      >
-      <span
-        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer"
-        @click="selectedInstrument = 'Klaver'"
-        ><p>Klaver</p></span
-      >
-      <span
-        class="bg-indigo-600 w-full h-12 text-center grid place-content-center cursor-pointer"
-        @click="selectedInstrument = 'PA'"
-        ><p>Elek</p></span
-      >
     </div>
   </section>
 </template>

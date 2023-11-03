@@ -53,7 +53,7 @@ onMounted(() => {
     >
       <SwiperSlide v-for="testimonials in data" v-bind:key="testimonials._id">
         <div class="testi_container">
-          <span class="testi_box cursor-grabbing ">
+          <span class="testi_box cursor-grabbing">
             <h3>{{ testimonials.navn }} - {{ testimonials.by }}</h3>
             <img
               class="w-24 bg-smooth my-1"
@@ -68,7 +68,7 @@ onMounted(() => {
         </div>
       </SwiperSlide>
     </Swiper>
-  <!--   <img
+    <!--   <img
       class="m-auto pb-8 w-[13em]"
       src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
       alt=""
@@ -88,7 +88,7 @@ onMounted(() => {
   @apply text-center bg-smooth text-Metric;
 }
 .testi_section h2 {
-  @apply text-2xl py-8 md:text-4xl md:py-4 md:px-4;
+  @apply text-2xl py-8 md:text-4xl px-4 pb-0 md:pb-4 md:py-4 ;
 }
 .testi_section h2::after {
   @apply block w-1/2 mx-auto mt-2 h-1 bg-gray-100;

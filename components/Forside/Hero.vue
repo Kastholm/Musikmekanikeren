@@ -1,7 +1,6 @@
 <template>
-  <!-- <div class="relative z-30  w-screen" ></div> -->
   <!-- Hero -->
-  <main id="abc" class="w-screen h-[40em]">
+  <main id="abc" class="w-screen">
     <div
       class="max-w-[85rem] mx-auto px-4 sm:px-6 lg:px-8 pt-[7em] relative z-30"
     >
@@ -14,13 +13,7 @@
             class="block text-3xl relative font-bold text-gray-800 sm:text-4xl md:text-2xl lg:text-6xl lg:leading-tight dark:text-white quote"
           >
             Lad os reparer dit instrument
-            <!-- <span class="text-cyangreen">Preline</span> -->
           </h1>
-          <!--   <img
-            class="absolute top-16 right-16 rotate-[-20deg] w-[10em]"
-            src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
-            alt=""
-          /> -->
           <span class="heroBg md:hidden block h-[10em]"></span>
           <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
             Det kræver stor tillid at aflevere sit højtelskede og værdsatte
@@ -83,29 +76,13 @@
         <!-- End Col -->
 
         <div class="relative ml-4">
-          <span class="heroBg rounded-sm hidden md:block h-[25em] border-r-8 border-t-8 border-[#304a4d] gradient-border"></span>
+          <span
+            class="heroBg rounded-sm hidden md:block h-[25em] border-r-8 border-t-8 border-[#304a4d] gradient-border"
+          ></span>
 
           <div
             class="absolute inset-0 -z-[1] bg-gradient-to-tr from-[#304a4d] via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"
           ></div>
-
-          <!-- SVG-->
-        <!-- <div class="absolute bottom-0 left-0">
-          <svg
-            class="ml-auto h-auto text-white dark:text-slate-900"
-            width="630"
-            height="451"
-            viewBox="0 0 630 451"
-            fill="red"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-
-            <rect x="0" y="439" width="624" height="12" fill="#304a4d" />
-            <rect x="612" y="31" width="12" height="580" fill="#304a4d" />
-            
-          </svg>
-        </div> -->
-        <!-- End SVG-->
         </div>
         <!-- End Col -->
       </div>
@@ -148,15 +125,7 @@ onMounted(async () => {
   background-image: url("https://images-ext-1.discordapp.net/external/fdbZQta670jFTyPb0wwIzsR9cRDYDOngtis5xtN44g4/%3Fetag%3D%25221b9763-5be21834%2522%26sourceContentType%3Dimage%252Fjpeg%26quality%3D85/https/musikmekanikeren.dk/____impro/1/onewebmedia/Privat/Musik%2520Mekanikeren%2520Lodning%2520Elektronik.JPG?width=689&height=722");
   @apply bg-cover   relative;
 }
-
-/* /* #abc {
+#abc {
   background: linear-gradient(to bottom, #222222, #273e3f, #222222, #222222);
-} */
-/*
-.heroShadow {
-     @apply bg-black/0 h-[35em] relative;
 }
-.heroBg span {
-     @apply block text-[14em] absolute left-4 bottom-0 leading-[.8em];
-} */
 </style>

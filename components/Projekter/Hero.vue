@@ -43,6 +43,11 @@
 <script setup></script>
 
 <style>
+
+#abc {
+  background: linear-gradient(to bottom, #222222, #273e3f, #222222, #222222);
+}
+
 .gradient-border {
   position: relative;
   padding-bottom: 8px; /* Adjust as needed */

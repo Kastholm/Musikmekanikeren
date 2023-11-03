@@ -41,7 +41,6 @@ onMounted(async () => {
     animation: navBg,
     trigger: ".mainNav",
     scrub: 1,
-    markers: true,
     start: "top -10% ",
     end: "bottom 20%",
     toggleActions: "restart none none none",

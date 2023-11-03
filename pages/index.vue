@@ -4,7 +4,6 @@
   <ForsideTestimonials />
   <ForsideInfo />
   <ForsideServices />
-  <ForsideInstrumenter />
   <div>
     <main>
     </main>

@@ -77,17 +77,7 @@ onMounted(async () => {
 });
 </script>
 <template>
-  <div class="overflow-hidden w-full relative">
-    <div
-      class="float flex justify-center items-center py-4 font-bold text-[2rem] lg:text-[5rem] xl:text-[6rem] font-header text-zinc-100 space-x-8 lg:space-x-16"
-    >
-      <span class="opacity-25">MUSIKMEKANIKEREN</span>
-      <span class="opacity-25">MUSIKMEKANIKEREN</span>
-      <span>MUSIKMEKANIKEREN</span>
-      <span class="opacity-25">MUSIKMEKANIKEREN</span>
-      <span class="opacity-25">MUSIKMEKANIKEREN</span>
-    </div>
-  </div>
+  
   <div class="circlePath"></div>
   <section class="wrapper relative portfolio">
     
@@ -357,7 +347,7 @@ onMounted(async () => {
   @apply text-base;
 }
 .showcase_text span {
-  @apply mx-4 p-4 bg-smooth rounded-lg;
+  @apply md:mx-4 p-4 bg-smooth rounded-lg;
 }
 .showcase_text h4 {
   @apply mb-4;

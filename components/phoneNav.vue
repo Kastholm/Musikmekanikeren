@@ -1,9 +1,8 @@
 <template>
   <header
-    style="z-index: 9"
-    class="bg-gray-800 z-10 fixed w-screen block md:hidden"
+    class="bg-gray-800 z-40 fixed w-screen block md:hidden"
   >
-    <nav
+    <nav style="z-index: 999;"
       class="mx-auto flex z-50 max-w-7xl items-center justify-between p-6 lg:px-8"
       aria-label="Global"
     >
@@ -48,7 +47,7 @@
             leave-to-class="opacity-0 translate-y-1"
           >
             <PopoverPanel
-              class="absolute -left-8 top-full z-10 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
+              class="absolute -left-8 top-full z-30 mt-3 w-screen max-w-md overflow-hidden rounded-3xl bg-white shadow-lg ring-1 ring-gray-900/5"
             >
               <div class="p-4">
                 <div
@@ -182,7 +181,7 @@
               <XMarkIcon class="h-6 w-6" aria-hidden="true" />
             </button>
           </div>
-          <div class="mt-6 flow-root">
+          <div class="mt-16 flow-root">
             <div class="-my-6 divide-y divide-gray-500/10">
               <div class="space-y-2 py-6">
                 <NuxtLink
