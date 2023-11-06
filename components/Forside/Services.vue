@@ -28,8 +28,8 @@ onMounted(async () => {
     animation: banner,
     trigger: ".float",
     scrub: 1,
-    start: "top 90% ",
-    end: "bottom 20%",
+    start: "top 100% ",
+    end: "bottom 130%",
     toggleActions: "restart none none none",
   });
 
@@ -77,17 +77,15 @@ onMounted(async () => {
 });
 </script>
 <template>
-  
   <div class="circlePath"></div>
   <section class="wrapper relative portfolio">
-    
     <ServiceTabs>
       <ServiceTab title="Service" class="showcase">
         <div class="tab_content">
           <div
             class="showcase_img rounded-xl"
             style="
-              background-image: url('https://getpaidstock.com/tmp/[GetPaidStock.com]-64020433685fc.jpg');
+              background-image: url('https://cdn.sanity.io/images/1f5ltia2/production/ea989f89ca96871b44ae040e6bdcaa17cd3a653c-1440x1000.jpg');
             "
           >
             <h3 class="showcase_title">SERVICE</h3>
@@ -185,7 +183,7 @@ onMounted(async () => {
           <div
             class="showcase_img rounded-xl"
             style="
-              background-image: url('https://musikmekanikeren.dk/____impro/1/onewebmedia/Kundemappe/Skoleservice/Musik%20Mekanikeren%20Skole%20Service%20Indretning%20Assentoftskolen%20EFTER.jpg?etag=%22fe73f-61d8bfca%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=1448%2B1086&extract=0%2B16%2B1440%2B1012&quality=85');
+              background-image: url('https://cdn.sanity.io/images/1f5ltia2/production/9895f1144c9f3e767a89ccb1303c78741ad375c7-1440x992.jpg');
             "
           >
             <h3 class="showcase_title text-md">Skole Service</h3>

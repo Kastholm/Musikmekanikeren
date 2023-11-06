@@ -35,7 +35,7 @@ onMounted(async () => {
     <SkoleservicesCTA />
     <SkoleservicesTestimonials />
     <div class="bg-cyangreen mt-4 py-8 grid">
-      <h2 class="text-5xl m-auto py-8">Se vores tidligere løsninger</h2>
+      <h2 class="text-5xl m-auto py-8 text-center">Se vores tidligere løsninger</h2>
 
       <div
         v-for="(beforeAfter, index) in data"
