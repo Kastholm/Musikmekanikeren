@@ -1,5 +1,11 @@
 <template>
-  <main v-for="story in data" :key="story.id" class="relative isolate">
+  <div
+    v-if="!data || data.length === 0"
+    class="flex justify-center items-center h-screen"
+  >
+    <div class="loader"></div>
+  </div>
+  <main v-else v-for="story in data" :key="story.id" class="relative isolate">
     <div>
       <div
         class="absolute inset-x-0 top-4 -z-10 flex transform-gpu justify-center overflow-hidden blur-3xl"
@@ -77,7 +83,7 @@
                   {{ story.historieTitle }}
                 </h1>
 
-                <p class="mt-6 text-xl leading-8 text-white-700">
+                <p class="mt-6 text-lg leading-8 text-white-700">
                   {{ story.historieText }}
                 </p>
               </div>
@@ -87,7 +93,7 @@
             class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
           >
             <img
-              class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
+              class="w-[38rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[32rem]"
               :src="story.imgurl"
               alt=""
             />
@@ -111,16 +117,40 @@
         </div>
       </div>
     </div>
-    <div class="max-w-screen-xl mx-auto p-4">
-      <div v-for="(section, index) in story.sections" :key="section._key" :class="sectionClass(index)" class="my-8">
+    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+      <h2
+        class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
+      >
+        Følg med i projektet
+      </h2>
+      <p class="mt-1 text-gray-600 dark:text-gray-400">
+        Se trin for trin hvordan projektet er forløbet
+      </p>
+    </div>
+    <div class="mx-auto">
+      <div
+        v-for="(section, index) in story.sections"
+        :key="section._key"
+        :class="{
+          'bg-smooth text-black': index % 2 === 0,
+          'bg-Metric text-white': index % 2 !== 0,
+        }"
+        class="py-16 mb-12"
+      >
         <!-- Billede del -->
-        <div class="flex flex-wrap -mx-2 mb-6">
-          <div class="w-full md:w-1/2 px-2">
-            <img
-              :src="section.imgurl"
-              alt="Sektions Billede"
-              class="w-full rounded-lg shadow-md"
-            />
+        <div class="flex flex-wrap justify-center m-auto max-w-screen-xl">
+          <div class="w-full md:w-1/2 px-6 relative">
+            <div
+              :style="{ backgroundImage: `url('${section.imgurl}')` }"
+              class="w-full rounded-lg shadow-md bg-cover bg-center h-[20em]"
+            >
+              <!-- Nummerering her -->
+              <div class="absolute bottom-0 left-6 p-2 bg-white rounded-tr-lg">
+                <span class="font-bold text-Metric text-2xl">{{
+                  index + 1
+                }}</span>
+              </div>
+            </div>
           </div>
 
           <!-- Tekst del -->
@@ -157,9 +187,9 @@ console.log("her er det nye", query);
 const story = ref({}); // eksempel initial værdi, du kan binde det til en egentlig datakilde
 
 const sectionClass = (index) => {
-  if (index === 0) return 'cyangreen';
-  if (index === 1) return 'Metric';
-  return '';
+  if (index === 0) return "cyangreen";
+  if (index === 1) return "Metric";
+  return "";
 };
 </script>
 

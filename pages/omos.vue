@@ -145,8 +145,8 @@
             class="-ml-12 -mt-12 p-12 lg:sticky lg:top-4 lg:col-start-2 lg:row-span-2 lg:row-start-1 lg:overflow-hidden"
           >
             <img
-              class="w-[48rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem]"
-              src="https://i.ibb.co/FHYgZzC/pexels-anna-tarazevich-5963182-1.jpg"
+              class="w-[42rem] max-w-none rounded-xl bg-gray-900 shadow-xl ring-1 ring-gray-400/10 sm:w-[37rem]"
+              src="https://cdn.sanity.io/images/1f5ltia2/production/2ada3892d941d732cced005daf2e7e76847fe015-482x714.jpg"
               alt=""
             />
           </div>
@@ -312,7 +312,7 @@ const team = [
     name: "Leslie Alexander",
     role: "Co-Founder / CEO",
     imageUrl:
-      "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=8&w=1024&h=1024&q=80",
+      "https://cdn.sanity.io/images/1f5ltia2/production/2ada3892d941d732cced005daf2e7e76847fe015-482x714.jpg",
     location: "Toronto, Canada",
   },
   // More people...

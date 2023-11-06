@@ -8,7 +8,7 @@
         :key="individual"
       >
         <div class="relative bg-white rounded border">
-          <picture class="block bg-gray-200 border-b">
+          <picture class="block bg-gray-200 border-b max-h-[18em] overflow-hidden">
             <img class="block" :src="individual.imgurl" alt="Card 1" />
           </picture>
           <div class="p-4">

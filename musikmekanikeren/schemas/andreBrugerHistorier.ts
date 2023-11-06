@@ -47,10 +47,16 @@ export default {
       validation: (Rule) => Rule.required(),
     }),
     defineField({
+      name: 'historieResume',
+      type: 'text',
+      title: 'Resume',
+      description: 'Her skrives et kort resume/teaser som står under billedet på /projekter hjemmesiden',
+    }),
+    defineField({
       name: 'historieText',
       type: 'text',
       title: 'Historie',
-      description: 'Her skrives bruger historiens tekst',
+      description: 'Her skrives den lange tekst, der vil fremgå på det individuelle projekts side',
     }),
     defineField({
       name: 'sections',

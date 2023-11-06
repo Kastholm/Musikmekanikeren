@@ -1,6 +1,9 @@
 <template>
   <div class="container mx-auto p-8 pt-0 md:pt-8">
-    <div class="flex flex-row flex-wrap -mx-2">
+    <div v-if="!data" class="flex justify-center items-center">
+      <div class="loader"></div>
+    </div>
+    <div v-else class="flex flex-row flex-wrap -mx-2">
       <div
         v-for="strenge in data"
         :key="strenge._id"
@@ -12,7 +15,9 @@
           title="Card 1"
         >
           <div class="relative bg-white rounded border">
-            <picture class="block bg-gray-200 border-b">
+            <picture
+              class="block bg-gray-200 border-b max-h-[14em] overflow-hidden"
+            >
               <img class="block" :src="strenge.imgurl" :alt="strenge.title" />
             </picture>
             <div class="p-4 relative">

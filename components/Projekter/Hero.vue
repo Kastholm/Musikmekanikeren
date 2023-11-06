@@ -27,11 +27,13 @@
       <!-- End Col -->
 
       <div class="relative ml-4">
-          <span class="heroBg block h-[25em] border-r-8 border-t-8 border-[#304a4d] gradient-border"></span>
+        <span
+          class="heroBg block h-[25em] border-r-8 border-t-8 border-[#304a4d] gradient-border"
+        ></span>
 
-          <div
-            class="absolute inset-0 -z-[1] bg-gradient-to-tr from-[#304a4d] via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"
-          ></div>
+        <div
+          class="absolute inset-0 -z-[1] bg-gradient-to-tr from-[#304a4d] via-white/0 to-white/0 w-full h-full rounded-md mt-4 -mb-4 mr-4 -ml-4 lg:mt-6 lg:-mb-6 lg:mr-6 lg:-ml-6 dark:from-slate-800 dark:via-slate-900/0 dark:to-slate-900/0"
+        ></div>
       </div>
       <!-- End Col -->
     </div>
@@ -42,16 +44,21 @@
 
 <script setup></script>
 
-<style>
-
+<style scoped>
 #abc {
   background: linear-gradient(to bottom, #222222, #273e3f, #222222, #222222);
+}
+
+.heroBg {
+  background-image: url("https://cdn.sanity.io/images/1f5ltia2/production/0fe1c5a7008f24a004f376a02dee9d95310aa502-1150x437.jpg") !important;
+  background-size: cover !important;
+  position: relative;
+  background-position: center center;
 }
 
 .gradient-border {
   position: relative;
   padding-bottom: 8px; /* Adjust as needed */
-  
 }
 
 .gradient-border::before {
@@ -61,7 +68,11 @@
   left: 0;
   width: 8px; /* Border width */
   height: 100%;
-  background: linear-gradient(to top, rgba(48, 74, 77, 0), rgba(48, 74, 77, 1)); /* Adjust color and opacity */
+  background: linear-gradient(
+    to top,
+    rgba(48, 74, 77, 0),
+    rgba(48, 74, 77, 1)
+  ); /* Adjust color and opacity */
 }
 
 .gradient-border::after {
@@ -71,6 +82,10 @@
   right: 0;
   width: 100%;
   height: 8px; /* Border height */
-  background: linear-gradient(to right, rgba(48, 74, 77, 0), rgba(48, 74, 77, 1)); /* Adjust color and opacity */
-  }
-  </style>
+  background: linear-gradient(
+    to right,
+    rgba(48, 74, 77, 0),
+    rgba(48, 74, 77, 1)
+  ); /* Adjust color and opacity */
+}
+</style>

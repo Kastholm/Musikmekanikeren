@@ -25,23 +25,26 @@ onMounted(async () => {
   });
   console.log(viewers);
 });
-
 </script>
 
 <template>
   <section class="z-10 relative">
-   
-
     <SkoleservicesCTA />
     <SkoleservicesTestimonials />
     <div class="bg-cyangreen mt-4 py-8 grid">
-      <h2 class="text-5xl m-auto py-8 text-center">Se vores tidligere løsninger</h2>
+      <h2 class="text-5xl m-auto py-8 text-center">
+        Se vores tidligere løsninger
+      </h2>
 
       <div
         v-for="(beforeAfter, index) in data"
         :key="beforeAfter"
         class="baSection max-h-[40em] overflow-hidden m-auto grid grid-cols-1 lg:grid-cols-2 py-12 px-[8vw]"
-        :class="index % 2 === 0 ? '' : 'bg-white'"
+        
+        :class="{
+              'bg-smooth text-black': index % 2 !== 0,
+              'bg-Metric text-white': index % 2 === 0,
+            }"
       >
         <div
           class="px-4 titleText"
@@ -50,7 +53,7 @@ onMounted(async () => {
           <h2 class="text-4xl mb-2">{{ beforeAfter.title }}</h2>
           <div
             class="leading-8"
-            :class="index % 2 === 0 ? 'text-white' : 'text-black'"
+            
           >
             <SanityBlocks
               :blocks="beforeAfter.content"

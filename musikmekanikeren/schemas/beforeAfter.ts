@@ -3,7 +3,7 @@ import { FiTag } from 'react-icons/fi'
 
 export default {
      name: 'beforeAfter',
-     title: 'Før og Efter',
+     title: 'Før og Efter Billeder',
      type: 'document',
      icon: FiTag,
      fields: [

@@ -39,13 +39,14 @@
                 >{{ story.historieDate }}</time
               >
               <p class="text-gray-800">
-                {{ story.historieText }}
+                {{ story.historieResume }}
               </p>
               <span class="stretched-link text-[2rem] text-gray-800">{{
                 story.title
               }}</span>
             </div>
               </NuxtLink>
+              
           </div>
       </div>
     </div>
