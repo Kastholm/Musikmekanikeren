@@ -7,7 +7,7 @@
       <div
         v-for="PA in data"
         :key="PA._id"
-        class="w-full md:w-1/3 lg:w-1/4 mb-12 px-2 hover:scale-[1.005] hover:shadow-black"
+        class="w-full md:w-1/3 xl:w-1/4 mb-12 px-2 hover:scale-[1.005] hover:shadow-black"
       >
         <NuxtLink
           class="stretched-link text-[2rem] text-gray-800"

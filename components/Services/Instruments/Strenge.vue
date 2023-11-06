@@ -7,7 +7,7 @@
       <div
         v-for="strenge in data"
         :key="strenge._id"
-        class="w-full md:w-1/3 lg:w-1/4 mb-12 px-2 hover:scale-[1.005] hover:shadow-black cursor-pointer transition-transform"
+        class="w-full md:w-1/3 xl:w-1/4 mb-12 px-2 hover:scale-[1.005] hover:shadow-black cursor-pointer transition-transform"
       >
         <NuxtLink
           class="stretched-link text-gray-800"
