@@ -1,96 +1,81 @@
 <template>
 <BaseShortcuts />
-<section class="bg-cyangreen relative z-10">
-<!-- h-64 tidligere h;jde  -->
-<div class="w-screen  text-smooth h-12 grid place-content-center">
-  <!-- <h2 class="text-6xl">Nyhedsbrev</h2> -->
-</div>
-
-<footer class="w-[95vw] h-[20em] bg-black m-auto rounded-t-[4em] relative overflow-hidden">
-    <video class="absolute w-[33em] h-[26] bottom-0 top-25 left-0 border-cyangreen border-r-4 border" autoplay muted loop playsinline crossorigin="">
-		<source src="/video/klaverfinal.mp4" type="video/mp4">
-	</video>
-  <div class="footerContent mr-6 py-10 text-center md:text-left">
-    <div class="grid grid-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <div class="grid place-content-center">
-        <p class="font-semibold bg-cyangreen bg-opacity-50 p-6 rounded-r-2xl" >
-          <h6 class="
-            uppercase
-            font-semibold
-            mb-4
-            flex
-            items-center
-            justify-center
-            md:justify-start
-          ">
-          MUSIK MEKANIKEREN®
-        </h6>
-          Musik Mekanikeren blev grundlagt i xxxx og har siden da været fast servicecenter for diverse intrumenter og forstærkere til både institutioner og private.
-        </p>
+<footer class="relative bg-blueGray-200 pt-8 pb-6">
+  <div class="container mx-auto px-4">
+    <div class="flex flex-wrap text-left lg:text-left">
+      <div class="w-full lg:w-6/12 px-4">
+        <h4 class="text-3xl fonat-semibold text-blueGray-700">Musik Mekanikeren®</h4>
+        <h5 class="text-lg mt-3 mb-4 text-blueGray-600">
+          Musik Mekanikeren blev stiftet i xxxx, og har siden da udført reparationer og service på hundredvis af diverse instrumenter og forstærkere.
+        </h5>
+        <img src="https://cdn.sanity.io/images/1f5ltia2/production/512bbd4914d06fd46e1dfca3086b178d042e7f4c-322x208.png" class=" max-h-[15vh]">
       </div>
-      <div class="grid ml-40">
-        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-          Produkter
-        </h6>
-        <p class="mb-4">
-          <a href="#!" class="text-gray-50">Skoleservice</a>
-        </p>
-        <p class="mb-4">
-          <a href="#!" class="text-gray-50">Service</a>
-        </p>
-        <p class="mb-4">
-          <a href="#!" class="text-gray-50">Produkter</a>
-        </p>
-        <p>
-          <a href="#!" class="text-gray-50">Tilmeld dig nyhedsbrev</a>
-        </p>
-      </div>
-      <div class="contact">
-        <h6 class="uppercase font-semibold mb-4 flex justify-center md:justify-start">
-          Kontakt os
-        </h6>
-        <p class="flex items-center justify-center md:justify-start mb-4">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="home"
-            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-            <path fill="currentColor"
-              d="M280.37 148.26L96 300.11V464a16 16 0 0 0 16 16l112.06-.29a16 16 0 0 0 15.92-16V368a16 16 0 0 1 16-16h64a16 16 0 0 1 16 16v95.64a16 16 0 0 0 16 16.05L464 480a16 16 0 0 0 16-16V300L295.67 148.26a12.19 12.19 0 0 0-15.3 0zM571.6 251.47L488 182.56V44.05a12 12 0 0 0-12-12h-56a12 12 0 0 0-12 12v72.61L318.47 43a48 48 0 0 0-61 0L4.34 251.47a12 12 0 0 0-1.6 16.9l25.5 31A12 12 0 0 0 45.15 301l235.22-193.74a12.19 12.19 0 0 1 15.3 0L530.9 301a12 12 0 0 0 16.9-1.6l25.5-31a12 12 0 0 0-1.7-16.93z">
-            </path>
-          </svg>
-          Jørgensens Allè 28  |  8722 Hedensted
-        </p>
-        <p class="flex items-center justify-center md:justify-start mb-4">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="envelope"
-            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512">
-            <path fill="currentColor"
-              d="M502.3 190.8c3.9-3.1 9.7-.2 9.7 4.7V400c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V195.6c0-5 5.7-7.8 9.7-4.7 22.4 17.4 52.1 39.5 154.1 113.6 21.1 15.4 56.7 47.8 92.2 47.6 35.7.3 72-32.8 92.3-47.6 102-74.1 131.6-96.3 154-113.7zM256 320c23.2.4 56.6-29.2 73.4-41.4 132.7-96.3 142.8-104.7 173.4-128.7 5.8-4.5 9.2-11.5 9.2-18.9v-19c0-26.5-21.5-48-48-48H48C21.5 64 0 85.5 0 112v19c0 7.4 3.4 14.3 9.2 18.9 30.6 23.9 40.7 32.4 173.4 128.7 16.8 12.2 50.2 41.8 73.4 41.4z">
-            </path>
-          </svg>
-          Kaare@musikmekanikeren.dk
-        </p>
-        <p class="flex items-center justify-center md:justify-start mb-4">
-          <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone"
-            class="w-4 mr-4" role="img" xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512">
-            <path fill="currentColor"
-              d="M493.4 24.6l-104-24c-11.3-2.6-22.9 3.3-27.5 13.9l-48 112c-4.2 9.8-1.4 21.3 6.9 28l60.6 49.6c-36 76.7-98.9 140.5-177.2 177.2l-49.6-60.6c-6.8-8.3-18.2-11.1-28-6.9l-112 48C3.9 366.5-2 378.1.6 389.4l24 104C27.1 504.2 36.7 512 48 512c256.1 0 464-207.5 464-464 0-11.2-7.7-20.9-18.6-23.4z">
-            </path>
-          </svg>
-          602 17 602
-        </p>
-        <p class="flex items-center justify-center md:justify-start">
-        </p>
+      <div class="w-full lg:w-6/12 px-4">
+        <div class="flex flex-wrap items-top mb-6 gap-20">
+          <div class="w-full lg:w-4/12 px-4 ml-auto">
+            <span class="block uppercase text-blueGray-500 text-xl font-semibold mb-2">Andre links</span>
+            <ul class="list-unstyled">
+              <NuxtLink to="/service"><li>
+                <p class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-base">Service</p>
+              </li></NuxtLink>
+              <NuxtLink to="/skoleservice"><li>
+                <p class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-base">Skoleservice</p>
+              </li></NuxtLink>
+              <NuxtLink to="/projekter"><li>
+                <p class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-base">Projekter</p>
+              </li></NuxtLink>
+              <NuxtLink to="/Omos"><li>
+                <p class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-base">Om os</p>
+              </li></NuxtLink>
+            </ul>
+          </div>
+          <div class="w-full lg:w-4/12 px-4 flex flex-col justify-center">
+            <span class="block uppercase text-blueGray-500 text-xl font-semibold mb-2">Kontakt os</span>
+            <ul class="list-unstyled">
+              <li class="inline-flex">
+                <svg fill="#000000" height="40" viewBox="0 0 24 24" id="house-storm" data-name="Flat Color" xmlns="http://www.w3.org/2000/svg" class="icon flat-color mr-2"><g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="primary" d="M20.58,9.9l-8-5.71a1,1,0,0,0-1.16,0l-8,5.71a1,1,0,0,0,1.16,1.62l.42-.3V21a1,1,0,0,0,1,1H18a1,1,0,0,0,1-1V11.22l.42.3a1,1,0,0,0,.58.19,1,1,0,0,0,.58-1.81Z"
+                    style="fill: #000000;"></path><path id="primary-2" data-name="primary" d="M20,22H4a1,1,0,0,1,0-2H20a1,1,0,0,1,0,2Z" style="fill: #FFFFFF;"></path><path id="secondary"
+                    d="M15,15v6a1,1,0,0,1-1,1H10a1,1,0,0,1-1-1V15a1,1,0,0,1,1-1h4A1,1,0,0,1,15,15Zm1.89-3.55,2-4A1,1,0,0,0,18,6H15.62l1.27-2.55a1,1,0,0,0-1.78-.9l-2,4A1,1,0,0,0,14,8h2.38l-1.27,2.55a1,1,0,0,0,.44,1.34A.93.93,0,0,0,16,12,1,1,0,0,0,16.89,11.45Z"
+                    style="fill: #263d3e;"></path></g></svg>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold text-base flex items-center min-w-[270px]"> Jørgensens Allè 28 | 8722 Hedensted</a>
+              </li>
+              <li class="inline-flex">
+                <svg fill="#000000" height="40" viewBox="0 0 24 24" id="email" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line mr-2"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round"
+                   stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path id="secondary" d="M20.61,5.23l-8,6.28a1,1,0,0,1-1.24,0l-8-6.28A1,1,0,0,0,3,6V18a1,1,0,0,0,1,1H20a1,1,0,0,0,1-1V6A1,1,0,0,0,20.61,5.23Z" style="fill: #263d3e;
+                   stroke-width: 2;"></path><path id="primary" d="M20,19H4a1,1,0,0,1-1-1V6A1,1,0,0,1,4,5H20a1,1,0,0,1,1,1V18A1,1,0,0,1,20,19ZM20,5H4a1,1,0,0,0-.62.22l8,6.29a1,1,0,0,0,1.24,0l8-6.29A1,1,0,0,0,20,5Z" style="fill: none; stroke: #000000;
+                   stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path></g></svg>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold pb-2 text-base flex items-end" href="https://creative-tim.com/terms?ref=njs-profile">Kaare@musikmekanikeren.dk</a>
+              </li>
+              <li class="inline-flex">
+                <svg fill="#000000" viewBox="0 0 24 24" height="40" id="phone-error-left-4" data-name="Flat Line" xmlns="http://www.w3.org/2000/svg" class="icon flat-line mr-2"><g id="SVGRepo_bgCarrier"
+                     stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect id="secondary" x="6" y="3"
+                     width="12" height="18" rx="1" style="fill: #263d3e; stroke-width: 2;"></rect><line id="primary-upstroke" x1="12.05" y1="17" x2="11.95" y2="17" style="fill: none;
+                     stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5;"></line><path id="primary" d="M6,9V4A1,1,0,0,1,7,3H17a1,1,0,0,1,1,1V20a1,1,0,0,1-1,1H11"
+                     style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></path><line id="primary-2" data-name="primary" x1="6" y1="13" x2="6" y2="16"
+                     style="fill: none; stroke: #FFFFFF; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"></line><line id="primary-upstroke-2" data-name="primary-upstroke" x1="6.05" y1="20.5"
+                     x2="5.95" y2="20.5" style="fill: none; stroke: #000000; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2.5;"></line></g></svg>
+                <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold text-base flex items-center" href="https://creative-tim.com/privacy?ref=njs-profile">602 17 602</a>
+              </li>
+              
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="text-center p-6 relative">
-    <span>© 2023 Copyright:</span>
-    <a class="text-gray-600 font-semibold" href="https://tailwind-elements.com/">MUSIK MEKANIKEREN</a>
+    <hr class="my-6 border-blueGray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+      <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2023</span>
+          <a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-[#263d3e]" target="_blank"> Musik Mekanikeren </a>
+          <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800 hover:text-[#263d3e]">- Udviklet og hosted af Webtify.dk</a>
+        </div>
+      </div>
+    </div>
+    
   </div>
 </footer>
-  
-
-</section>
 </template>
 
 <script>
