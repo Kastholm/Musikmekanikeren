@@ -48,7 +48,7 @@ async function onSubmit(values) {
 
 <template>
   <Form :validation-schema="schema" @submit="onSubmit" class="pt-32">
-    <div class="relative isolate bg-cyangreen">
+    <div class="relative isolate bg-cyangreen ">
       <div class="mx-auto grid max-w-7xl grid-cols-1 lg:grid-cols-2">
         <div
           class="relative mt-6 md:mt-0 px-6 pb-20 pt-24 sm:pt-32 lg:static lg:px-8 lg:py-48"
