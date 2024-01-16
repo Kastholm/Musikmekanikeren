@@ -12,18 +12,12 @@
         with Preline.
       </p>
     </div>
-    <div class="flex flex-row flex-wrap -mx-2">
-      <div
-        v-for="story in data"
-        :key="story.id"
-        class="w-full sm:w-1/2 md:w-1/4 mb-4 px-2"
-      >
-          <div class="relative bg-white rounded border">
-              <NuxtLink :to="`/projekter/${story.historieTitle }`">
-            <picture class="block bg-gray-200 border-b">
-              <img class="block" :src="story.imgurl" alt="Card Image" />
-            </picture>
-            <div class="p-4">
+    <div class="grid -mx-2">
+      <div v-for="story in data" :key="story.id" class="w-full mb-4 px-2">
+        <div class="relative bg-white rounded border">
+          <NuxtLink :to="`/projekter/${story.historieTitle}`">
+            <div class="grid grid-cols-2">
+              <div class="p-4">
                 <h3 class="text-lg font-bold">
                   <a
                     class="stretched-link text-gray-900"
@@ -33,21 +27,28 @@
                   </a>
                 </h3>
 
-              <time
-                class="block mb-2 text-sm text-gray-600"
-                datetime="2019-01-01"
-                >{{ story.historieDate }}</time
-              >
-              <p class="text-gray-800">
-                {{ story.historieResume }}
-              </p>
-              <span class="stretched-link text-[2rem] text-gray-800">{{
-                story.title
-              }}</span>
+                <time
+                  class="block mb-2 text-sm text-gray-600"
+                  datetime="2019-01-01"
+                  >{{ story.historieDate }}</time
+                >
+                <p class="text-gray-800">
+                  {{ story.historieResume }}
+                </p>
+                <span class="stretched-link text-[2rem] text-gray-800">{{
+                  story.title
+                }}</span>
+              </div>
+              <div class="overflow-hidden rounded-tl-4xl grid place-content-center h-[30em] w-[45em]">
+                <img
+                  class="rotate-90 mr-auto"
+                  :src="story.imgurl"
+                  alt="Card Image"
+                />
+              </div>
             </div>
-              </NuxtLink>
-              
-          </div>
+          </NuxtLink>
+        </div>
       </div>
     </div>
   </div>
