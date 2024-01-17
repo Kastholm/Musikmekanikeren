@@ -12,13 +12,13 @@
         with Preline.
       </p>
     </div>
-    <div class="grid -mx-2">
+    <div class="grid -mx-2 overflow-hidden">
       <div v-for="story in data" :key="story.id" class="w-full mb-4 px-2">
         <div class="relative bg-white rounded border">
           <NuxtLink :to="`/projekter/${story.historieTitle}`">
-            <div class="grid grid-cols-2">
+            <div class="grid lg:grid-cols-2">
               <div class="p-4">
-                <h3 class="text-lg font-bold">
+                <h3 class="text-2xl lg:text-3xl font-bold">
                   <a
                     class="stretched-link text-gray-900"
                     :title="story.historieTitle"
@@ -32,17 +32,20 @@
                   datetime="2019-01-01"
                   >{{ story.historieDate }}</time
                 >
-                <p class="text-gray-800">
+                <p class="text-gray-800 text-sm lg:text-lg">
                   {{ story.historieResume }}
                 </p>
                 <span class="stretched-link text-[2rem] text-gray-800">{{
                   story.title
                 }}</span>
               </div>
-              <div class="overflow-hidden rounded-tl-4xl grid place-content-center h-[30em] w-[45em]">
+              <div
+                class="overflow-hidden rounded-tl-4xl grid place-content-center lg:h-[22em]"
+              >
                 <img
-                  class="rotate-90 mr-auto"
+                  class="lg:rotate-90 w-fit -mt-60 lg:mt-0 lg:w-[22em] lg:h-full lg:ml-20 "
                   :src="story.imgurl"
+                  style="clip-path: circle(79.5% at 68% 33%);"
                   alt="Card Image"
                 />
               </div>
