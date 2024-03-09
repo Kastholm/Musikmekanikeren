@@ -54,13 +54,15 @@ onMounted(async () => {
         <li><NuxtLink to="/">Forside</NuxtLink></li>
         <li><NuxtLink to="/Service">Service</NuxtLink></li>
         <li><NuxtLink to="/Skoleservice">Skoleservice</NuxtLink></li>
+        <li><NuxtLink to="/projekter"> Projekter</NuxtLink></li>
         <span class="logo-bg"
           ><img
             class="logo"
             src="https://cdn.sanity.io/images/1f5ltia2/production/512bbd4914d06fd46e1dfca3086b178d042e7f4c-322x208.png"
             alt=""
         /></span>
-        <li><NuxtLink to="/projekter"> Projekter</NuxtLink></li>
+        <li><NuxtLink >Blog</NuxtLink></li>
+        <li><NuxtLink to="/shop">Shop</NuxtLink></li>
         <li><NuxtLink to="/kontakt">Kontakt</NuxtLink></li>
         <li><NuxtLink to="/omos"> Om os</NuxtLink></li>
         <!-- <li><NuxtLink to="/shop">Shop</NuxtLink></li> -->

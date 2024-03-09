@@ -172,7 +172,7 @@ onMounted(async () => {
                   Klaverer & Keyboards
                 </li>
               </ul>
-              <BaseButton>Læs mere</BaseButton>
+              <NuxtLink to="/service"><BaseButton>Læs mere</BaseButton></NuxtLink>
             </span>
           </div>
         </div>
@@ -273,7 +273,7 @@ onMounted(async () => {
                   Løsningsorienteret sparring
                 </li>
               </ul>
-              <BaseButton>Læs mere</BaseButton>
+              <NuxtLink to="/skoleservice"><BaseButton>Læs mere</BaseButton></NuxtLink>
             </span>
           </div>
         </div>

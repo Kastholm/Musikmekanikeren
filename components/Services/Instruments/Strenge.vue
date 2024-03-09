@@ -16,7 +16,7 @@
         >
           <div class="relative bg-white rounded border">
             <picture
-              class="block bg-gray-200 border-b max-h-[14em] overflow-hidden"
+              class="block bg-gray-200 border-b max-h-[200px] min-h-[200px] overflow-hidden"
             >
               <img class="block" :src="strenge.imgurl" :alt="strenge.title" />
             </picture>
@@ -27,7 +27,7 @@
                 {{ strenge.title }}
               </h3>
               <p
-                class="text-gray-800 readMore"
+                class="text-gray-800 readMore max-h-[150px] min-h-[150px] overflow-hidden"
                 :class="{ expanded: strenge.expanded }"
                 @click="strenge.expanded = !strenge.expanded"
               >

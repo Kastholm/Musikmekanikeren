@@ -33,19 +33,20 @@
                   >{{ story.historieDate }}</time
                 >
                 <p class="text-gray-800 text-sm lg:text-lg">
-                  {{ story.historieResume }}
+                  {{ story.historieResume }} <br> <span class="stretched-link text-xl bg-cyangreen bg-opacity-80 text-[#fbfbfb] p-2 absolute bottom-4">Læs Mere</span>
                 </p>
+                <p>L;s mere</p>
                 <span class="stretched-link text-[2rem] text-gray-800">{{
                   story.title
                 }}</span>
               </div>
               <div
-                class="overflow-hidden rounded-tl-4xl grid place-content-center lg:h-[22em]"
+                class="overflow-hidden ml-[4em] rounded-tl-4xl grid place-content-center lg:h-[22em]"
               >
                 <img
                   class="lg:rotate-90 w-fit -mt-60 lg:mt-0 lg:w-[22em] lg:h-full lg:ml-20 "
                   :src="story.imgurl"
-                  style="clip-path: circle(79.5% at 68% 33%);"
+                  style="clip-path: circle(90.5% at 95% 23%);"
                   alt="Card Image"
                 />
               </div>

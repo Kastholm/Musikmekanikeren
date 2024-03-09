@@ -23,7 +23,7 @@
           <div class="relative py-8">
             <h3 class="text-2xl">Taylor Certificeret</h3>
             <img
-              class="absolute -bottom-2 lg:right-28 rotate-[-20deg] lg:w-[9em] md:w-[8em] md:right-6 sm:w-[10em] w-[6em] right-0"
+              class="absolute -bottom-2 lg:right-28  lg:w-[9em] md:w-[8em] md:right-6 sm:w-[10em] w-[6em] right-0"
               src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Logo%20m.m./Taylor%20Guitars%20Logo.png?etag=%22ebde-61d9fdd3%22&sourceContentType=image%2Fpng&ignoreAspectRatio&resize=263%2B200&extract=0%2B0%2B263%2B200"
               alt=""
             />

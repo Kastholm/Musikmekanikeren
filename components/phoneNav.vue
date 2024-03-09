@@ -300,6 +300,18 @@ const products = [
     icon: SquaresPlusIcon,
   },
   {
+    name: "Blog",
+    description: "Our blog",
+    href: "/blog",
+    icon: PlayCircleIcon,
+  },
+  {
+    name: "Shop",
+    description: "Our shop",
+    href: "/shop",
+    icon: PhoneIcon,
+  },
+  {
     name: "Kontakt",
     description: "Contact us",
     href: "/kontakt",

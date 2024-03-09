@@ -13,16 +13,15 @@
           </picture>
           <div class="p-4">
             <h3 class="text-lg font-bold">
-              <a class="stretched-link text-gray-900" href="#" title="Card 1">
+              <p class="stretched-link text-gray-900" title="Card 1">
                 {{ individual.title }}
-              </a>
+              </p>
             </h3>
-            <div class="text-gray-800">
+            <div class="text-gray-800 min-h-[15em] max-h-[15em]">
               <SanityBlocks
               :blocks="individual.content"
               :serializers="serializers"
-            />
-          
+              />
             </div>
           </div>
         </div>

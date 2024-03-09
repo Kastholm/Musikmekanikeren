@@ -15,7 +15,7 @@
           title="Card 1"
         >
           <div class="relative bg-white rounded border">
-            <picture class="block bg-gray-200 border-b">
+            <picture class="block bg-gray-200 border-b max-h-[200px] min-h-[200px] overflow-hidden">
               <img class="block" :src="klaver.imgurl" :alt="klaver.title" />
             </picture>
             <div class="p-4 relative">

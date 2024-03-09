@@ -31,7 +31,7 @@ onMounted(async () => {
   <section class="z-10 relative">
     <SkoleservicesCTA />
     <SkoleservicesTestimonials />
-    <div class="bg-cyangreen mt-4 py-8 grid">
+    <div class="bg-cyangreen mt-4 grid">
       <h2 class="text-5xl m-auto py-8 text-center">
         Se vores tidligere løsninger
       </h2>
@@ -39,7 +39,7 @@ onMounted(async () => {
       <div
         v-for="(beforeAfter, index) in data"
         :key="beforeAfter"
-        class="baSection max-h-[40em] overflow-hidden m-auto grid grid-cols-1 lg:grid-cols-2 py-12 px-[8vw]"
+        class="baSection  m-auto grid grid-cols-1 lg:grid-cols-2 py-12 px-[8vw]"
         
         :class="{
               'bg-smooth text-black': index % 2 !== 0,

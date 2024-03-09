@@ -3,7 +3,6 @@
 import testimonials from './testimonials'
 import testimonials_skoleservice from './testimonials-skoleservice'
 /* import products from './productsold' */
-import products from './products'
 import category from './products_categories'
 import strenge from './service_instrumenter/strenge'
 import trommer from './service_instrumenter/trommer'
@@ -14,7 +13,10 @@ import smallUserStory from './andreBrugerHistorier'
 import beforeAfter from './beforeAfter'
 import individualIndretning from './individualIndretning'
 import keypoints from './keypoints'
-export const schemaTypes = [testimonials, testimonials_skoleservice, strenge, trommer, klaver, PA, bigUserStory, smallUserStory, beforeAfter, individualIndretning, keypoints]
+import shop from './shop'
+import shopCategories from './shop/shopCategories'
+import products from './shop/products'
+export const schemaTypes = [testimonials, testimonials_skoleservice, strenge, trommer, klaver, PA, bigUserStory, smallUserStory, beforeAfter, individualIndretning, keypoints, shop, shopCategories, products]
 
 /* import T from '@sanity/base/initial-value-template-builder'
 

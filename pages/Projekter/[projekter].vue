@@ -117,52 +117,56 @@
         </div>
       </div>
     </div>
-    <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
-      <h2
-        class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
-      >
-        Følg med i projektet
-      </h2>
-      <p class="mt-1 text-gray-600 dark:text-gray-400">
-        Se trin for trin hvordan projektet er forløbet
-      </p>
-    </div>
-    <div class="mx-auto">
-      <div
-        v-for="(section, index) in story.sections"
-        :key="section._key"
-        :class="{
-          'bg-smooth text-black': index % 2 === 0,
-          'bg-Metric text-white': index % 2 !== 0,
-        }"
-        class="py-16 mb-12"
-      >
-        <!-- Billede del -->
-        <div class="flex flex-wrap justify-center m-auto max-w-screen-xl">
-          <div class="w-full md:w-1/2 px-6 relative">
-            <div
-              :style="{ backgroundImage: `url('${section.imgurl}')` }"
-              class="w-full rounded-lg shadow-md bg-cover bg-center h-[20em]"
-            >
-              <!-- Nummerering her -->
-              <div class="absolute bottom-0 left-6 p-2 bg-white rounded-tr-lg">
-                <span class="font-bold text-Metric text-2xl">{{
-                  index + 1
-                }}</span>
+    <div>
+      <div class="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
+        <h2
+          class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
+        >
+          Følg med i projektet
+        </h2>
+        <p class="mt-1 text-gray-600 dark:text-gray-400">
+          Se trin for trin hvordan projektet er forløbet
+        </p>
+      </div>
+      <div class="mx-auto">
+        <!-- :class="{
+            'bg-smooth text-black': index % 2 === 0,
+            'bg-Metric text-white': index % 2 !== 0,
+          }" -->
+        <div
+          v-for="(section, index) in story.sections"
+          :key="section._key"
+          class="py-16 mb-0 lg:mb-12"
+        >
+          <!-- Billede del -->
+          <div class="flex flex-wrap justify-center m-auto max-w-screen-xl">
+            <div class="w-full md:w-1/2 px-6 relative">
+              <div
+                :style="{ backgroundImage: `url('${section.imgurl}')` }"
+                class="w-full rounded-lg shadow-md bg-cover bg-center h-[20em]"
+              >
+                <!-- Nummerering her -->
+                <div
+                  class="absolute bottom-0 left-6 p-2 bg-white rounded-tr-lg"
+                >
+                  <span class="font-bold text-Metric text-2xl">{{
+                    index + 1
+                  }}</span>
+                </div>
               </div>
             </div>
-          </div>
 
-          <!-- Tekst del -->
-          <div class="w-full md:w-1/2 px-2">
-            <h3 class="text-xl font-semibold mb-3">
-              {{ section.sectionTitle }}
-            </h3>
-            <div>
-              <SanityBlocks
-                :blocks="section.content"
-                :serializers="serializers"
-              />
+            <!-- Tekst del -->
+            <div class="border-left relative w-full md:w-1/2 px-2">
+              <h3 class="text-xl font-semibold mb-3">
+                {{ section.sectionTitle }}
+              </h3>
+              <div>
+                <SanityBlocks
+                  :blocks="section.content"
+                  :serializers="serializers"
+                />
+              </div>
             </div>
           </div>
         </div>
@@ -194,5 +198,26 @@ const sectionClass = (index) => {
 </script>
 
 <style>
-/* Eventuelle styles du vil bruge */
+.border-left::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  border-left: 2px solid #486262;
+  height: 38em;
+}
+.border-left::after {
+  content: "";
+  position: absolute;
+  bottom: -40px;
+  left: -17px;
+  background-color: #fbfbfb;
+  height: 1em;
+  width: 1em;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+#abc {
+  background: linear-gradient(to bottom, #222222, #273e3f, #222222, #222222);
+}
 </style>
