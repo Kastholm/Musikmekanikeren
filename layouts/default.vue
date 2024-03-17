@@ -10,6 +10,12 @@
 
 <style>
 @import url("https://use.typekit.net/rwl1ktr.css");
+
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   @apply text-smooth overflow-x-hidden bg-Metric;
 }

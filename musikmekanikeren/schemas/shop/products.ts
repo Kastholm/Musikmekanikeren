@@ -24,9 +24,15 @@ export default {
           },
           {
                name: 'description',
-               title: 'Beskrivelse',
-               type: 'text'
-          },
+               type: 'array',
+               title: 'Beskrivelse af produktet',
+               of: [
+                 {
+                   type: 'block'
+                 },
+               ],
+               validation: (Rule) => Rule.required(),
+             },
           {
                name: 'price',
                title: 'Pris',

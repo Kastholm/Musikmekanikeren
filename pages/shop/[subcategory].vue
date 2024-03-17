@@ -1,67 +1,102 @@
 <template>
-  <main class="py-32 bg-red-200">
+  <section id="abc" class="text-Metric pt-32">
     <div v-for="item in data" :key="item._id">
-      <h1>{{ item.title }}</h1>
-      <div v-for="section in item.sections" :key="section._key">
-        <h2>{{ section.shoptitle }}</h2>
-        <!-- Antager at du vil vise den første imgurl for hver sektion -->
-        <img :src="section.imgurl" alt="Billede for sektion">
-        <!-- Hvis der er flere imgurl'er indenfor samme sektion, skal du tilføje en yderligere loop her -->
+      <p class="p-8 pt-0 md:pt-8" v-if="item.sections.length > 1"></p>
+      <div v-if="item.sections.length > 1" class="container mx-auto">
+        <div class="grid place-content-center text-smooth">
+          <h1 class="shopHeader text-5xl">{{ item.title }} Kategorier</h1>
+          <p class="arrow bg-Metric"></p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 -mx-2">
+          <div
+            v-for="section in item.sections"
+            :key="section._key"
+            class="w-full mb-12 px-2 hover:scale-[1.005] hover:shadow-black cursor-pointer transition-transform"
+          >
+            <a :href="`#${section.shoptitle.replace(/\s+/g, '-')}`">
+              <div class="relative bg-white rounded border">
+                <picture
+                  class="block bg-gray-200 border-b max-h-[300px] min-h-[300px] overflow-hidden"
+                >
+                  <img
+                    class="block w-full h-full"
+                    :src="section.imgurl"
+                    :alt="section.title"
+                  />
+                </picture>
+                <div class="p-4 relative">
+                  <h3
+                    class="text-2xl font-bold absolute -top-10 left-0 p-2 bg-white rounded-tr-lg"
+                  >
+                    {{ section.shoptitle }}
+                  </h3>
+                  <BaseButton>Se udvalget</BaseButton>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-  </main>
 
-
-<div class="container mx-auto p-8 pt-0 md:pt-8">
-  <div class="flex flex-row flex-wrap -mx-2">
-    <div
-      v-for="item in data" :key="item._id"
-      class="w-full md:w-1/2 xl:w-1/3 mb-12 px-2 hover:scale-[1.005] hover:shadow-black cursor-pointer transition-transform"
-    >
-      <!-- <NuxtLink
-        class="stretched-link text-gray-800"
-        :to="'/Service/' + item.slug.current + '?type=' + item.slug.current"
-        title="Card 1"
-      > -->
-        <div class="relative bg-white rounded border">
-          <picture
-            class="block bg-gray-200 border-b max-h-[200px] min-h-[200px] overflow-hidden"
-          >
-            <!-- Antager at du vil vise item.imgurl, ellers ændr til section.imgurl indeni en nested loop -->
-            <img class="block" :src="item.imgurl" :alt="item.title" />
-          </picture>
-          <div class="p-4 relative">
-            <h3
-              class="text-2xl font-bold absolute -top-10 left-0 p-2 bg-white rounded-tr-lg"
+    <div class="container mx-auto p-8 pt-0 md:pt-8">
+      <div v-for="item in data" :key="item._id">
+        <div v-for="section in item.sections" :key="section._key">
+          <div class="grid place-content-center text-smooth">
+            <h1
+              :id="section.shoptitle.replace(/\s+/g, '-')"
+              class="shopHeader text-5xl pt-2"
             >
-              {{ item.title }}
-            </h3>
-            <!-- Loop over sections for hver item for at vise beskrivelsen -->
-            <div v-for="section in item.sections" :key="section._key">
-              <p
-                class="text-gray-800 readMore max-h-[150px] min-h-[150px] overflow-hidden"
-                :class="{ expanded: section.expanded }"
-                @click="section.expanded = !section.expanded"
-              >
-                {{ section.shoptitle }} <!-- Eller en anden felt fra section du vil vise -->
-              </p>
+              {{ section.shoptitle }}
+            </h1>
+            <p class="arrow bg-smooth"></p>
+          </div>
+          <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-3 -mx-2">
+            <div
+              v-for="product in section.productCategory"
+              :key="product._key"
+              class="w-full mb-12 px-2 hover:shadow-black transition-transform"
+            >
+              <div class="relative bg-white rounded border">
+                <picture
+                  class="block bg-gray-200 border-b max-h-[300px] min-h-[300px] overflow-hidden"
+                >
+                  <img
+                    class="block w-full h-full"
+                    :src="product.imgurl"
+                    :alt="product.ptitle"
+                  />
+                </picture>
+                <div class="p-4 relative">
+                  <h3
+                    class="text-2xl font-bold absolute -top-10 left-0 p-2 bg-white rounded-tr-lg"
+                  >
+                    {{ product.ptitle }}
+                  </h3>
+                  <!-- <p>{{ product.description }}</p> -->
+                  <SanityBlocks
+                    :blocks="product.description"
+                    :serializers="serializers"
+                  />
+                  <p class="mt-8 text-2xl font-bold">
+                    DKK {{ product.price }},-
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-        <!-- </NuxtLink> -->
+        </div>
       </div>
     </div>
-  </div>
-</div>
-
-
-
-
-
+  </section>
 </template>
+  <!-- Link ned til id af den man ønsker at se. fremvise all produkter her -->
 
 <script setup>
 import { useRoute } from "vue-router";
 import { ref } from "vue";
+import { SanityBlocks } from "sanity-blocks-vue-component";
+
 const route = useRoute();
 
 const slug = route.params.subcategory;
@@ -73,4 +108,16 @@ console.log(data, "data");
 const mobileFiltersOpen = ref(false);
 </script>
 
-<style scoped></style>
+<style scoped>
+.shopHeader {
+  position: relative;
+}
+.arrow {
+  text-align: center;
+  height: 1em;
+  width: 1em;
+  margin: 1em auto 3em auto;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+</style>
