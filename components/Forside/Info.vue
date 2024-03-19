@@ -5,19 +5,22 @@
         <span class="">
           <h2 class="quoteTwo header">DIT FORTRUKNE INSTRUMENT VÆRKSTED</h2>
           <h5 class="quote_text text-[1.2rem] md:text-[1.35rem] mt-2">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
-            cumque velit, nostrum nesciunt at placeat, blanditiis illum ex
-            dolores, in cum odio incidunt ratione maiores dolorum eveniet? Optio
-            molestiae dolorem quidem laboriosam maxime officia consequatur nulla
-            doloribus ipsam unde odit consectetur, qui quae natus quos beatae
-            aut debitis cupiditate minima.
+            At overlade sit højtelskede instrument til en anden person kræver tillid - især når det gælder reparationer!
+            <br><br>
+            Hos Musik Mekanikeren er dit instrument i trygge & kyndige hænder og vil altid komme retur i sin bedste stand.
+            <br>
+            Efter mange års erfaring inden for branchen ved vi, hvad det vil sige at servicere musik-instrumenter - hvad enten det drejer sig om Strengeinstrumenter, Trommer & Slagtøj, Klaverer & Keyboards, Forstærkere, PA osv..
+            <br><br>
+            Musik Mekanikeren har alverdens specialværktøj til rådighed til alle typer opgaver og dét kombineret med stor ekspertise og nørderi, gør for mange Musik Mekanikeren til deres foretrukne instrumentværksted!
+
+
           </h5>
         </span>
       </div>
       <div class="md:w-1/2 relative">
         <img
-          class="md:w-[30em] gsapimg m-auto relative z-10"
-          src="https://musikmekanikeren.dk/____impro/1/onewebmedia/Shop/Produkter/KATEGORI/Musik%20Mekanikeren%20Brugte%20Instrumenter%20Guitar%20&%20Bas.jpg?etag=%223e2b3f-61533a92%22&sourceContentType=image%2Fjpeg&ignoreAspectRatio&resize=340%2B255&extract=0%2B3%2B340%2B252&quality=85"
+          class="md:w-[26em] gsapimg m-auto relative z-10 rounded-lg"
+          src="https://i.ibb.co/cgnFR61/Musik-Mekanikeren-Kaare-Headshot-Profile-1-2.jpg"
           alt=""
         />
         <img
@@ -116,8 +119,8 @@ onMounted(async () => {
   height: auto;
   z-index: 0;
   opacity: 0;
-  left: 30px;
+  left: 68px;
   top: 180px;
-  @apply max-h-[234px] max-w-[234px] md:max-h-[434px] md:max-w-[434px];
+  @apply max-h-[234px] max-w-[234px] md:max-h-[600px] md:max-w-[600px];
 }
 </style>
