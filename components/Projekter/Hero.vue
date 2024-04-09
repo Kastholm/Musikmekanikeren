@@ -5,11 +5,11 @@
     <div class="grid md:grid-cols-2 gap-4 md:gap-8 xl:gap-20 md:items-center">
       <div>
         <h1
-          class="block text-3xl font-bold text-gray-800 sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
+          class="block text-3xl font-bold text-white sm:text-4xl lg:text-6xl lg:leading-tight dark:text-white"
         >
           Se tidligere projekter
         </h1>
-        <p class="mt-3 text-lg text-gray-800 dark:text-gray-400">
+        <p class="mt-3 text-lg text-white dark:text-gray-400">
           Personligt har jeg det på samme måde, når jeg afleverer bilen hos
           mekanikeren - man ønsker den tilbage så den både øles, kører og ser ud
           i sin bedst mulige stand! Jeg tager hver enkelt opgave meget seriøst

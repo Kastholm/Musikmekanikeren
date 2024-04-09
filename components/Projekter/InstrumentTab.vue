@@ -5,11 +5,10 @@
       <h2
         class="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white"
       >
-        Customer stories
+        Historier fra alle instrumenter
       </h2>
-      <p class="mt-1 text-gray-600 dark:text-gray-400">
-        See how game-changing companies are making the most of every engagement
-        with Preline.
+      <p class="mt-1 text-white dark:text-gray-400">
+        Musik Mekanikeren tager stolthed i alle instrumenter der kommer igennem værkstedet.
       </p>
     </div>
     <div class="grid -mx-2 overflow-hidden">
