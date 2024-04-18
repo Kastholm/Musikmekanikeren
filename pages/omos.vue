@@ -34,8 +34,8 @@
       <!-- Header section -->
       <div class="px-6 pt-14 lg:px-8">
         <div class="mx-auto max-w-2xl pt-24 text-center sm:pt-40">
-          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-6xl">
-            Velkommen til Musik Mekanikeren
+          <h2 class="text-4xl font-bold tracking-tight text-white sm:text-[46px]">
+            Den bedste belønning, kommer i form af tilfredse kunder
           </h2>
           <p class="mt-6 text-lg leading-8 text-gray-300">
             Kan det ikke repareres her - kan det højst sandsynligt ikke repareres!
@@ -51,32 +51,23 @@
           >
             <div>
               <p>
-                Vi har xx års erfaring med instrumenter og forstærkere, fra barns ben.... 
-                Id dolor praesent donec est. Odio penatibus risus viverra tellus
-                varius sit neque erat velit. Faucibus commodo massa rhoncus,
-                volutpat. Dignissim sed eget risus enim. Mattis mauris semper
-                sed amet vitae sed turpis id.
+                Musik Mekanikeren filosofi er, at alle kan få sig et fedt instrument. Hvad enten det er tale om en prisvenlig begynder guitar eller bas, det første trommesæt
+                eller et dyrere & eksklusivt custom shop instrument. Uanset modellen og kvaliteten, er langt de fleste instrumenter sjældent sat ordentligt op fra fabrikken, eller også passer fabrik setup'et ikke til dig.
+                Det er her at Musik Mekanikeren kan hjælpe dig.
               </p>
               <p class="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas.
+                Udover servicering af dit instrument, tilbyder Musik Mekanikeren også kyndig råd & vejledning omkring alt fra gode tips & tricks
+                til strengetykkelse og trommeskind, med henblik på det optimale setup for dig.
               </p>
             </div>
             <div>
               <p>
-                Erat pellentesque dictumst ligula porttitor risus eget et eget.
-                Ultricies tellus felis id dignissim eget. Est augue maecenas
-                risus nulla ultrices congue nunc tortor. Enim et nesciunt
-                doloremque nesciunt voluptate.
+                På værkstedet bliver der løbende købt nyt og lækkert special-værktøj samt masser af materialer og reservedele ind, udvalget konstant bliver større.
+                Har du en forespørgsel er du meget velkommen til at kontakte værkstedet for et uforpligtende og særskilt tilbud.
               </p>
               <p class="mt-8">
-                Et vitae blandit facilisi magna lacus commodo. Vitae sapien duis
-                odio id et. Id blandit molestie auctor fermentum dignissim.
-                Lacus diam tincidunt ac cursus in vel. Mauris varius vulputate
-                et ultrices hac adipiscing egestas. Iaculis convallis ac tempor
-                et ut. Ac lorem vel integer orci.
+                Pr. 1. September 2020 flyttede Musik Mekanikeren i nye og dertil-indrettede værkstedslokaler på Jørgensens Allé 28 i Hedensted - som giver dit instrument du bedste forhold indenfor renovering og reparation.
+              
               </p>
             </div>
           </div>
@@ -132,11 +123,10 @@
                 <h1
                   class="mt-2 text-3xl font-bold tracking-tight text-white-900 sm:text-4xl"
                 >
-                  Vi bruger hænderne
+                Historien bag
                 </h1>
                 <p class="mt-6 text-xl leading-8 text-white-700">
-                  Hos Musik Mekanikeren gør vi en dyd ud af kvalitetsbevidst arbejde lavet i hænderne.... Arcu, sit dui mi, nibh dui, diam eget aliquam. Quisque
-                  id at vitae feugiat egestas.
+                  Det hele bunder i en brændende interesse for guitarer og instrumenter generelt, samt et ønske om at hjælpe dig til at få det optimale ud af dit instrument.
                 </p>
               </div>
             </div>
@@ -158,73 +148,38 @@
                 class="max-w-xl text-base leading-7 text-white-700 lg:max-w-lg"
               >
                 <p>
-                  Faucibus commodo massa rhoncus, volutpat. Dignissim sed eget
-                  risus enim. Mattis mauris semper sed amet vitae sed turpis id.
-                  Id dolor praesent donec est. Odio penatibus risus viverra
-                  tellus varius sit neque erat velit. Faucibus commodo massa
-                  rhoncus, volutpat. Dignissim sed eget risus enim. Mattis
-                  mauris semper sed amet vitae sed turpis id.
+                  Jeg startede Musik Mekanikeren tilbage i 2012 (CVR-registreret i 2015), med filosofien
+                  om at det skulle være stedet hvor det traditionelle håndværk møder den personlige
+                  kontakt. Det skulle være værkstedet hvor kunden og Jeg sammen finder frem til
+                  den helt rigtige løsning for den enkelte musiker - og det enkelte instrument.
+                  Det er en værdi, som jeg sætter en stor ære i at fremhæve fuldt ud hver gang en ny
+                  opgave præsenterer sig, og forhåbentligt bidragende til, at kunden har lyst til at
+                  komme igen.
                 </p>
-                <ul role="list" class="mt-8 space-y-8 text-white-600">
-                  <li class="flex gap-x-3">
-                    <CloudArrowUpIcon
-                      class="mt-1 h-5 w-5 flex-none text-white-600"
-                      aria-hidden="true"
-                    />
-                    <span
-                      ><strong class="font-semibold text-white-900"
-                        >Punkt 1.</strong
-                      >
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                      Maiores impedit perferendis suscipit eaque, iste dolor
-                      cupiditate blanditiis ratione.</span
-                    >
-                  </li>
-                  <li class="flex gap-x-3">
-                    <LockClosedIcon
-                      class="mt-1 h-5 w-5 flex-none text-white-600"
-                      aria-hidden="true"
-                    />
-                    <span
-                      ><strong class="font-semibold text-white-900"
-                        >Punkt 2.</strong
-                      >
-                      Anim aute id magna aliqua ad ad non deserunt sunt. Qui
-                      irure qui lorem cupidatat commodo.</span
-                    >
-                  </li>
-                  <li class="flex gap-x-3">
-                    <ServerIcon
-                      class="mt-1 h-5 w-5 flex-none text-white-600"
-                      aria-hidden="true"
-                    />
-                    <span
-                      ><strong class="font-semibold text-white-900"
-                        >Punkt 3.</strong
-                      >
-                      Ac tincidunt sapien vehicula erat auctor pellentesque
-                      rhoncus. Et magna sit morbi lobortis.</span
-                    >
-                  </li>
-                </ul>
+                
                 <p class="mt-8">
-                  Et vitae blandit facilisi magna lacus commodo. Vitae sapien
-                  duis odio id et. Id blandit molestie auctor fermentum
-                  dignissim. Lacus diam tincidunt ac cursus in vel. Mauris
-                  varius vulputate et ultrices hac adipiscing egestas. Iaculis
-                  convallis ac tempor et ut. Ac lorem vel integer orci.
+                  Hvad enten du går og drømmer om at modificere dit instrument, eller ærger dig over
+                  en skade, så kan du altid kontakte værkstedet som vil stå klar med råd og vejledning.
+                  Musik Mekanikeren ønsker at være stedet musikere tager til, ikke kun for at handle,
+                  men for at få en god snak om musikken, instrumenterne og hvad vi hver især syntes
+                  er fedt ved det hele - Det kan jo være dét ene fjollede forslag, der føder idéen til det
+                  næste brilliante påfund!
+                  Det er billigere end du tror, at få lavet et gammelt uspilbart instrument om til et
+                  inspirerende værktøj til musikkens verden, og ikke mindst til glæde for dig som
+                  musiker. Jeg håber, at du som musiker vil tage godt imod min filosofi med
+                  instrumentværkstedet Musik Mekanikeren, da idéen netop er at give musikere
+                  lige fra nybegyndere til professionelle netop dét instrument de fortjener.
                 </p>
                 <h2
                   class="mt-16 text-2xl font-bold tracking-tight text-white-900"
                 >
-                  Svært ved at give slip?
+                Hvem er Kaare Nygaard?
                 </h2>
                 <p class="mt-6">
-                  Vi forstår din ømhed overfor dit udstyr - frygt ej! Hos os kan du med ro i maven.... Convallis arcu ipsum urna nibh. Pharetra,
-                  euismod vitae interdum mauris enim, consequat vulputate nibh.
-                  Maecenas pellentesque id sed tellus mauris, ultrices mauris.
-                  Tincidunt enim cursus ridiculus mi. Pellentesque nam sed
-                  nullam sed diam turpis ipsum eu a sed convallis diam.
+                  Musik Mekanikeren blev startet da jeg var 21 år gammel. Men min musikalske rejse startede jeg allerede som 7-årig. Her begyndte jeg  til samspil, på en musikalsk forskole i Slagelse og fik hurtigt lyst til at lære mere. Derfor, så snart jeg kunne komme på venteliste til trommespil som 10-årig,  skrev jeg mig op og efter 6 lange måneder, blev jeg endelig tildelt en plads på musikskolen Domus i Vejle, ved min trommelærer og mentor Arne Østergaard. <br><br>
+                  Herfra tog det rytmiske aspekt af musikken raketfart og tre år efter gik jeg op til optagelsesprøven til Legoland-garden i Billund, og bestod. Herefter var det øvning to dage om ugen, samt  koncerter hver weekend i Legoland. Foruden dette spillede jeg også   trommer til diverse arrangementer, samt med mit daværende band. Jeg tilmeldte mig også et par års guitarundervisning, for at udvide min melodiske  viden. <br><br>
+                  Da jeg blev  16 startede jeg som hjælper i Tartan Music, en musikforretning i Vejle. Herfra begyndte jeg at få stor interesse for det tekniske aspekt ved guitarer - og instrumenter generelt -   og begyndte at foretage reparationer og justeringer på butikkens vegne. Udover det tekniske aspekt, begyndte jeg også at se guitaren som noget helt unikt. Denne kreation var (er) så mange ting i ét - melodisk instrument, kunst, unikt håndværk og  alt i alt kulminationen af så mange forskellige metoder og dele. Guitaren måtte, i mine øjne, være det ultimative redskab til musik (som Jimi, Clapton, Dylan osv. allerede har bevist det). <br><br> Noget jeg også syntes er rigtig fedt er, at hver eneste model har sit helt eget udtryk. Jeg begyndte meget at dyrke hvilke modeller der fandtes på markedet, hvilke fordele og ulemper de hver især havde - både lydmæssigt og designmæssigt - hvilke kunstnere der spillede på hvad og selvfølgelig de legendariske eftertragtede "vintage" modeller. Jeg var som besat. <br><br>
+                  Jeg har stået i musikforretning lige siden, og både solgt guitarer og andet grej til mennesker, som gerne ville fordybe sig i musikkens verden, samt stået på værkstedet og foretaget reparationer og justeringer. Ud fra dette har jeg erhvervet mig en masse erfaring indenfor faget, men min  erfarelse/oplevelse er langt fra slut og jeg ser altid frem til det næste projekt at gå i gang med :)
                 </p>
               </div>
             </div>

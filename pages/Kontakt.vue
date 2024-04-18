@@ -116,9 +116,8 @@ async function onSubmit(values) {
               Kontakt os alle hverdage
             </h2>
             <p class="mt-6 text-lg leading-8 text-gray-300">
-              Proin volutpat consequat porttitor cras nullam gravida at. Orci
-              molestie a eu arcu. Sed ut tincidunt integer elementum id sem.
-              Arcu sed malesuada et magna.
+              Du kan komme i kontakt med Musik Mekanikeren via nedenstående
+              tlf. nummer & e-mail, eller via kontaktformularen til højre.
             </p>
             <dl class="mt-10 space-y-4 text-base leading-7 text-gray-300">
               <div class="flex gap-x-4">

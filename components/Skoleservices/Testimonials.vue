@@ -1,9 +1,9 @@
 <script setup>
-const query = groq`*[_type == "testimonials_skoleservice"]`;
-const { data } = useSanityQuery(query);
+/*const query = groq`*[_type == "testimonials_skoleservice"]`;
+const { data } = useSanityQuery(query); */
 </script>
 <template>
-  <section class="testi_section">
+  <!-- <section class="testi_section">
     <div class="grid place-content-center">
       <h2 class="testi_h2">
         Musik Mekanikeren er Autoriseret Servicecenter for
@@ -46,7 +46,7 @@ const { data } = useSanityQuery(query);
       </SwiperSlide>
     </Swiper>
  
-  </section>
+  </section> -->
 </template>
 
 <style>
