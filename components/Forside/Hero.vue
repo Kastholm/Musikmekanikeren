@@ -12,13 +12,11 @@
           <h1
             class="block text-3xl relative font-bold text-white sm:text-4xl md:text-2xl lg:text-6xl lg:leading-tight dark:text-white quote"
           >
-            Lad os reparer dit instrument
+          Spiller musikken ikke?
           </h1>
           <span class="heroBg md:hidden block h-[10em]"></span>
           <p class="mt-3 text-lg text-white dark:text-gray-400">
-            Det kræver stor tillid at aflevere sit højtelskede og værdsatte
-            instrument til en anden, både til et generelt service-tjek men især
-            når det gælder dybere-gående reparationer.
+            Det kræver stor tillid at aflevere sit højtelskede og værdsatte instrument til en anden, både til et generelt service-tjek men især når det gælder dybere-gående reparationer. Jeg sætter en ære i at leve op til denne tillid og yde den bedste service og oplevelse undervejs og efterfølgende.
           </p>
           <div class="relative py-8">
             <h3 class="text-2xl">Taylor Certificeret</h3>
@@ -32,7 +30,7 @@
           <div class="mt-7 grid gap-3 w-full sm:inline-flex">
             <div
               class="inline-flex justify-center items-center gap-x-3 text-center bg-cyangreen hover:bg-cyangreen border border-transparent text-sm lg:text-base text-white font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-offset-white transition py-3 px-4 hover:scale-[1.01]">
-              <li class="list-none"><NuxtLink to="service"> Vælg instrument du ønsker repareret</NuxtLink></li>
+              <li class="list-none"><NuxtLink to="service"> Instrumentservice</NuxtLink></li>
               <svg
                 class="w-2.5 h-2.5"
                 width="16"
@@ -50,7 +48,8 @@
             </div>
             
               <div class="inline-flex justify-center items-center gap-x-3.5 text-sm lg:text-base text-center border border-smooth bg-smooth hover:scale-[1.01] shadow-sm font-medium rounded-md focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white transition py-3 px-4 dark:border-gray-800 dark:hover:border-gray-600 text-cyangreen dark:focus:ring-gray-700 w-full max-w-[200px]">
-                <li class="list-none"><NuxtLink to="/projekter"> Se vores arbejde </NuxtLink></li>
+                <li class="list-none"><NuxtLink to="/projekter"> Tidligere projekter </NuxtLink></li>
+                
               </div>
             
           </div>

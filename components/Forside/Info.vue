@@ -4,17 +4,15 @@
       <div class="md:w-1/2">
         <span class="">
           <h2 class="quoteTwo header">DIT FORTRUKNE INSTRUMENT VÆRKSTED</h2>
-          <h5 class="quote_text text-[1.2rem] md:text-[1.35rem] mt-2">
+          <p class="quote_text text-[1.2rem] md:text-[1.35rem] mt-2">
             At overlade sit højtelskede instrument til en anden person kræver tillid - især når det gælder reparationer!
             <br><br>
             Hos Musik Mekanikeren er dit instrument i trygge & kyndige hænder og vil altid komme retur i sin bedste stand.
-            <br>
-            Efter mange års erfaring inden for branchen ved vi, hvad det vil sige at servicere musik-instrumenter - hvad enten det drejer sig om Strengeinstrumenter, Trommer & Slagtøj, Klaverer & Keyboards, Forstærkere, PA osv..
+Efter mere end 20 års erfaring inden for musikbranchen ved vi, hvad det vil sige at servicere musik-instrumenter - hvad enten det drejer sig om Strengeinstrumenter, Trommer & Slagtøj, Klaverer & Keyboards, Forstærkere, PA osv..
             <br><br>
             Musik Mekanikeren har alverdens specialværktøj til rådighed til alle typer opgaver og dét kombineret med stor ekspertise og nørderi, gør for mange Musik Mekanikeren til deres foretrukne instrumentværksted!
 
-
-          </h5>
+          </p>
         </span>
       </div>
       <div class="md:w-1/2 relative">

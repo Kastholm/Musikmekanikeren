@@ -4,9 +4,9 @@
   <div class="container mx-auto px-4">
     <div class="flex flex-wrap text-left lg:text-left">
       <div class="w-full lg:w-6/12 px-4">
-        <h4 class="text-3xl fonat-semibold text-blueGray-700">Musik Mekanikeren®</h4>
+        <h4 class="text-3xl fonat-semibold text-blueGray-700">Hvem står bag Musik Mekanikeren®?</h4>
         <h5 class="text-lg mt-3 mb-4 text-blueGray-600">
-          Musik Mekanikeren blev stiftet i 2015, og har siden da udført reparationer og service på hundredvis af diverse instrumenter og forstærkere.
+          Læs mere om mig og min erfaring med musikinstrumenter & udstyr igennem de sidste 20 år..
         </h5>
         <img src="https://cdn.sanity.io/images/1f5ltia2/production/512bbd4914d06fd46e1dfca3086b178d042e7f4c-322x208.png" class=" max-h-[15vh]">
       </div>

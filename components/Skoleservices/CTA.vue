@@ -52,6 +52,10 @@
               <CheckCircleIcon class="h-7 w-5 flex-none" aria-hidden="true" />
               {{ keypoint.title6 }}
             </li>
+            <li class="flex col-span-2 mt-5">Hvad enten det drejer sig om Strengeinstrumenter, Trommer & Slagtøj, Klaverer & Keyboards, PA eller Generel Opsætning & Indretning, så kommer Musik Mekanikeren ud til din skole og laver en komplet gennemgang af alt udstyret i musiklokalet. Samtidig bliver der analyseret på indretningen og drøftet ønsker & behov med dig som musiklærer, for til sidst at give et fuldendt overblik over hvilke tiltag der på bedste og billigste vis, vil realise drømmen om det perfekte musiklokale.
+              <br><br>At få foretaget denne gennemgang af musiklokalet koster ingenting, og du binder dig ikke til noget. Det er blot medvirkende til at skabe et overblik over netop dit musiklokale og mulighederne deri.
+              <br><br>Hvis du tænker at dette kunne være interessant for netop din skole, så ring eller skriv for at booke en tid til et uforpligtende besøg!
+            </li>
           </ul>
         </div>
       </div>

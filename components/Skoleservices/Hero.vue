@@ -10,17 +10,14 @@
           Lad os optimere jeres Musik lokale
         </h1>
         <p class="mt-3 text-lg text-white dark:text-gray-400">
-          Vi ved at tiden er knap, rundt om på landets skoler og institutioner.
-          Derfor tilbyder Musik Mekanikeren, at levere et velspillende -og
-          organiseret musiklokale, hvor alle instrumenter samt udstyr, står klar
-          til at spille på. På denne måde, kan du som musiklærer fra starten
-          undgå bekymringer ift. udstyret og i stedet fokusere på at gøre dét at
-          lære til en succesoplevelse!
+          Med både forberedelse og den egentlige undervisning er der ikke meget tid tilovers, til også at sørge for at udstyret i musiklokalet spiller som det skal.
+          Her kommer Musik Mekanikeren ind i billedet og tilbyder at levere et velspillende -og organiseret musiklokale, hvor alle instrumenter samt udstyr, står klar til at spille på.
+          På denne måde, kan du som musiklærer fra starten undgå bekymringer ift.
+          udstyret og i stedet fokusere på at gøre dét at lære til en succesoplevelse!
           <br />
           <br />
-          At få foretaget denne gennemgang af musiklokalet koster ingenting, og
-          du binder dig ikke til noget. Det er blot medvirkende til at skabe et
-          overblik over netop dit musiklokale og mulighederne deri.
+          At få foretaget denne gennemgang af musiklokalet <span class="underline">koster ingenting</span>, og du binder dig ikke til noget.
+          Det er blot medvirkende til at skabe et overblik over netop dit musiklokale og mulighederne deri.
         </p>
 
        

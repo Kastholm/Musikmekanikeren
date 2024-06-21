@@ -64,7 +64,7 @@ onMounted(async () => {
         <li><NuxtLink >Blog</NuxtLink></li>
         <li><NuxtLink to="/shop">Shop</NuxtLink></li>
         <li><NuxtLink to="/kontakt">Kontakt</NuxtLink></li>
-        <li><NuxtLink to="/omos"> Om os</NuxtLink></li>
+        <li><NuxtLink to="/omos"> Om MM</NuxtLink></li>
         <!-- <li><NuxtLink to="/shop">Shop</NuxtLink></li> -->
         <!-- <li>
           <NuxtLink @change="navigate">
@@ -84,7 +84,7 @@ onMounted(async () => {
         <li><NuxtLink to="/Service">Service</NuxtLink></li>
         <li><NuxtLink to="/Skoleservice">Skoleservice</NuxtLink></li>
         <li><NuxtLink to="/projekter"> Projekter</NuxtLink></li>
-        <li><NuxtLink to="/omos">Om os </NuxtLink></li>
+        <li><NuxtLink to="/omos">Om MM </NuxtLink></li>
         <li><NuxtLink to="/kontakt">Kontakt</NuxtLink></li>
       </ul> -->
 </template>
